@@ -1,0 +1,6 @@
+_ignore*
+.env
+composer.lock
+vendor/*
+.vscode
+public_html/wp-content/uploads

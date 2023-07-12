@@ -1,0 +1,12 @@
+{
+    "name": "rohankleem/buildio",
+    "authors": [
+        {
+            "name": "rohankleem",
+            "email": "rohankleem@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    }
+}
