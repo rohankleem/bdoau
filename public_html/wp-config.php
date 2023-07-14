@@ -1,96 +1,52 @@
 <?php
-/**
- * The base configuration for WordPress
- *
- * The wp-config.php creation script uses this file during the installation.
- * You don't have to use the web site, you can copy this file to "wp-config.php"
- * and fill in the values.
- *
- * This file contains the following configurations:
- *
- * * Database settings
- * * Secret keys
- * * Database table prefix
- * * ABSPATH
- *
- * @link https://wordpress.org/documentation/article/editing-wp-config-php/
- *
- * @package WordPress
- */
 
-// ** Database settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define( 'DB_NAME', 'bowpqfwg' );
+// BEGIN iThemes Security - Do not modify or remove this line
+// iThemes Security Config Details: 2
+define( 'DISALLOW_FILE_EDIT', true ); // Disable File Editor - Security > Settings > WordPress Tweaks > File Editor
+// END iThemes Security - Do not modify or remove this line
 
-/** Database username */
-define( 'DB_USER', 'root' );
+//turn off errors and warnings////
+//ini_set('display_errors','Off');
+// ini_set('error_reporting', E_ALL );
+define('WP_DEBUG_DISPLAY', false);
+//////////////////////////////////
 
-/** Database password */
-define( 'DB_PASSWORD', '' );
+require_once(__DIR__ . '/../vendor/autoload.php');
 
-/** Database hostname */
-define( 'DB_HOST', 'localhost' );
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/../');
+$dotenv->load();
 
-/** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define('DB_NAME', 			$_ENV['DB_NAME']);
+define('DB_USER', 			$_ENV['DB_USER']);
+define('DB_PASSWORD', 		$_ENV['DB_PASSWORD']);
+define('DB_HOST', 			$_ENV['DB_HOST']);
+define('DB_CHARSET', 		$_ENV['DB_CHARSET']);
+define('DB_COLLATE', 		'');
 
-/** The database collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
+define('AUTH_KEY',         	$_ENV['AUTH_KEY']);
+define('SECURE_AUTH_KEY',  	$_ENV['SECURE_AUTH_KEY']);
+define('LOGGED_IN_KEY',    	$_ENV['LOGGED_IN_KEY']);
+define('NONCE_KEY',        	$_ENV['NONCE_KEY']);
+define('AUTH_SALT',        	$_ENV['AUTH_SALT']);
+define('SECURE_AUTH_SALT', 	$_ENV['SECURE_AUTH_SALT']);
+define('LOGGED_IN_SALT',   	$_ENV['LOGGED_IN_SALT']);
+define('NONCE_SALT',       	$_ENV['NONCE_SALT']);
 
-/**#@+
- * Authentication unique keys and salts.
- *
- * Change these to different unique phrases! You can generate these using
- * the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}.
- *
- * You can change these at any point in time to invalidate all existing cookies.
- * This will force all users to have to log in again.
- *
- * @since 2.6.0
- */
-define( 'AUTH_KEY',         'qkD_Hxi3;w-l-#z6AG(zb(E%Ea3s:oI&fjh:^pWY}T$oZ(N`]*#ZT]jX#q/VBvfP' );
-define( 'SECURE_AUTH_KEY',  'PRx%r9}mCq/v-0y}~HQVb`{&Wvc%=l00k!Ee6?#p#Dm|jRfGtxFlZw;eFmMYP/*d' );
-define( 'LOGGED_IN_KEY',    'n{4pYN!JX+W9>aBfxI.kat.!pQDVkBN?vc$K[wImaL_i]#BemEZ*8`sNc^~fSped' );
-define( 'NONCE_KEY',        '^!P6tTfifB?]}ED:|FR+^ot;jz }`;yN@)M:ocX :#W#7>o..]%>?g)>9JF#RAvH' );
-define( 'AUTH_SALT',        '~jF A1NmDhzpZe3[vCSSo_jCK4Pb@@CNO+X4Y?$9|bho`0RtsrT>%<dJ 6_oI;)T' );
-define( 'SECURE_AUTH_SALT', '($z%]m;b;51B$nx]&fc@C>T^*7W`JHb&bJ~iazpGn9lYKE+-cH-G!lfuEeAX,hbu' );
-define( 'LOGGED_IN_SALT',   '|i`:?Z0tR.NYR.<r#qH2$|6Vzz108H6.i5e4/*-XQGJb%:+WSMB6|jiCzhx}JHK}' );
-define( 'NONCE_SALT',       'dPand6-.~B/ablxj[Ld?.QMH}tM]]JB%vo;}hN<6wO$yaecM[9MfA}*[5v)0}~2 ' );
+define('WP_DEBUG',			$_ENV['WP_DEBUG']);
+define('WP_DEBUG_LOG',		$_ENV['WP_DEBUG_LOG']);
+define('WP_HOME', 			$_ENV['WP_HOME']);
+define('WP_SITEURL', 		$_ENV['WP_SITEURL']);
 
-/**#@-*/
+define ('DEFAULT_LISTING_IMAGE', 'wp-content/themes/steelchief/img/img-default-location.jpg');
 
-/**
- * WordPress database table prefix.
- *
- * You can have multiple installations in one database if you give each
- * a unique prefix. Only numbers, letters, and underscores please!
- */
-$table_prefix = 'wp_';
-
-/**
- * For developers: WordPress debugging mode.
- *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
- *
- * For information on other constants that can be used for debugging,
- * visit the documentation.
- *
- * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
- */
-define( 'WP_DEBUG', false );
-
-/* Add any custom values between this line and the "stop editing" line. */
-
-
-
-/* That's all, stop editing! Happy publishing. */
+$table_prefix = $_ENV['TABLE_PREFIX'];
 
 /** Absolute path to the WordPress directory. */
-if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
+if (!defined('ABSPATH')) {
+	define('ABSPATH', __DIR__ . '/');
 }
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+date_default_timezone_set("Australia/Melbourne");

@@ -1,0 +1,21 @@
+- cgi-bin/
+- public_html/wp-content/uploads/
+- public_html/wp-content/cache/
+- public_html/wp-content/mcloud-reports/
+- public_html/wp-content/mcloud-view-cache/
+- public_html/wp-content/languages/
+- public_html/wp-content/languages/
+- public_html/wp-content/autoptimize*
+- public_html/wp-content/uploads/
+- public_html/.well-known/
+- public_html/.htaccess
+- public_html/php.ini
+- public_html/wp-content/plugins/formidable/css/formidableforms.css
++ public_html/***
++ vendor/***
++ src/***
++ composer.json
++ composer.lock
+- *
+
+#A pattern like dir/*** differs from dir/** in that the former also includes the dir directory itself.
