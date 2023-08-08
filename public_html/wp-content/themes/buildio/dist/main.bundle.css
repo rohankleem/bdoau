@@ -2,6 +2,17 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/main.scss ***!
   \*************************************************************************************************************/
 @charset "UTF-8";
+@font-face {
+  font-family: "Inter var";
+  font-feature-settings: "cv11";
+  src: url(c8ba52b05a9ef10f4758.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, div, a, td, th {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
 .bg-gradient-primary {
   background-image: linear-gradient(310deg, #a0cc00, #dc3545);
 }
@@ -82,7 +93,7 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Inter var", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);

@@ -2,9 +2,13 @@
 //https://www.youtube.com/watch?v=nCX3QVl_PiI
 
 //custom variables
+@import "fonts.scss";
 $primary: #642B73;
 $asdfasdfasdf: #a0cc00;
-
+$font-family-sans-serif: "Inter var", sans-serif;
+h1,h2,h3,h4,h5,p,div,a,td,th{
+    font-feature-settings:"cv02","cv03","cv04","cv11";
+}
 
 //import the funcitons & variables
 @import "../../node_modules/bootstrap/scss/functions";
@@ -21,6 +25,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 //other custom partials (must have underscore in filename)
 @import "custom.scss";
+
 
 
 

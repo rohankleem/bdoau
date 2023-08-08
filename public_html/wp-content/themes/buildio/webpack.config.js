@@ -4,9 +4,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
+    devtool: 'eval-source-map',
     entry: {
         main: [
-            './node_modules/bootstrap/dist/js/bootstrap.js',
+            './node_modules/bootstrap/dist/js/bootstrap.bundle.js',
             './src/scss/main.scss'
         ]
     },
