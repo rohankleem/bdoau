@@ -6,13 +6,12 @@ define( 'DISALLOW_FILE_EDIT', true ); // Disable File Editor - Security > Settin
 // END iThemes Security - Do not modify or remove this line
 
 //turn off errors and warnings////
-//ini_set('display_errors','Off');
-// ini_set('error_reporting', E_ALL );
-define('WP_DEBUG_DISPLAY', false);
+ini_set('display_errors','On');
+ini_set('error_reporting', E_ALL );
+define('WP_DEBUG_DISPLAY', true);
 //////////////////////////////////
 
 require_once(__DIR__ . '/../vendor/autoload.php');
-
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/../');
 $dotenv->load();
 

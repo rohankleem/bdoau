@@ -1,0 +1,28 @@
+
+//https://www.youtube.com/watch?v=nCX3QVl_PiI
+
+//custom variables
+$primary: #642B73;
+$asdfasdfasdf: #a0cc00;
+
+
+//import the funcitons & variables
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// add some custom colours to the theme, to use things like btn-aasdf
+$custom-theme-colors: (
+	"featurePrime1_A": #ff0000,
+	"featurePrime1_B": #654645
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+
+//other custom partials (must have underscore in filename)
+@import "custom.scss";
+
+
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
