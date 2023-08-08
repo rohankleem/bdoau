@@ -6,8 +6,4 @@
 </head>
 
 <body>
-
-	<div class="jumbotron">
-		<h1>HEADER</h1>
-	</div>
 	<div class="container">

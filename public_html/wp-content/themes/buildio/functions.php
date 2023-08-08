@@ -63,7 +63,7 @@ if ( ! function_exists( 'buildiotheme_setup' ) ) :
 		 */
 		add_theme_support( 'post-formats', array( 'aside', 'gallery', 'quote', 'image', 'video' ) );
 
-		echo "HELLOOOOOO";
+		//echo "HELLOOOOOO";
 
 		//echo get_stylesheet_directory_uri() . '/dist/main.bundle.css' ;
 
@@ -74,7 +74,7 @@ if ( ! function_exists( 'buildiotheme_setup' ) ) :
 endif; // myfirsttheme_setup
 add_action('after_setup_theme', 'buildiotheme_setup' );
 add_action('wp_enqueue_scripts', 'add_sasdfsdtyles');
-echo "xxxxxxxxxxxxxxxxeeeeeeeeeeeeeeeeeeeeeee";
+//echo "xxxxxxxxxxxxxxxxeeeeeeeeeeeeeeeeeeeeeee";
 
 
 
