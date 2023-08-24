@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) || exit;
 
 
 
-function add_sasdfsdtyles()
+function do_enqueue()
 {
 
 	//echo "HELLOOOOOOxxxxxxxxxxxx";
@@ -14,9 +14,8 @@ function add_sasdfsdtyles()
     $stylesversion = "1";
     $scriptsversion = "1";
 
-	wp_enqueue_style('styles-dist-main', get_stylesheet_directory_uri() . '/dist/main.bundle.css', array(), 1);
-
-	wp_enqueue_script('sripts-dist-main', get_stylesheet_directory_uri() . '/dist/main.bundle.js', array(), 1, true);
+	wp_enqueue_style('styles-dist-main', get_stylesheet_directory_uri() . '/dist/main.bundle.css?ver=' . $stylesversion, array(), 1);
+	wp_enqueue_script('scripts-dist-main', get_stylesheet_directory_uri() . '/dist/main.bundle.js?ver=' . $scriptsversion, array(), 1, true);
 
 }
 
@@ -73,9 +72,16 @@ if ( ! function_exists( 'buildiotheme_setup' ) ) :
 	}
 endif; // myfirsttheme_setup
 add_action('after_setup_theme', 'buildiotheme_setup' );
-add_action('wp_enqueue_scripts', 'add_sasdfsdtyles');
-//echo "xxxxxxxxxxxxxxxxeeeeeeeeeeeeeeeeeeeeeee";
+add_action('wp_enqueue_scripts', 'do_enqueue');
 
 
+function custom_excerpt_length($length) {
+    return 20; // Adjust the number of words you want in the excerpt
+}
+add_filter('excerpt_length', 'custom_excerpt_length');
 
+function custom_excerpt_more($more) {
+	return ' <a href="' . get_permalink() . '">more...</a>'; // Remove the default "[...]" at the end of the excerpt
+}
+add_filter('excerpt_more', 'custom_excerpt_more');
 

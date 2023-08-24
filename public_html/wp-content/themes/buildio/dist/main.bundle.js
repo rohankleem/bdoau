@@ -9,6 +9,16 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/main.js":
+/*!************************!*\
+  !*** ./src/js/main.js ***!
+  \************************/
+/***/ (() => {
+
+eval("console.log(\"Main js code\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvbWFpbi5qcyIsIm5hbWVzIjpbImNvbnNvbGUiLCJsb2ciXSwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9qcy9tYWluLmpzPzkyOTEiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc29sZS5sb2coXCJNYWluIGpzIGNvZGVcIik7Il0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBTyxDQUFDQyxHQUFHLENBQUMsY0FBYyxDQUFDIn0=\n//# sourceURL=webpack-internal:///./src/js/main.js\n");
+
+/***/ }),
+
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.bundle.js":
 /*!************************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.bundle.js ***!
@@ -74,6 +84,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
 /******/ 	__webpack_require__("./node_modules/bootstrap/dist/js/bootstrap.bundle.js");
+/******/ 	__webpack_require__("./src/js/main.js");
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/scss/main.scss");
 /******/ 	
 /******/ })()

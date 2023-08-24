@@ -8,6 +8,7 @@ module.exports = {
     entry: {
         main: [
             './node_modules/bootstrap/dist/js/bootstrap.bundle.js',
+            './src/js/main.js',
             './src/scss/main.scss'
         ]
     },

@@ -41,24 +41,43 @@
 	</button>
 </div>
 
+
+
 <div class="row">
-	<div class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
-
-		<div class="row">
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-						<h1><?php the_title(); ?></h1>
-						<h4>Posted on <?php the_time('F jS, Y') ?></h4>
-						<p><?php the_content(__('(more...)')); ?></p>
-					</div>
-				<?php endwhile;
-			else : ?>
-				<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-			<?php endif; ?>
-		</div>
-	</div>
-
+    <?php if (have_posts()) : ?>
+        <?php $post_counter = 0; ?>
+        <?php while (have_posts()) : the_post(); ?>
+            <?php
+            if ($post_counter < 3) {
+                // Show up to 3 posts on mobile devices
+                $post_counter++;
+            ?>
+                <div class="col-4 col-sm-12">
+                    <h2><?php the_title(); ?></h2>
+                    <small>Posted on <?php the_time('F jS, Y') ?></small>
+                    <p><?php the_excerpt(); ?></p>
+                </div>
+            <?php
+            } elseif ($post_counter < 6) {
+                // Show up to 6 posts on larger screens
+                $post_counter++;
+            ?>
+                <div class="col-4 d-none d-md-block ">
+                    <h2><?php the_title(); ?></h2>
+                    <small>Posted on <?php the_time('F jS, Y') ?></small>
+                    <p><?php the_excerpt(); ?></p>
+                </div>
+            <?php
+            } else {
+                break; // Stop looping once the maximum post count is reached
+            }
+            ?>
+        <?php endwhile; ?>
+    <?php else : ?>
+        <p><?php _e('No articles to show.'); ?></p>
+    <?php endif; ?>
 </div>
+
 
 
 
