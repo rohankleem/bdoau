@@ -23,11 +23,9 @@ $custom-theme-colors: (
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 
-//other custom partials (must have underscore in filename)
-@import "custom.scss";
-
-
-
-
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+//other custom partials (must have underscore in filename)
+@import "custom.scss";

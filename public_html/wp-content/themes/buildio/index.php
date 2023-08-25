@@ -8,26 +8,12 @@
 		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
 		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
 	</div>
-	<div class="carousel-inner">
+	<div class="carousel-inner rounded">
 		<div class="carousel-item active">
-			<img src="https://picsum.photos/800/300" class="d-block w-100" alt="...">
+			<img class="d-block w-100" src="<?php echo get_stylesheet_directory_uri() ?>/img/buildio-hero-2.jpg" alt="Buildio"/>
 			<div class="carousel-caption d-none d-md-block">
-				<h5>First slide label</h5>
-				<p>Some representative placeholder content for the first slide.</p>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img src="https://picsum.photos/800/300" class="d-block w-100" alt="...">
-			<div class="carousel-caption d-none d-md-block">
-				<h5>Second slide label</h5>
-				<p>Some representative placeholder content for the second slide.</p>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img src="https://picsum.photos/800/300" class="d-block w-100" alt="...">
-			<div class="carousel-caption d-none d-md-block">
-				<h5>Third slide label</h5>
-				<p>Some representative placeholder content for the third slide.</p>
+				<h5>Digital Integrations for Business Development</h5>
+				<p>Tie together business processes for optimsation and easy workflow automation.</p>
 			</div>
 		</div>
 	</div>
@@ -43,7 +29,7 @@
 
 
 
-<div class="row">
+<div class="row blog-tile-snippets mt-5">
     <?php if (have_posts()) : ?>
         <?php $post_counter = 0; ?>
         <?php while (have_posts()) : the_post(); ?>
@@ -52,7 +38,7 @@
                 // Show up to 3 posts on mobile devices
                 $post_counter++;
             ?>
-                <div class="col-4 col-sm-12">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                     <h2><?php the_title(); ?></h2>
                     <small>Posted on <?php the_time('F jS, Y') ?></small>
                     <p><?php the_excerpt(); ?></p>
@@ -62,7 +48,7 @@
                 // Show up to 6 posts on larger screens
                 $post_counter++;
             ?>
-                <div class="col-4 d-none d-md-block ">
+                <div class="col-4 d-none d-md-block">
                     <h2><?php the_title(); ?></h2>
                     <small>Posted on <?php the_time('F jS, Y') ?></small>
                     <p><?php the_excerpt(); ?></p>
