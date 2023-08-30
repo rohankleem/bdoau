@@ -9,7 +9,9 @@ module.exports = {
         main: [
             './node_modules/bootstrap/dist/js/bootstrap.bundle.js',
             './src/js/main.js',
-            './src/scss/main.scss'
+            './src/js/megamenu.js',
+            './src/scss/main.scss',
+            './src/scss/megamenu.scss'
         ]
     },
     module: {

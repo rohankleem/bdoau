@@ -72,11 +72,11 @@ $twenty_twenty_one_comment_count = get_comments_number();
 				),
 			)
 		);
-		?>
 
-		<?php if ( ! comments_open() ) : ?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'twentytwentyone' ); ?></p>
-		<?php endif; ?>
+		if ( ! comments_open() ) :
+			echo '<p class="no-comments">' . esc_html__( 'Comments are closed.', 'twentytwentyone' ) . '</p>';
+		endif;
+	?>
 	<?php endif; ?>
 
 	<?php
@@ -85,6 +85,30 @@ $twenty_twenty_one_comment_count = get_comments_number();
 			'title_reply'        => esc_html__( 'Leave a comment', 'twentytwentyone' ),
 			'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
 			'title_reply_after'  => '</h2>',
+			'class_form'         => 'comment-form', // Apply Bootstrap class to the comment form
+			'comment_notes_before' => '', // Remove the comment notes
+			'comment_notes_after' => '', // Remove the comment notes
+			'submit_button' => '<button class="btn btn-primary" type="submit" id="submit">Submit</button>', // Style the submit button with Bootstrap class
+			'fields' => apply_filters( 'comment_form_default_fields', array(
+				'author' =>
+				  '<div class="form-group">' .
+				  '<label for="author">' . esc_html__( 'Name', 'domainreference' ) . '</label> ' .
+				  ( $req ? '<span class="required">*</span>' : '' ) .
+				  '<input class="form-control" id="author" name="author" required type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+				  '" size="30"' . $aria_req . ' /></div>',
+				  'email' =>
+				  '<div class="form-group">' .
+				  '<label for="email">' . esc_html__( 'Email', 'domainreference' ) . '</label> ' .
+				  ( $req ? '<span class="required">*</span>' : '' ) .
+				  '<input class="form-control" id="email" name="email" type="text" required value="' . esc_attr(  $commenter['comment_author_email'] ) .
+				  '" size="30"' . $aria_req . ' /></div>',
+				  'url' =>
+				  '<div class="form-group">' .
+				  '<label for="url">' . esc_html__( 'Website', 'domainreference' ) . '</label>' .
+				  '<input class="form-control" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
+				  '" size="30" /></div>'
+			) ),
+			'comment_field' => '<div class="form-group"><label for="comment">' . esc_html_x( 'Comment', 'noun', 'twentytwentyone' ) . '</label><textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true" required></textarea></div>',
 		)
 	);
 	?>

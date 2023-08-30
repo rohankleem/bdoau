@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTFQ6C50H9"></script>
 	<script>
@@ -26,11 +27,11 @@
 
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/buildio-logo-hori-1.jpg" alt="Buildio"/></a>
+				<a class="navbar-brand" href="/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/buildio-logo-hori-1.jpg" alt="Buildio" /></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarText" >
+				<div class="collapse navbar-collapse" id="navbarText">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item d-none">
 							<a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -43,3 +44,8 @@
 				</div>
 			</div>
 		</nav>
+
+		<?php include("nav-header.php") ?>
+
+
+		

@@ -5,15 +5,18 @@
 define( 'DISALLOW_FILE_EDIT', true ); // Disable File Editor - Security > Settings > WordPress Tweaks > File Editor
 // END iThemes Security - Do not modify or remove this line
 
-//turn off errors and warnings////
-ini_set('display_errors','On');
-ini_set('error_reporting', E_ALL );
-define('WP_DEBUG_DISPLAY', true);
-//////////////////////////////////
+define( 'ITSEC_ENCRYPTION_KEY', 'emF4Pj1KVUxMa3NuKGBmQVlSazUqM3FwPUQ5eWNVa1hqQU9hL1kjOzRrdGlFK085XkRJSl1vX307NltAey00aA==' );
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/../');
 $dotenv->load();
+
+//turn off errors and warnings////
+ini_set('display_errors','On');
+ini_set('error_reporting', E_ALL );
+//////////////////////////////////
+
+
 
 define('DB_NAME', 			$_ENV['DB_NAME']);
 define('DB_USER', 			$_ENV['DB_USER']);
@@ -33,6 +36,8 @@ define('NONCE_SALT',       	$_ENV['NONCE_SALT']);
 
 define('WP_DEBUG',			$_ENV['WP_DEBUG']);
 define('WP_DEBUG_LOG',		$_ENV['WP_DEBUG_LOG']);
+define('WP_DEBUG_DISPLAY', filter_var($_ENV['dddd']??false, FILTER_VALIDATE_BOOLEAN));
+
 define('WP_HOME', 			$_ENV['WP_HOME']);
 define('WP_SITEURL', 		$_ENV['WP_SITEURL']);
 
