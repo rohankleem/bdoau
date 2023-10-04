@@ -10,8 +10,8 @@ module.exports = {
             './node_modules/bootstrap/dist/js/bootstrap.bundle.js',
             './src/js/main.js',
             './src/js/megamenu.js',
-            './src/scss/main.scss',
-            './src/scss/megamenu.scss'
+            './src/scss/main.scss'
+            //'./src/scss/megamenu.scss'
         ]
     },
     module: {
@@ -50,4 +50,7 @@ module.exports = {
             new CssMinimizerPlugin(),
         ]
     },
+    stats: {
+        errorDetails: true,
+      },
 }
