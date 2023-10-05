@@ -8,11 +8,10 @@ module.exports = {
     devtool: 'source-map',
     entry: {
         main: [
-           './node_modules/bootstrap/dist/js/bootstrap.bundle.js',
-           './src/js/theme-custom.js',
-           './src/js/main.js',
-            './src/scss/theme.scss'
-            //'./src/scss/megamenu.scss'
+            './node_modules/bootstrap/dist/js/bootstrap.bundle.js',
+            './src/js/theme-custom.js',
+            './src/js/main.js',
+            './src/vendor/hs-mega-menu/dist/hs-mega-menu.js',
         ]
     },
     module: {

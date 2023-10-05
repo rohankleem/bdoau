@@ -1,16 +1,6 @@
 // Setup
-@import "custom-fonts.scss";
-$primary: #642B73;
-$asdfasdfasdf: #a0cc00;
-$font-family-sans-serif: "Inter var", sans-serif;
-h1,h2,h3,h4,h5,p,div,a,td,th{
-    font-feature-settings:"cv02","cv03","cv04","cv11";
-}
-
 
 @import '../../node_modules/bootstrap/scss/functions';
-
-
 
 @import 'themes/default';
 @import 'user-variables';
@@ -18,6 +8,7 @@ h1,h2,h3,h4,h5,p,div,a,td,th{
 
 @import '../../node_modules/bootstrap/scss/variables';
 @import "../../node_modules/bootstrap/scss/variables-dark"; /*rmk https://github.com/twbs/bootstrap/issues/38683*/
+
 @import '../../node_modules/bootstrap/scss/maps';
 @import '../../node_modules/bootstrap/scss/utilities';
 
@@ -36,8 +27,6 @@ h1,h2,h3,h4,h5,p,div,a,td,th{
 @import 'front/front';
 
 //custom variables
-
-
 
 
 

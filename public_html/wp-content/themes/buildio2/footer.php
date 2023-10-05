@@ -3,7 +3,7 @@
 <hr/>
 
 
-<div class="d-none">
+<div class="">
 
 
 

@@ -8,7 +8,21 @@
 // $primary: $red;
 // $font-size-base: .875rem;
 
-
-
 // The color of the SVG loader should be modified manually.
 // See assets/svg/components/circle-preloader.svg
+
+
+@font-face {
+	font-family: 'Inter var';
+	src: url('../fonts/Inter-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  $font-family-base: "Inter var", sans-serif;
+  $font-family-sans-serif: "Inter var", sans-serif;
+  h1,h2,h3,h4,h5,p,div,a,td,th{
+	  font-feature-settings:"cv02","cv03","cv04","cv11";
+  }
+
+$primary: #642B73;
