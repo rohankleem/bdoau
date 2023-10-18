@@ -21,8 +21,9 @@
   
   $font-family-base: "Inter var", sans-serif;
   $font-family-sans-serif: "Inter var", sans-serif;
-  h1,h2,h3,h4,h5,p,div,a,td,th{
+  body,h1,h2,h3,h4,h5,p,div,a,td,th,button,ul,li,ol{
 	  font-feature-settings:"cv02","cv03","cv04","cv11";
   }
 
-$primary: #642B73;
+$primary: #1B7DC5;
+

@@ -15,10 +15,47 @@ console.log("Main js code");
 /*!********************************!*\
   !*** ./src/js/theme-custom.js ***!
   \********************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vendor_duotone_icons_gen_gen017_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../vendor/duotone-icons/gen/gen017.svg */ "./src/vendor/duotone-icons/gen/gen017.svg");
+/* harmony import */ var _vendor_duotone_icons_gen_gen017_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_duotone_icons_gen_gen017_svg__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _vendor_duotone_icons_gen_gen018_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../vendor/duotone-icons/gen/gen018.svg */ "./src/vendor/duotone-icons/gen/gen018.svg");
+/* harmony import */ var _vendor_duotone_icons_gen_gen018_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_vendor_duotone_icons_gen_gen018_svg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _vendor_duotone_icons_art_art009_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../vendor/duotone-icons/art/art009.svg */ "./src/vendor/duotone-icons/art/art009.svg");
+/* harmony import */ var _vendor_duotone_icons_art_art009_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_vendor_duotone_icons_art_art009_svg__WEBPACK_IMPORTED_MODULE_2__);
 // File for your custom JavaScript
 console.log("custom theme js code");
+
+// 1. Import your SVGs 
+
+
+
+
+// 2. Store your imported SVGs and their respective container IDs in an array.
+var icons = [{
+  svg: (_vendor_duotone_icons_gen_gen017_svg__WEBPACK_IMPORTED_MODULE_0___default()),
+  container: 'gen017Svg'
+}, {
+  svg: (_vendor_duotone_icons_gen_gen018_svg__WEBPACK_IMPORTED_MODULE_1___default()),
+  container: 'gen018Svg'
+}, {
+  svg: (_vendor_duotone_icons_art_art009_svg__WEBPACK_IMPORTED_MODULE_2___default()),
+  container: 'art009Svg'
+}
+// ... add more icons as needed
+];
+
+document.addEventListener("DOMContentLoaded", function () {
+  // 3. Loop through the array and inject the SVG content into the containers.
+  icons.forEach(function (icon) {
+    var containerElement = document.getElementById(icon.container);
+    if (containerElement) {
+      containerElement.innerHTML = icon.svg;
+    }
+  });
+});
 
 /***/ }),
 
@@ -6727,6 +6764,62 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=bootstrap.bundle.js.map
 
 
+/***/ }),
+
+/***/ "./src/scss/theme.scss":
+/*!*****************************!*\
+  !*** ./src/scss/theme.scss ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/vendor/hs-mega-menu/src/scss/hs-mega-menu.scss":
+/*!************************************************************!*\
+  !*** ./src/vendor/hs-mega-menu/src/scss/hs-mega-menu.scss ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/vendor/duotone-icons/art/art009.svg":
+/*!*************************************************!*\
+  !*** ./src/vendor/duotone-icons/art/art009.svg ***!
+  \*************************************************/
+/***/ ((module) => {
+
+module.exports = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path opacity=\"0.3\" d=\"M21 18.3V4H20H5C4.4 4 4 4.4 4 5V20C10.9 20 16.7 15.6 19 9.5V18.3C18.4 18.6 18 19.3 18 20C18 21.1 18.9 22 20 22C21.1 22 22 21.1 22 20C22 19.3 21.6 18.6 21 18.3Z\" fill=\"#035A4B\"></path><path d=\"M22 4C22 2.9 21.1 2 20 2C18.9 2 18 2.9 18 4C18 4.7 18.4 5.29995 18.9 5.69995C18.1 12.6 12.6 18.2 5.70001 18.9C5.30001 18.4 4.7 18 4 18C2.9 18 2 18.9 2 20C2 21.1 2.9 22 4 22C4.8 22 5.39999 21.6 5.79999 20.9C13.8 20.1 20.1 13.7 20.9 5.80005C21.6 5.40005 22 4.8 22 4Z\" fill=\"#035A4B\"></path></svg>"
+
+/***/ }),
+
+/***/ "./src/vendor/duotone-icons/gen/gen017.svg":
+/*!*************************************************!*\
+  !*** ./src/vendor/duotone-icons/gen/gen017.svg ***!
+  \*************************************************/
+/***/ ((module) => {
+
+module.exports = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path opacity=\"0.3\" d=\"M5 8.04999L11.8 11.95V19.85L5 15.85V8.04999Z\" fill=\"#035A4B\"></path><path d=\"M20.1 6.65L12.3 2.15C12 1.95 11.6 1.95 11.3 2.15L3.5 6.65C3.2 6.85 3 7.15 3 7.45V16.45C3 16.75 3.2 17.15 3.5 17.25L11.3 21.75C11.5 21.85 11.6 21.85 11.8 21.85C12 21.85 12.1 21.85 12.3 21.75L20.1 17.25C20.4 17.05 20.6 16.75 20.6 16.45V7.45C20.6 7.15 20.4 6.75 20.1 6.65ZM5 15.85V7.95L11.8 4.05L18.6 7.95L11.8 11.95V19.85L5 15.85Z\" fill=\"#035A4B\"></path></svg>"
+
+/***/ }),
+
+/***/ "./src/vendor/duotone-icons/gen/gen018.svg":
+/*!*************************************************!*\
+  !*** ./src/vendor/duotone-icons/gen/gen018.svg ***!
+  \*************************************************/
+/***/ ((module) => {
+
+module.exports = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path opacity=\"0.3\" d=\"M18.0624 15.3453L13.1624 20.7453C12.5624 21.4453 11.5624 21.4453 10.9624 20.7453L6.06242 15.3453C4.56242 13.6453 3.76242 11.4453 4.06242 8.94534C4.56242 5.34534 7.46242 2.44534 11.0624 2.04534C15.8624 1.54534 19.9624 5.24534 19.9624 9.94534C20.0624 12.0453 19.2624 13.9453 18.0624 15.3453Z\" fill=\"#035A4B\"></path><path d=\"M12.0624 13.0453C13.7193 13.0453 15.0624 11.7022 15.0624 10.0453C15.0624 8.38849 13.7193 7.04535 12.0624 7.04535C10.4056 7.04535 9.06241 8.38849 9.06241 10.0453C9.06241 11.7022 10.4056 13.0453 12.0624 13.0453Z\" fill=\"#035A4B\"></path></svg>"
+
 /***/ })
 
 /******/ 	});
@@ -6759,6 +6852,46 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/node module decorator */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nmd = (module) => {
@@ -6776,7 +6909,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /******/ 	__webpack_require__("./node_modules/bootstrap/dist/js/bootstrap.bundle.js");
 /******/ 	__webpack_require__("./src/js/theme-custom.js");
 /******/ 	__webpack_require__("./src/js/main.js");
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/vendor/hs-mega-menu/dist/hs-mega-menu.js");
+/******/ 	__webpack_require__("./src/vendor/hs-mega-menu/dist/hs-mega-menu.js");
+/******/ 	__webpack_require__("./src/scss/theme.scss");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/vendor/hs-mega-menu/src/scss/hs-mega-menu.scss");
 /******/ 	
 /******/ })()
 ;

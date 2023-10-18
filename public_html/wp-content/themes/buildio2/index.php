@@ -1,15 +1,11 @@
 <?php get_header(); ?>
 
 
-<h1>Hello</h1>
+<?php include get_template_directory() . '/inc/hero-home.php'; ?>
 
-<h2>Hello</h2>
+<?php include get_template_directory() . '/inc/home/snippet2.php'; ?>
 
-<h3>Hello</h3>
-
-<h4>Hello</h4>
-
-<p>asdfasdgasdg asdga sdgasdgasdg asdg asdg</p>
+<?php include get_template_directory() . '/inc/home/snippet1.php'; ?>
 
 
 <?php get_footer(); ?>

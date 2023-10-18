@@ -12,6 +12,9 @@ module.exports = {
             './src/js/theme-custom.js',
             './src/js/main.js',
             './src/vendor/hs-mega-menu/dist/hs-mega-menu.js',
+            './src/scss/theme.scss',
+            './src/vendor/hs-mega-menu/src/scss/hs-mega-menu.scss'
+            
         ]
     },
     module: {
@@ -21,15 +24,24 @@ module.exports = {
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
-                    options: {presets: ["@babel/preset-env"]},
+                    options: { presets: ["@babel/preset-env"] },
                 }
             },
             // sass compilation
             {
                 test: /\.(sass|scss)$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
-                
+
             },
+            //svg compliation
+            {
+                test: /\.svg$/,
+                include: [
+                    path.resolve(__dirname, 'src/vendor/duotone-icons/')
+                ],
+                use: 'svg-inline-loader'
+            },
+
         ]
     },
     output: {
@@ -53,5 +65,5 @@ module.exports = {
     },
     stats: {
         errorDetails: true,
-      },
+    },
 }

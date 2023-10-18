@@ -1,3 +1,9 @@
 /*------------------------------------
   File for your custom SCSS style
 ------------------------------------*/
+
+.icon-container svg {
+  width: 24px;  /* or whatever size you desire */
+  height: 24px;
+  display: block; /* this helps remove any potential unwanted whitespace around the SVG */
+}
