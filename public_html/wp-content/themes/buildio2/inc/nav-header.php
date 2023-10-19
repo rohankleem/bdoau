@@ -4,7 +4,7 @@
     <nav class="js-mega-menu navbar-nav-wrap">
       <!-- Default Logo -->
       <a class="navbar-brand" href="../index.html" aria-label="Front">
-		<img class="navbar-brand-logo" src="<?php echo get_template_directory_uri(); ?>/img/buildio-hori-clean-1.svg" alt="Buildio">
+		<img class="navbar-brand-logo" src="<?php echo get_template_directory_uri(); ?>/img/buildio-hori-clean-b.svg" alt="Buildio">
       </a>
       <!-- End Default Logo -->
 
@@ -109,43 +109,6 @@
           </li>
           <!-- End Company -->
 
-          <!-- Account -->
-          <li class="hs-has-sub-menu nav-item">
-            <a id="accountMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
-
-            <!-- Mega Menu -->
-            <div class="hs-sub-menu dropdown-menu" aria-labelledby="accountMegaMenu" style="min-width: 14rem;">
-              <!-- Authentication -->
-              <div class="hs-has-sub-menu nav-item">
-                <a id="authenticationMegaMenu" class="hs-mega-menu-invoker dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Authentication</a>
-
-                <div class="hs-sub-menu dropdown-menu" aria-labelledby="authenticationMegaMenu" style="min-width: 14rem;">
-                  <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Signup Modal</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Login</a>
-                  <a class="dropdown-item" href="#">Signup</a>
-                  <a class="dropdown-item" href="#">Reset Password</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Login Simple</a>
-                  <a class="dropdown-item" href="#">Signup Simple</a>
-                  <a class="dropdown-item" href="#">Reset Password Simple</a>
-                </div>
-              </div>
-              <!-- End Authentication -->
-
-              <a class="dropdown-item" href="#">Personal Info</a>
-              <a class="dropdown-item" href="#">Security</a>
-              <a class="dropdown-item" href="#">Notifications</a>
-              <a class="dropdown-item" href="#">Preferences</a>
-              <a class="dropdown-item" href="#">Orders</a>
-              <a class="dropdown-item" href="#">Wishlist</a>
-              <a class="dropdown-item" href="#">Payments</a>
-              <a class="dropdown-item" href="#">Address</a>
-              <a class="dropdown-item" href="#">Teams</a>
-            </div>
-            <!-- End Mega Menu -->
-          </li>
-          <!-- End Account -->
 
           <!-- Pages -->
           <li class="hs-has-sub-menu nav-item">
