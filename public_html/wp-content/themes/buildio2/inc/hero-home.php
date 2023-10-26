@@ -8,47 +8,40 @@
 	<div class="container content-space-t-2 content-space-b-1 content-space-b-lg-3">
 
 	
-
 		<div class="row justify-content-lg-between align-items-lg-center pt-lg-5">
 
 
-			<div class="col-md-6 col-lg-5 mb-7 mb-md-0 z-index-1">
-				<!-- Heading -->
-				<div class="mb-5">
+			<div class="col-md-6 col-lg-5 mb-7 mb-md-0 position-relative position-relative zi-1">
+
+				
+				<div class="mb-5 ">
 					<span class="text-cap">Who we are?</span>
 					<h1 class="display-4 mb-3">Design agency that inspires</h1>
 					<p class="lead">Our team aims to deliver the most outstanding work in every pixel.</p>
 				</div>
-				<!-- End Title & Description -->
 
 				<div class="d-grid d-sm-flex gap-3">
 					<a class="btn btn-primary btn-transition" href="#caseStudies">Case studies</a>
 					<a class="btn btn-link" href="#">Learn more <i class="bi-chevron-right small ms-1"></i></a>
 				</div>
 
-				<img class="position-absolute" src="<?php echo get_stylesheet_directory_uri() ?>/img/sydney-skyline.png" style="left: -50px;
-    bottom: -80px; opacity: 0.25" alt="Image Description">
-
 			</div>
-			<!-- End Col -->
 
-
-			
 
 
 			<div class="col-md-6">
 				<div class="position-relative">
 					<!--<img class="img-fluid rounded-2" src="<?php echo $imgpath ?>/svg/components/card-10.svg" alt="Image Description">-->
 					<!--<img class="img-fluid rounded-2" src="<?php echo get_stylesheet_directory_uri() ?>/img/hero-piece-1.jpg" alt="Image Description">-->
-					<img class="img-fluid rounded-2" src="<?php echo get_stylesheet_directory_uri() ?>/img/hero-piece-3.svg" alt="Image Description">
+					<img class="img-fluid rounded-2" src="<?php echo get_stylesheet_directory_uri() ?>/img/hero-piece-12.svg" alt="Image Description">
 					<div class="position-absolute top-0 end-0 w-100 h-100 bg-soft-primary rounded-2 zi-n1 mt-5 me-n5"></div>
 				</div>
 			</div>
-			<!-- End Row -->
+
+			
 		</div>
 
-
-
+		<img class="position-absolute" src="<?php echo get_stylesheet_directory_uri() ?>/img/hero-piece-mel-4.svg" style="bottom:0; left:0%; opacity: 0.45; width: 40%" alt="Image Description">
 
 
 	</div>
