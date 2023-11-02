@@ -7,5 +7,7 @@
 
 <?php include get_template_directory() . '/inc/home/snippet1.php'; ?>
 
+<?php include get_template_directory() . '/inc/home/cases.php'; ?>
+
 
 <?php get_footer(); ?>

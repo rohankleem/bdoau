@@ -4,7 +4,7 @@
 
 <?php $imgpath = get_stylesheet_directory_uri() . "/dist/assets" ?>
 
-<div class="position-relative bg-img-start" style="background-image: url(<?php echo $imgpath ?>/svg/components/card-11.svg);">
+<div class="position-relative bg-img-start mb-5 mb-md-7" style="background-image: url(<?php echo $imgpath ?>/svg/components/card-11.svg);">
 	<div class="container content-space-t-2 content-space-b-1 content-space-b-lg-3">
 
 	
@@ -15,19 +15,17 @@
 
 				
 				<div class="mb-5 ">
-					<span class="text-cap">Who we are?</span>
-					<h1 class="display-4 mb-3">Design agency that inspires</h1>
-					<p class="lead">Our team aims to deliver the most outstanding work in every pixel.</p>
+					<span class="text-cap">We help businesses streamline</span>
+					<h1 class="display-5 mb-3">Your Partner for Business Growth</h1>
+					<p class="lead">Unlock the power of integrations, automation and digital systems to elevate your business. Based right here in Australia.</p>
 				</div>
 
 				<div class="d-grid d-sm-flex gap-3">
-					<a class="btn btn-primary btn-transition" href="#caseStudies">Case studies</a>
-					<a class="btn btn-link" href="#">Learn more <i class="bi-chevron-right small ms-1"></i></a>
+					<a class="btn btn-primary btn-transition" href="#caseStudies">Give us a call</a>
+					<a class="btn btn-link" href="#">Zoho CRM Specialists <i class="bi-chevron-right small ms-1"></i></a>
 				</div>
 
 			</div>
-
-
 
 			<div class="col-md-6">
 				<div class="position-relative">
@@ -39,10 +37,22 @@
 			</div>
 
 			
+
+			
 		</div>
 
-		<img class="position-absolute" src="<?php echo get_stylesheet_directory_uri() ?>/img/hero-piece-mel-4.svg" style="bottom:0; left:0%; opacity: 0.45; width: 40%" alt="Image Description">
+		<?php
 
+			$location="mel";
+
+		?>
+
+		<?php if ($location==="syd") { ?>
+			<img class="position-absolute" src="<?php echo get_stylesheet_directory_uri() ?>/img/hero-piece-syd-1.svg" style="bottom:0; left:0%; opacity: 0.42; width: 40%" alt="Image Description">
+		<?php } ?>
+		<?php if ($location==="mel") { ?>
+			<img class="position-absolute" src="<?php echo get_stylesheet_directory_uri() ?>/img/hero-piece-mel-7.svg" style="bottom:0; left:0%; opacity: 0.45; width: 37%" alt="Image Description">
+		<?php } ?>
 
 	</div>
 </div>

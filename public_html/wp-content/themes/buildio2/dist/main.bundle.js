@@ -25,6 +25,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor_duotone_icons_gen_gen018_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_vendor_duotone_icons_gen_gen018_svg__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _vendor_duotone_icons_art_art009_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../vendor/duotone-icons/art/art009.svg */ "./src/vendor/duotone-icons/art/art009.svg");
 /* harmony import */ var _vendor_duotone_icons_art_art009_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_vendor_duotone_icons_art_art009_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _vendor_duotone_icons_ecm_ecm003_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../vendor/duotone-icons/ecm/ecm003.svg */ "./src/vendor/duotone-icons/ecm/ecm003.svg");
+/* harmony import */ var _vendor_duotone_icons_ecm_ecm003_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_vendor_duotone_icons_ecm_ecm003_svg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _vendor_duotone_icons_gra_gra010_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../vendor/duotone-icons/gra/gra010.svg */ "./src/vendor/duotone-icons/gra/gra010.svg");
+/* harmony import */ var _vendor_duotone_icons_gra_gra010_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_vendor_duotone_icons_gra_gra010_svg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _vendor_duotone_icons_art_art002_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../vendor/duotone-icons/art/art002.svg */ "./src/vendor/duotone-icons/art/art002.svg");
+/* harmony import */ var _vendor_duotone_icons_art_art002_svg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_vendor_duotone_icons_art_art002_svg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _vendor_duotone_icons_gen_gen020_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../vendor/duotone-icons/gen/gen020.svg */ "./src/vendor/duotone-icons/gen/gen020.svg");
+/* harmony import */ var _vendor_duotone_icons_gen_gen020_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_vendor_duotone_icons_gen_gen020_svg__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _vendor_duotone_icons_map_map007_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../vendor/duotone-icons/map/map007.svg */ "./src/vendor/duotone-icons/map/map007.svg");
+/* harmony import */ var _vendor_duotone_icons_map_map007_svg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_vendor_duotone_icons_map_map007_svg__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _vendor_duotone_icons_gen_gen004_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../vendor/duotone-icons/gen/gen004.svg */ "./src/vendor/duotone-icons/gen/gen004.svg");
+/* harmony import */ var _vendor_duotone_icons_gen_gen004_svg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_vendor_duotone_icons_gen_gen004_svg__WEBPACK_IMPORTED_MODULE_8__);
 // File for your custom JavaScript
 console.log("custom theme js code");
 
@@ -33,26 +45,68 @@ console.log("custom theme js code");
 
 
 
+
+
+
+
+
+
 // 2. Store your imported SVGs and their respective container IDs in an array.
 var icons = [{
   svg: (_vendor_duotone_icons_gen_gen017_svg__WEBPACK_IMPORTED_MODULE_0___default()),
   container: 'gen017Svg'
-}, {
+},
+// cube
+{
   svg: (_vendor_duotone_icons_gen_gen018_svg__WEBPACK_IMPORTED_MODULE_1___default()),
   container: 'gen018Svg'
-}, {
+},
+// map marker
+{
   svg: (_vendor_duotone_icons_art_art009_svg__WEBPACK_IMPORTED_MODULE_2___default()),
   container: 'art009Svg'
-}
+},
+// curl up graph
+{
+  svg: (_vendor_duotone_icons_ecm_ecm003_svg__WEBPACK_IMPORTED_MODULE_3___default()),
+  container: 'ecm003Svg'
+},
+// percentage tag
+{
+  svg: (_vendor_duotone_icons_gra_gra010_svg__WEBPACK_IMPORTED_MODULE_4___default()),
+  container: 'gra010Svg'
+},
+// pie chart
+{
+  svg: (_vendor_duotone_icons_art_art002_svg__WEBPACK_IMPORTED_MODULE_5___default()),
+  container: 'art002Svg'
+},
+// measuring sticks
+{
+  svg: (_vendor_duotone_icons_gen_gen020_svg__WEBPACK_IMPORTED_MODULE_6___default()),
+  container: 'gen020Svg'
+},
+// trophy
+{
+  svg: (_vendor_duotone_icons_map_map007_svg__WEBPACK_IMPORTED_MODULE_7___default()),
+  container: 'map007Svg'
+},
+// target
+{
+  svg: (_vendor_duotone_icons_gen_gen004_svg__WEBPACK_IMPORTED_MODULE_8___default()),
+  container: 'gen004Svg'
+} // magnifying glass
 // ... add more icons as needed
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
   // 3. Loop through the array and inject the SVG content into the containers.
   icons.forEach(function (icon) {
-    var containerElement = document.getElementById(icon.container);
-    if (containerElement) {
-      containerElement.innerHTML = icon.svg;
+    var containerElements = document.getElementsByClassName(icon.container);
+    if (containerElements.length > 0) {
+      for (var i = 0; i < containerElements.length; i++) {
+        containerElements[i].innerHTML = icon.svg;
+      }
     }
   });
 });
@@ -6792,6 +6846,16 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/vendor/duotone-icons/art/art002.svg":
+/*!*************************************************!*\
+  !*** ./src/vendor/duotone-icons/art/art002.svg ***!
+  \*************************************************/
+/***/ ((module) => {
+
+module.exports = "<svg viewBox=\"0 0 24 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path opacity=\"0.3\" d=\"M8.9 21L7.19999 22.6999C6.79999 23.0999 6.2 23.0999 5.8 22.6999L4.1 21H8.9ZM4 16.0999L2.3 17.8C1.9 18.2 1.9 18.7999 2.3 19.1999L4 20.9V16.0999ZM19.3 9.1999L15.8 5.6999C15.4 5.2999 14.8 5.2999 14.4 5.6999L9 11.0999V21L19.3 10.6999C19.7 10.2999 19.7 9.5999 19.3 9.1999Z\" fill=\"#035A4B\"></path><path d=\"M21 15V20C21 20.6 20.6 21 20 21H11.8L18.8 14H20C20.6 14 21 14.4 21 15ZM10 21V4C10 3.4 9.6 3 9 3H4C3.4 3 3 3.4 3 4V21C3 21.6 3.4 22 4 22H9C9.6 22 10 21.6 10 21ZM7.5 18.5C7.5 19.1 7.1 19.5 6.5 19.5C5.9 19.5 5.5 19.1 5.5 18.5C5.5 17.9 5.9 17.5 6.5 17.5C7.1 17.5 7.5 17.9 7.5 18.5Z\" fill=\"#035A4B\"></path></svg>"
+
+/***/ }),
+
 /***/ "./src/vendor/duotone-icons/art/art009.svg":
 /*!*************************************************!*\
   !*** ./src/vendor/duotone-icons/art/art009.svg ***!
@@ -6799,6 +6863,26 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((module) => {
 
 module.exports = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path opacity=\"0.3\" d=\"M21 18.3V4H20H5C4.4 4 4 4.4 4 5V20C10.9 20 16.7 15.6 19 9.5V18.3C18.4 18.6 18 19.3 18 20C18 21.1 18.9 22 20 22C21.1 22 22 21.1 22 20C22 19.3 21.6 18.6 21 18.3Z\" fill=\"#035A4B\"></path><path d=\"M22 4C22 2.9 21.1 2 20 2C18.9 2 18 2.9 18 4C18 4.7 18.4 5.29995 18.9 5.69995C18.1 12.6 12.6 18.2 5.70001 18.9C5.30001 18.4 4.7 18 4 18C2.9 18 2 18.9 2 20C2 21.1 2.9 22 4 22C4.8 22 5.39999 21.6 5.79999 20.9C13.8 20.1 20.1 13.7 20.9 5.80005C21.6 5.40005 22 4.8 22 4Z\" fill=\"#035A4B\"></path></svg>"
+
+/***/ }),
+
+/***/ "./src/vendor/duotone-icons/ecm/ecm003.svg":
+/*!*************************************************!*\
+  !*** ./src/vendor/duotone-icons/ecm/ecm003.svg ***!
+  \*************************************************/
+/***/ ((module) => {
+
+module.exports = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path opacity=\"0.3\" d=\"M18 22H6C5.4 22 5 21.6 5 21V8C6.6 6.4 7.4 5.6 9 4H15C16.6 5.6 17.4 6.4 19 8V21C19 21.6 18.6 22 18 22ZM12 5.5C11.2 5.5 10.5 6.2 10.5 7C10.5 7.8 11.2 8.5 12 8.5C12.8 8.5 13.5 7.8 13.5 7C13.5 6.2 12.8 5.5 12 5.5Z\" fill=\"#035A4B\"></path><path d=\"M12 7C11.4 7 11 6.6 11 6V3C11 2.4 11.4 2 12 2C12.6 2 13 2.4 13 3V6C13 6.6 12.6 7 12 7ZM15.1 10.6C15.1 10.5 15.1 10.4 15 10.3C14.9 10.2 14.8 10.2 14.7 10.2C14.6 10.2 14.5 10.2 14.4 10.3C14.3 10.4 14.3 10.5 14.2 10.6L9 19.1C8.9 19.2 8.89999 19.3 8.89999 19.4C8.89999 19.5 8.9 19.6 9 19.7C9.1 19.8 9.2 19.8 9.3 19.8C9.5 19.8 9.6 19.7 9.8 19.5L15 11.1C15 10.8 15.1 10.7 15.1 10.6ZM11 11.6C10.9 11.3 10.8 11.1 10.6 10.8C10.4 10.6 10.2 10.4 10 10.3C9.8 10.2 9.50001 10.1 9.10001 10.1C8.60001 10.1 8.3 10.2 8 10.4C7.7 10.6 7.49999 10.9 7.39999 11.2C7.29999 11.6 7.2 12 7.2 12.6C7.2 13.1 7.3 13.5 7.5 13.9C7.7 14.3 7.9 14.5 8.2 14.7C8.5 14.9 8.8 14.9 9.2 14.9C9.8 14.9 10.3 14.7 10.6 14.3C11 13.9 11.1 13.3 11.1 12.5C11.1 12.3 11.1 11.9 11 11.6ZM9.8 13.8C9.7 14.1 9.5 14.2 9.2 14.2C9 14.2 8.8 14.1 8.7 14C8.6 13.9 8.5 13.7 8.5 13.5C8.5 13.3 8.39999 13 8.39999 12.6C8.39999 12.2 8.4 11.9 8.5 11.7C8.5 11.5 8.6 11.3 8.7 11.2C8.8 11.1 9 11 9.2 11C9.5 11 9.7 11.1 9.8 11.4C9.9 11.7 10 12 10 12.6C10 13.2 9.9 13.6 9.8 13.8ZM16.5 16.1C16.4 15.8 16.3 15.6 16.1 15.4C15.9 15.2 15.7 15 15.5 14.9C15.3 14.8 15 14.7 14.6 14.7C13.9 14.7 13.4 14.9 13.1 15.3C12.8 15.7 12.6 16.3 12.6 17.1C12.6 17.6 12.7 18 12.9 18.4C13.1 18.7 13.3 19 13.6 19.2C13.9 19.4 14.2 19.5 14.6 19.5C15.2 19.5 15.7 19.3 16 18.9C16.4 18.5 16.5 17.9 16.5 17.1C16.7 16.8 16.6 16.4 16.5 16.1ZM15.3 18.4C15.2 18.7 15 18.8 14.7 18.8C14.4 18.8 14.2 18.7 14.1 18.4C14 18.1 13.9 17.7 13.9 17.2C13.9 16.8 13.9 16.5 14 16.3C14.1 16.1 14.1 15.9 14.2 15.8C14.3 15.7 14.5 15.6 14.7 15.6C15 15.6 15.2 15.7 15.3 16C15.4 16.2 15.5 16.6 15.5 17.2C15.5 17.7 15.4 18.1 15.3 18.4Z\" fill=\"#035A4B\"></path></svg>"
+
+/***/ }),
+
+/***/ "./src/vendor/duotone-icons/gen/gen004.svg":
+/*!*************************************************!*\
+  !*** ./src/vendor/duotone-icons/gen/gen004.svg ***!
+  \*************************************************/
+/***/ ((module) => {
+
+module.exports = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M21.7 18.9L18.6 15.8C17.9 16.9 16.9 17.9 15.8 18.6L18.9 21.7C19.3 22.1 19.9 22.1 20.3 21.7L21.7 20.3C22.1 19.9 22.1 19.3 21.7 18.9Z\" fill=\"#035A4B\"></path><path opacity=\"0.3\" d=\"M11 20C6 20 2 16 2 11C2 6 6 2 11 2C16 2 20 6 20 11C20 16 16 20 11 20ZM11 4C7.1 4 4 7.1 4 11C4 14.9 7.1 18 11 18C14.9 18 18 14.9 18 11C18 7.1 14.9 4 11 4ZM8 11C8 9.3 9.3 8 11 8C11.6 8 12 7.6 12 7C12 6.4 11.6 6 11 6C8.2 6 6 8.2 6 11C6 11.6 6.4 12 7 12C7.6 12 8 11.6 8 11Z\" fill=\"#035A4B\"></path></svg>"
 
 /***/ }),
 
@@ -6819,6 +6903,36 @@ module.exports = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3
 /***/ ((module) => {
 
 module.exports = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path opacity=\"0.3\" d=\"M18.0624 15.3453L13.1624 20.7453C12.5624 21.4453 11.5624 21.4453 10.9624 20.7453L6.06242 15.3453C4.56242 13.6453 3.76242 11.4453 4.06242 8.94534C4.56242 5.34534 7.46242 2.44534 11.0624 2.04534C15.8624 1.54534 19.9624 5.24534 19.9624 9.94534C20.0624 12.0453 19.2624 13.9453 18.0624 15.3453Z\" fill=\"#035A4B\"></path><path d=\"M12.0624 13.0453C13.7193 13.0453 15.0624 11.7022 15.0624 10.0453C15.0624 8.38849 13.7193 7.04535 12.0624 7.04535C10.4056 7.04535 9.06241 8.38849 9.06241 10.0453C9.06241 11.7022 10.4056 13.0453 12.0624 13.0453Z\" fill=\"#035A4B\"></path></svg>"
+
+/***/ }),
+
+/***/ "./src/vendor/duotone-icons/gen/gen020.svg":
+/*!*************************************************!*\
+  !*** ./src/vendor/duotone-icons/gen/gen020.svg ***!
+  \*************************************************/
+/***/ ((module) => {
+
+module.exports = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M14 18V16H10V18L9 20H15L14 18Z\" fill=\"#035A4B\"></path><path opacity=\"0.3\" d=\"M20 4H17V3C17 2.4 16.6 2 16 2H8C7.4 2 7 2.4 7 3V4H4C3.4 4 3 4.4 3 5V9C3 11.2 4.8 13 7 13C8.2 14.2 8.8 14.8 10 16H14C15.2 14.8 15.8 14.2 17 13C19.2 13 21 11.2 21 9V5C21 4.4 20.6 4 20 4ZM5 9V6H7V11C5.9 11 5 10.1 5 9ZM19 9C19 10.1 18.1 11 17 11V6H19V9ZM17 21V22H7V21C7 20.4 7.4 20 8 20H16C16.6 20 17 20.4 17 21ZM10 9C9.4 9 9 8.6 9 8V5C9 4.4 9.4 4 10 4C10.6 4 11 4.4 11 5V8C11 8.6 10.6 9 10 9ZM10 13C9.4 13 9 12.6 9 12V11C9 10.4 9.4 10 10 10C10.6 10 11 10.4 11 11V12C11 12.6 10.6 13 10 13Z\" fill=\"#035A4B\"></path></svg>"
+
+/***/ }),
+
+/***/ "./src/vendor/duotone-icons/gra/gra010.svg":
+/*!*************************************************!*\
+  !*** ./src/vendor/duotone-icons/gra/gra010.svg ***!
+  \*************************************************/
+/***/ ((module) => {
+
+module.exports = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M13.0021 10.9128V3.01281C13.0021 2.41281 13.5021 1.91281 14.1021 2.01281C16.1021 2.21281 17.9021 3.11284 19.3021 4.61284C20.7021 6.01284 21.6021 7.91285 21.9021 9.81285C22.0021 10.4129 21.5021 10.9128 20.9021 10.9128H13.0021V10.9128Z\" fill=\"#035A4B\"></path><path opacity=\"0.3\" d=\"M11.0021 13.7128V4.91283C11.0021 4.31283 10.5021 3.81283 9.90208 3.91283C5.40208 4.51283 1.90209 8.41284 2.00209 13.1128C2.10209 18.0128 6.40208 22.0128 11.3021 21.9128C13.1021 21.8128 14.7021 21.3128 16.0021 20.4128C16.5021 20.1128 16.6021 19.3128 16.1021 18.9128L11.0021 13.7128Z\" fill=\"#035A4B\"></path><path opacity=\"0.3\" d=\"M21.9021 14.0128C21.7021 15.6128 21.1021 17.1128 20.1021 18.4128C19.7021 18.9128 19.0021 18.9128 18.6021 18.5128L13.0021 12.9128H20.9021C21.5021 12.9128 22.0021 13.4128 21.9021 14.0128Z\" fill=\"#035A4B\"></path></svg>"
+
+/***/ }),
+
+/***/ "./src/vendor/duotone-icons/map/map007.svg":
+/*!*************************************************!*\
+  !*** ./src/vendor/duotone-icons/map/map007.svg ***!
+  \*************************************************/
+/***/ ((module) => {
+
+module.exports = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path opacity=\"0.3\" d=\"M21 11H18.9C18.5 7.9 16 5.49998 13 5.09998V3C13 2.4 12.6 2 12 2C11.4 2 11 2.4 11 3V5.09998C7.9 5.49998 5.50001 8 5.10001 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H5.10001C5.50001 16.1 8 18.4999 11 18.8999V21C11 21.6 11.4 22 12 22C12.6 22 13 21.6 13 21V18.8999C16.1 18.4999 18.5 16 18.9 13H21C21.6 13 22 12.6 22 12C22 11.4 21.6 11 21 11ZM12 17C9.2 17 7 14.8 7 12C7 9.2 9.2 7 12 7C14.8 7 17 9.2 17 12C17 14.8 14.8 17 12 17Z\" fill=\"#035A4B\"></path><path d=\"M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z\" fill=\"#035A4B\"></path></svg>"
 
 /***/ })
 
