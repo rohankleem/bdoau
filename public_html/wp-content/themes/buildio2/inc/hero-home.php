@@ -17,11 +17,11 @@
 				<div class="mb-5 ">
 					<span class="text-cap">We help businesses streamline</span>
 					<h1 class="display-5 mb-3">Your Partner for Business Growth</h1>
-					<p class="lead">Unlock the power of integrations, automation and digital systems to elevate your business. Based right here in Australia.</p>
+					<p class="lead">Unlock the power of integrations and digital solutions to optimise your business. Based right here in Australia.</p>
 				</div>
 
 				<div class="d-grid d-sm-flex gap-3">
-					<a class="btn btn-primary btn-transition" href="#caseStudies">Give us a call</a>
+					<a class="btn btn-primary btn-transition" href="#caseStudies">Call for a chat</a>
 					<a class="btn btn-link" href="#">Zoho CRM Specialists <i class="bi-chevron-right small ms-1"></i></a>
 				</div>
 
