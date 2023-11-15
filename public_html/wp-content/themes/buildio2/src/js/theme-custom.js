@@ -11,6 +11,9 @@ import art002Svg from '../vendor/duotone-icons/art/art002.svg';
 import gen020Svg from '../vendor/duotone-icons/gen/gen020.svg';
 import map007Svg from '../vendor/duotone-icons/map/map007.svg';
 import gen004Svg from '../vendor/duotone-icons/gen/gen004.svg';
+import arr031Svg from '../vendor/duotone-icons/arr/arr031.svg';
+import teh001Svg from '../vendor/duotone-icons/teh/teh001.svg';
+import gen012Svg from '../vendor/duotone-icons/gen/gen012.svg';
 
 // 2. Store your imported SVGs and their respective container IDs in an array.
 const icons = [
@@ -23,6 +26,9 @@ const icons = [
     { svg: gen020Svg, container: 'gen020Svg' }, // trophy
     { svg: map007Svg, container: 'map007Svg' }, // target
     { svg: gen004Svg, container: 'gen004Svg' }, // magnifying glass
+    { svg: arr031Svg, container: 'arr031Svg' }, // circuit arrows
+    { svg: teh001Svg, container: 'teh001Svg' }, // connecting chip
+    { svg: gen012Svg, container: 'gen012Svg' }, // hour glass
     // ... add more icons as needed
 ];
 
