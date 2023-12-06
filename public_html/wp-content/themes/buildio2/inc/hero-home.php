@@ -17,7 +17,7 @@
 				<div class="mb-5 ">
 					<span class="text-cap">We help businesses streamline</span>
 					<h1 class="display-5 mb-3">Your Partner for Business Growth</h1>
-					<p class="lead">Unlock the power of integrations and digital solutions to optimise your business. Based right here in Australia.</p>
+					<p class="lead">Unlock business potential through digital solutions, integrations and automation. Based right here in Australia.</p>
 				</div>
 
 				<div class="d-grid d-sm-flex gap-3">

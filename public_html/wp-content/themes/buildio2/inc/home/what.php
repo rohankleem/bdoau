@@ -20,7 +20,7 @@
 
 							<div class="col-sm-6">
 								<ul class="list-checked list-checked-bg-success list-checked-sm mb-0">
-									<li class="list-checked-item">Reporting and insights</li>
+									<li class="list-checked-item">Reporting and insights<span class="badge bg-soft-secondary text-dark rounded-pill ms-1">Zoho Analytics</span></li>
 									<li class="list-checked-item">Phone and SMS systems<span class="badge bg-soft-secondary text-dark rounded-pill ms-1">Twilio</span><span class="badge bg-soft-secondary text-dark rounded-pill ms-1">Spoke</span></li>
 									<li class="list-checked-item">Hosting and infrastructure</li>
 								</ul>

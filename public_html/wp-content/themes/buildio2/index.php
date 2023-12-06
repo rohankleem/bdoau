@@ -7,7 +7,11 @@
 
 <?php include get_template_directory() . '/inc/home/what.php'; ?>
 
-<?php include get_template_directory() . '/inc/home/approaches2.php'; ?>
+<?php include get_template_directory() . '/inc/home/approaches6.php'; ?>
+
+<?php //include get_template_directory() . '/inc/home/approaches4.php'; ?>
+
+<?php include get_template_directory() . '/inc/home/brands3.php'; ?>
 
 <?php include get_template_directory() . '/inc/home/cases.php'; ?>
 

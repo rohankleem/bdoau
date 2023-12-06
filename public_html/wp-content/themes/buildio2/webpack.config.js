@@ -13,7 +13,8 @@ module.exports = {
             './src/js/main.js',
             './src/vendor/hs-mega-menu/dist/hs-mega-menu.js',
             './src/scss/theme.scss',
-            './src/vendor/hs-mega-menu/src/scss/hs-mega-menu.scss'
+            './src/vendor/hs-mega-menu/src/scss/hs-mega-menu.scss',
+            
             
         ]
     },
@@ -41,6 +42,10 @@ module.exports = {
                 ],
                 use: 'svg-inline-loader'
             },
+            {
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader' ]
+             }
 
         ]
     },

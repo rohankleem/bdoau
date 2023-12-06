@@ -4,8 +4,7 @@
 <div class="container mb-7">
 
 	<div class="w-md-75 w-lg-50 text-center mx-md-auto mb-4 mb-md-8">
-		<span class="text-cap">Digital Solutions to</span>
-		<h2>Take Your Business To The Next Level</h2>
+		<h2>Your business optimised</h2>
 	</div>
 
 
@@ -33,7 +32,7 @@
 					<h4 class="mb-0">Connect separate systems</h4>
 				</div>
 			</div>
-			<p>Optimise workflows by getting your systems talking to one another.</p>
+			<p>Improve workflows by getting your systems talking to one another.</p>
 		</div>
 
 		<div class="col-sm-6 col-md-4 mb-3 mb-sm-6 mb-md-0">
@@ -68,7 +67,7 @@
 					<span class="svg-icon text-primary gen012Svg"></span>
 				</div>
 				<div class="flex-grow-1 ms-3">
-					<h4 class="mb-0">Save time</h4>
+					<h4 class="mb-0">Free up time</h4>
 				</div>
 			</div>
 			<p>Turn your staff into super heroes and free them up to work on the things that matter.</p>
@@ -88,19 +87,13 @@
 		</div>
 
 
-
 		<div class="text-center">
 			<div class="d-grid d-sm-flex justify-content-center gap-2 mb-3">
-				<a class="btn btn-primary btn-transition" href="#">Get in touch</a>
+				<a class="btn btn-primary btn-transition d-none d-md-block" href="#">Get in touch</a>
 				<a class="btn btn-link d-none" href="#">Find our more<i class="bi-chevron-right small ms-1"></i></a>
 			</div>
 
 		</div>
-
-
-
-
-		
 
 
 	</div>

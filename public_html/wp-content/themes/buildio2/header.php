@@ -18,8 +18,8 @@
 	</script>
 
 
-	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri() ?>/img/fav-icon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_stylesheet_directory_uri() ?>/img/fav-icon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri() ?>/img/icon-fav-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_stylesheet_directory_uri() ?>/img/icon-fav-16x16.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri() ?>/img/icon-apple-touch.png">
 	<meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri() ?>/img/icon-mstile-150x150.png">
 	<meta name="msapplication-TileColor" content="#ffffff">
