@@ -130,9 +130,11 @@
 							<!-- End Slide -->
 						</div>
 
-						<!-- Arrows -->
+
+						<!--
 						<div class="js-swiper-course-hero-button-next swiper-button-next"></div>
 						<div class="js-swiper-course-hero-button-prev swiper-button-prev"></div>
+						-->
 					</div>
 				</div>
 				<!-- End Swiper Slider -->

@@ -7,7 +7,6 @@
 @import 'front/variables';
 
 
-
 @import '../../node_modules/bootstrap/scss/variables';
 @import "../../node_modules/bootstrap/scss/variables-dark"; /*rmk https://github.com/twbs/bootstrap/issues/38683*/
 
@@ -16,6 +15,9 @@
 
 @import 'front/utilities';
 @import 'user-utilities';
+
+@import 'swiper/css/bundle';
+@import '../../dist/assets/vendor/swiper/swiper.scss';
 
 
 // Bootstrap core

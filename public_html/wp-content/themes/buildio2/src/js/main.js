@@ -3,9 +3,7 @@ console.log("Main js code");
 
 import Swiper from 'swiper/bundle';
 //import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css/bundle';
-import '../../dist/assets/vendor/swiper/swiper.scss';
-import '../../dist/assets/vendor/swiper/swiper.scss';
+
 
 // import 'swiper/css';
 // import 'swiper/css/navigation';
@@ -18,17 +16,20 @@ import '../../dist/assets/vendor/swiper/swiper.scss';
 		//modules: [Navigation, Pagination],
 		
       preloaderClass: 'custom-swiper-lazy-preloader',
-      navigation: {
-        nextEl: '.js-swiper-course-hero-button-next',
-        prevEl: '.js-swiper-course-hero-button-prev',
+      // navigation: {
+      //   nextEl: '.js-swiper-course-hero-button-next',
+      //   prevEl: '.js-swiper-course-hero-button-prev',
 
-      },
+      // },
       slidesPerView: 1,
       loop: 1,
-      freeMode: true,
-      speed: 3000,
+      freeMode: {
+        enabled: true,
+        sticky: false,
+      },
+      speed: 3500,
       autoplay: {
-        delay: 200,
+        delay: 0,
         disableOnInteraction: false,
       },
       breakpoints: {
