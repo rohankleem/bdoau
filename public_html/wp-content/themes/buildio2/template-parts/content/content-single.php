@@ -11,6 +11,10 @@
 
 ?>
 
+
+<div class="container mt-5">
+
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="entry-header alignwide">
@@ -42,3 +46,5 @@
 	<?php endif; ?>
 
 </article><!-- #post-<?php the_ID(); ?> -->
+
+</div>

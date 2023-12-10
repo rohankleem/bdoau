@@ -24,6 +24,9 @@ if ( post_password_required() ) {
 $twenty_twenty_one_comment_count = get_comments_number();
 ?>
 
+
+<div class="container">
+
 <div id="comments" class="comments-area default-max-width <?php echo get_option( 'show_avatars' ) ? 'show-avatars' : ''; ?>">
 
 	<?php
@@ -114,3 +117,6 @@ $twenty_twenty_one_comment_count = get_comments_number();
 	?>
 
 </div><!-- #comments -->
+
+
+</div>
