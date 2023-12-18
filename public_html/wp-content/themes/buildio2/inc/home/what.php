@@ -13,7 +13,7 @@
 							<div class="col-sm-6 mb-2 mb-sm-0">
 								<ul class="list-checked list-checked-bg-success list-checked-sm mb-0">
 									<li class="list-checked-item">CRM system development<span class="badge bg-soft-secondary text-dark rounded-pill ms-1">Zoho</span></li>
-									<li class="list-checked-item">API development</li>
+									<li class="list-checked-item">API integration</li>
 									<li class="list-checked-item">Custom apps and software</li>
 								</ul>
 							</div>
@@ -31,8 +31,8 @@
 					<div class="col-md-3">
 						<div class="ps-md-2">
 							<h4>Included</h4>
-							<p>Full integration guidance and resources.</p>
-							<a class="link" href="#">Get Started <i class="bi-chevron-right small ms-1"></i></a>
+							<p>Full integration guidance and advice.</p>
+							<a class="link d-none" href="#">Get Started <i class="bi-chevron-right small ms-1"></i></a>
 						</div>
 					</div>
 

@@ -85,3 +85,16 @@ function custom_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
 
+
+
+function sc_get_content_substr($content, $length = 50)
+{
+
+    $content = wp_strip_all_tags($content, true);
+
+    $content =  substr($content, 0, $length);
+
+
+    return $content;
+}
+

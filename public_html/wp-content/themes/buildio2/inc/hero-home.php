@@ -21,7 +21,7 @@
 				</div>
 
 				<div class="d-grid d-sm-flex gap-3">
-					<a class="btn btn-primary btn-transition" href="#caseStudies">Call for a chat</a>
+					<a class="btn btn-primary btn-transition" href="/contact">Call for a chat</a>
 					<a class="btn btn-link" href="#">Zoho CRM Specialists <i class="bi-chevron-right small ms-1"></i></a>
 				</div>
 

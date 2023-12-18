@@ -1,6 +1,9 @@
 
 <div class="container">
 
+<span class="text-cap">From the</span>
+<h2>Scrapbook</h2>
+
 
 <div class="row blog-tile-snippets mt-5">
     <?php if (have_posts()) : ?>
