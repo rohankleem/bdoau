@@ -15,9 +15,31 @@
 @font-face {
 	font-family: 'Inter var';
 	src: url('../fonts/Inter-Regular.woff2') format('woff2');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
-  }
+}
+
+@font-face {
+	font-family: 'Inter var';
+	src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter var';
+	src: url('../fonts/Inter-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter var';
+	src: url('../fonts/Inter-ExtraBold.woff2') format('woff2');
+	font-weight: 800;
+	font-style: normal;
+}
+  
   
   $font-family-base: "Inter var", sans-serif;
   $font-family-sans-serif: "Inter var", sans-serif;
