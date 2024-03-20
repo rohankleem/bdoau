@@ -22,14 +22,14 @@ final class Global_Question_Pack implements Questions_Provider {
 				}
 
 				public function get_description(): string {
-					return __( 'Detects the correct way to identify user IP addresses based on your server configuration by making an API request to iThemes.com servers. No user information is sent to iThemes.', 'better-wp-security' );
+					return __( 'Detects the correct way to identify user IP addresses based on your server configuration by making an API request to SolidWP.com servers. No user information is sent to SolidWP.', 'better-wp-security' );
 				}
 
 				public function get_answer_schema(): array {
 					return [
 						'type'        => 'boolean',
 						'title'       => __( 'Enable Security Check Pro', 'better-wp-security' ),
-						'description' => '<a href="https://ithemes.com/privacy-policy/">' . __( 'Read our Privacy Policy', 'better-wp-security' ) . '</a>',
+						'description' => '<a href="https://go.solidwp.com/solid-privacy-policy">' . __( 'Read our Privacy Policy', 'better-wp-security' ) . '</a>',
 						'default'     => false,
 						'uiSchema'    => [
 							'ui:widget' => 'ToggleWidget',
@@ -38,8 +38,10 @@ final class Global_Question_Pack implements Questions_Provider {
 				}
 
 				public function respond( Answer_Handler $handler ) {
-					$handler->enable_module( 'security-check-pro' );
-					$handler->set_setting( 'global', 'proxy', 'security-check' );
+					if ( $handler->get_answer() ) {
+						$handler->enable_module( 'security-check-pro' );
+						$handler->set_setting( 'global', 'proxy', 'security-check' );
+					}
 				}
 			};
 		}

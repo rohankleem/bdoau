@@ -18,6 +18,11 @@ const history = createHistory( document.location, { page: 'itsec' } );
 
 domReady( () => {
 	const containerEl = document.getElementById( 'itsec-settings-root' );
+
+	if ( ! containerEl ) {
+		return;
+	}
+
 	const serverType = containerEl.dataset.serverType;
 	const installType = containerEl.dataset.installType;
 	const onboardComplete = containerEl.dataset.onboard === '1';
@@ -34,9 +39,7 @@ domReady( () => {
 } );
 
 export * from './settings/components';
-export { ToolFill } from './settings/pages/tools';
-export { SecureSiteEndFill } from './settings/pages/secure-site';
-export { BeforeSettingsFill } from './settings/pages/settings';
+export { OnboardSiteTypeBeforeFill } from './settings/pages/site-type/chooser';
 export {
 	Page,
 	ChildPages,
@@ -46,8 +49,10 @@ export {
 export {
 	useNavigateTo,
 	useConfigContext,
-	useModuleSchemaValidator,
+	useModuleRequirementsValidator,
+	useSettingsForm,
+	useAllowedSettingsFields,
 } from './settings/utils';
+export { SingleModulePage } from './settings/pages/configure';
 export { STORE_NAME as ONBOARD_STORE_NAME } from './settings/stores/onboard';
-export { STORE_NAME as TOOLS_STORE_NAME } from './settings/stores/tools';
 export { history };

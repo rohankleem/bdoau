@@ -4,6 +4,8 @@ namespace iThemesSecurity;
 
 use iThemesSecurity\Lib\REST;
 use iThemesSecurity\Lib\Site_Types;
+use iThemesSecurity\Lib\Stellar_Container;
+use iThemesSecurity\Strauss\StellarWP\Telemetry\Config as Telemetry;
 use ITSEC_Lib_Upgrader;
 use iThemesSecurity\Strauss\Pimple\Container;
 use wpdb;
@@ -18,6 +20,10 @@ return static function ( Container $c ) {
 	};
 
 	$c[ \ITSEC_Modules::class ] = \ITSEC_Modules::get_instance();
+
+	$c[ \ITSEC_Lockout::class ] = static function () {
+		return $GLOBALS['itsec_lockout'];
+	};
 
 	$c[ Actor\Multi_Actor_Factory::class ] = static function ( Container $c ) {
 		return new Actor\Multi_Actor_Factory( ...$c['actor.factories'] );
@@ -48,7 +54,7 @@ return static function ( Container $c ) {
 		];
 	};
 
-	$c['rest.controllers'] = static function() {
+	$c['rest.controllers'] = static function () {
 		return [];
 	};
 
@@ -114,5 +120,46 @@ return static function ( Container $c ) {
 			$c[ Lib\Tools\Tools_Registry::class ],
 			$c[ Lib\Tools\Tools_Runner::class ]
 		);
+	};
+
+	$c[ REST\User_Actions_Controller::class ] = static function () {
+		return new REST\User_Actions_Controller();
+	};
+
+	$c[ REST\Users_Controller_Extension::class ] = static function () {
+		return new REST\Users_Controller_Extension();
+	};
+
+	$c[ REST\Logs_Controller::class ] = static function () {
+		return new REST\Logs_Controller();
+	};
+
+	$c[ REST\Geolocation_Controller::class ] = static function () {
+		return new REST\Geolocation_Controller();
+	};
+
+	$c[ REST\Trusted_Devices_Controller::class ] = static function () {
+		return new REST\Trusted_Devices_Controller();
+	};
+
+	$c[ Rest\Lockouts_Controller::class ] = static function ( Container $c ) {
+		return new Rest\Lockouts_Controller(
+			$c[ \ITSEC_Lockout::class ]
+		);
+	};
+
+	$c[ REST\Lockout_Stats_Controller::class ] = static function ( Container $c ) {
+		return new REST\Lockout_Stats_Controller(
+			$c[ \ITSEC_Lockout::class ]
+		);
+	};
+
+	$c[ Telemetry::class ] = static function ( Container $c ) {
+		$telemetry = new Telemetry();
+		$telemetry::set_container( new Stellar_Container( $c ) );
+		$telemetry::set_hook_prefix( 'ithemes-security' );
+		$telemetry::set_stellar_slug( 'solid-security' );
+
+		return $telemetry;
 	};
 };
