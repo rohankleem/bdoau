@@ -1,7 +1,7 @@
 <header id="header" class="navbar navbar-expand-lg navbar-end navbar-light bg-white">
 	<div class="container">
 		<nav class="js-mega-menu navbar-nav-wrap">
-			<a class="navbar-brand" href="../index.html" aria-label="Front">
+			<a class="navbar-brand" href="/" aria-label="Buildio">
 				<img class="navbar-brand-logo" src="<?php echo get_template_directory_uri(); ?>/img/buildio-hori-clean-b.svg" alt="Buildio">
 			</a>
 
@@ -34,9 +34,9 @@
 						</div>
 					</li>
 
-					<!-- Blog -->
+					<!-- Scrapbook -->
 					<li class="hs-has-sub-menu nav-item">
-						<a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+						<a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Scrapbook</a>
 						<div class="hs-sub-menu dropdown-menu" aria-labelledby="blogMegaMenu" style="min-width: 14rem;">
 
 
@@ -73,6 +73,9 @@
 							}
 
 							?>
+
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="/scrapbook/"><strong>View all articles...</strong></a>
 						</div>
 					</li>
 

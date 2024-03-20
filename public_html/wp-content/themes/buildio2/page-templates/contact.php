@@ -1,11 +1,8 @@
 <?php
-
-/**
- * Template Name: Contact
- *
- * Contact page
- *
- */
+/*
+Template Name: Contact Page
+Template Post Type: page
+*/
 
 
 // Exit if accessed directly.

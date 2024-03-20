@@ -18,6 +18,8 @@ ini_set('error_reporting', E_ALL );
 
 
 
+
+
 define('DB_NAME', 			$_ENV['DB_NAME']);
 define('DB_USER', 			$_ENV['DB_USER']);
 define('DB_PASSWORD', 		$_ENV['DB_PASSWORD']);
@@ -34,9 +36,20 @@ define('SECURE_AUTH_SALT', 	$_ENV['SECURE_AUTH_SALT']);
 define('LOGGED_IN_SALT',   	$_ENV['LOGGED_IN_SALT']);
 define('NONCE_SALT',       	$_ENV['NONCE_SALT']);
 
-define('WP_DEBUG',			$_ENV['WP_DEBUG']);
-define('WP_DEBUG_LOG',		$_ENV['WP_DEBUG_LOG']);
-define('WP_DEBUG_DISPLAY', filter_var($_ENV['dddd']??false, FILTER_VALIDATE_BOOLEAN));
+// Convert environment variable string to boolean
+$wp_debug = strtolower($_ENV['WP_DEBUG']) === 'true' ? true : false;
+if (strtolower($_ENV['WP_DEBUG_LOG']) === 'true') {
+    $wp_debug_log = true;
+} elseif (strtolower($_ENV['WP_DEBUG_LOG']) === 'false') {
+    $wp_debug_log = false;
+} else {
+    $wp_debug_log = $_ENV['WP_DEBUG_LOG']; // Use as a file path
+}
+$wp_debug_display = strtolower($_ENV['WP_DEBUG_DISPLAY']) === 'true' ? true : false;
+
+define('WP_DEBUG',			$wp_debug);
+define('WP_DEBUG_LOG',		$wp_debug_log);
+define('WP_DEBUG_DISPLAY', 	$wp_debug_display);
 
 define('WP_HOME', 			$_ENV['WP_HOME']);
 define('WP_SITEURL', 		$_ENV['WP_SITEURL']);

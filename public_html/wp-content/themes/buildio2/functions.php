@@ -98,3 +98,56 @@ function sc_get_content_substr($content, $length = 50)
     return $content;
 }
 
+function pagination_echo_default($echo = true) {
+    // Default Pagination
+    $default_pagination = get_the_posts_pagination(array(
+        'mid_size'  => 2,
+        'prev_text' => __('&larr; Previous', 'textdomain'),
+        'next_text' => __('Next &rarr;', 'textdomain'),
+    ));
+
+    if ($echo) {
+        echo $default_pagination;
+    } else {
+        return $default_pagination;
+    }
+}
+
+
+function pagination_echo_bootstrap($custom_query = null, $echo = true) {
+    if (!$custom_query) {
+        global $wp_query;
+        $custom_query = $wp_query;
+    }
+
+    $pages = paginate_links(array(
+        'base'         => str_replace(999999999, '%#%', esc_url(get_pagenum_link(999999999))),
+        'format'       => '?paged=%#%',
+        'current'      => max(1, get_query_var('paged')),
+        'total'        => $custom_query->max_num_pages,
+        'type'         => 'array',
+        'show_all'     => false,
+        'end_size'     => 3,
+        'mid_size'     => 3,
+        'prev_next'    => true,
+        'prev_text'    => __('&laquo;'),
+        'next_text'    => __('&raquo;'),
+    ));
+
+    if (is_array($pages)) {
+        $pagination = '<nav aria-label="Page navigation"><ul class="pagination">';
+        foreach ($pages as $page) {
+            $active = strpos($page, 'current') !== false ? ' active' : '';
+            $pagination .= '<li class="page-item' . $active . '">' . str_replace('page-numbers', 'page-link', $page) . '</li>';
+        }
+        $pagination .= '</ul></nav>';
+
+        if ($echo) {
+            echo $pagination;
+        } else {
+            return $pagination;
+        }
+    }
+}
+
+
