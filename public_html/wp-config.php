@@ -12,8 +12,8 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/../');
 $dotenv->load();
 
 //turn off errors and warnings////
-ini_set('display_errors','On');
-ini_set('error_reporting', E_ALL );
+// ini_set('display_errors','On');
+// ini_set('error_reporting', E_ALL );
 //////////////////////////////////
 
 
