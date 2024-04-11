@@ -61,23 +61,23 @@ $twenty_twenty_one_comment_count = get_comments_number();
 		<?php
 		the_comments_pagination(
 			array(
-				'before_page_number' => esc_html__( 'Page', 'twentytwentyone' ) . ' ',
+				'before_page_number' => "Page" . ' ',
 				'mid_size'           => 0,
 				'prev_text'          => sprintf(
 					'%s <span class="nav-prev-text">%s</span>',
-					is_rtl() ? twenty_twenty_one_get_icon_svg( 'ui', 'arrow_right' ) : twenty_twenty_one_get_icon_svg( 'ui', 'arrow_left' ),
+					"x",
 					esc_html__( 'Older comments', 'twentytwentyone' )
 				),
 				'next_text'          => sprintf(
 					'<span class="nav-next-text">%s</span> %s',
 					esc_html__( 'Newer comments', 'twentytwentyone' ),
-					is_rtl() ? twenty_twenty_one_get_icon_svg( 'ui', 'arrow_left' ) : twenty_twenty_one_get_icon_svg( 'ui', 'arrow_right' )
+					"y"
 				),
 			)
 		);
 
 		if ( ! comments_open() ) :
-			echo '<p class="no-comments">' . esc_html__( 'Comments are closed.', 'twentytwentyone' ) . '</p>';
+			echo '<p class="no-comments">' . 'Comments are closed.' . '</p>';
 		endif;
 	?>
 	<?php endif; ?>
