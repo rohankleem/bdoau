@@ -1,44 +1,53 @@
-
 <div class="container">
 
-<span class="text-cap">From the</span>
-<h2>Scrapbook</h2>
+    <span class="text-cap">From the</span>
+    <h2>Scrapbook</h2>
 
 
-<div class="row blog-tile-snippets mt-5">
-    <?php if (have_posts()) : ?>
-        <?php $post_counter = 0; ?>
-        <?php while (have_posts()) : the_post(); ?>
-            <?php
-            if ($post_counter < 6) {
-                // Show up to 3 posts on mobile devices
-                $post_counter++;
-            ?>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                    <h3><?php the_title(); ?></h3>
-                    <small>Posted on <?php the_time('F jS, Y') ?></small>
-                    <p><?php the_excerpt(); ?></p>
-                </div>
-            <?php
-            } elseif ($post_counter < 9) {
-                // Show up to 6 posts on larger screens
-                $post_counter++;
-            ?>
-                <div class="col-4 d-none d-md-block">
-                    <h3><?php the_title(); ?></h3>
-                    <small>Posted on <?php the_time('F jS, Y') ?></small>
-                    <p><?php the_excerpt(); ?></p>
-                </div>
-            <?php
-            } else {
-                break; // Stop looping once the maximum post count is reached
-            }
-            ?>
-        <?php endwhile; ?>
+    <?php
+    $args = array(
+        'posts_per_page' => 6,
+        'orderby' => 'date',
+        'order' => 'DESC'
+    );
+
+    $blog_snippet_list = new WP_Query($args);
+
+    if ($blog_snippet_list->have_posts()) : ?>
+
+
+        <div class="swiperBlogSnippets swiper">
+            <div class="swiper-wrapper my-2">
+
+                <?php while ($blog_snippet_list->have_posts()) : $blog_snippet_list->the_post(); ?>
+
+                    <div class="swiper-slide">
+                        <a class="card h-100 bg-light shadow-none card-transition" href="#">
+                            <?php if (has_post_thumbnail()) : ?>
+                                <img src="<?php the_post_thumbnail_url('medium'); ?>" class="card-img-top" alt="<?php the_title(); ?>">
+                            <?php endif; ?>
+                            <div class="card-body">
+                                <h5 class="card-title"><?php the_title(); ?></h5>
+                                <p class="card-text"><?php echo wp_strip_all_tags(get_the_excerpt()); ?></p>
+
+                            </div>
+                        </a>
+                    </div>
+
+                <?php endwhile; ?>
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <?php wp_reset_postdata(); ?>
     <?php else : ?>
-        <p><?php _e('No articles to show.'); ?></p>
+        <p>No posts found.</p>
     <?php endif; ?>
-</div>
 
 
 </div>

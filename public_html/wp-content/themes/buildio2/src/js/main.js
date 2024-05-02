@@ -57,4 +57,39 @@ import Swiper from 'swiper/bundle';
         }
       }
     });
+
+
+
+
+    var swiper = new Swiper(".swiperBlogSnippets", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        380: {
+          slidesPerView: 1.3,
+          spaceBetween: 15,
+        },
+        580: {
+          slidesPerView: 1.5,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 2.4,
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: 3.4,
+          spaceBetween: 15,
+        },
+      }
+    });
   })();
