@@ -3,9 +3,13 @@
 @import '../../node_modules/bootstrap/scss/functions';
 
 @import 'themes/default';
-@import 'user-variables';
-@import 'front/variables';
 
+@import 'user-variables';
+
+
+
+
+@import 'front/variables';
 
 @import '../../node_modules/bootstrap/scss/variables';
 @import "../../node_modules/bootstrap/scss/variables-dark"; /*rmk https://github.com/twbs/bootstrap/issues/38683*/
@@ -31,8 +35,7 @@
 
 @import 'front/front';
 
-//custom variables
-
+//custom variables ?
 
 
 // Custom core
