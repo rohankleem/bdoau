@@ -27,8 +27,6 @@
 	<link rel="icon" sizes="512x512" href="<?php echo get_stylesheet_directory_uri() ?>/img/icon-android-512x512.png">
 
 
-	<title>Buildio</title>
-
 	<?php wp_head() ?>
 </head>
 

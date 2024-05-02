@@ -43,6 +43,11 @@ if ( ! function_exists( 'buildiotheme_setup' ) ) :
 		 */
 		add_theme_support( 'automatic-feed-links' );
 
+        /**
+		 * Add title tag
+		 */
+        add_theme_support('title-tag');
+
 		/**
 		 * Enable support for post thumbnails and featured images.
 		 */
@@ -76,12 +81,13 @@ add_action('wp_enqueue_scripts', 'do_enqueue');
 
 
 function custom_excerpt_length($length) {
-    return 20; // Adjust the number of words you want in the excerpt
+    return 8; // Adjust the number of words you want in the excerpt
 }
 add_filter('excerpt_length', 'custom_excerpt_length');
 
 function custom_excerpt_more($more) {
-	return ' <a href="' . get_permalink() . '">more...</a>'; // Remove the default "[...]" at the end of the excerpt
+	//return ' <a href="' . get_permalink() . '">more...</a>'; // Remove the default "[...]" at the end of the excerpt
+    return '...';
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
 
