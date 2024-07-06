@@ -13,21 +13,17 @@ get_header();
 
 <?php $imgpath = get_stylesheet_directory_uri() . "/img" ?>
 
+<?php include get_template_directory() . '/inc/hero-unipixel.php'; ?>
+
 <div class="container mt-5">
 
-	<div class="row mb-4">
-		<div class="col-12">
-			<img class="" src="<?php echo $imgpath ?>/unipixel-logo-hori-1.svg" alt="UniPixel Logo">
-		</div>
-	</div>
 
 
-	<div class="row">
+	<div class="row d-none">
 		<div class="col-12">
 			<div class="card bg-light-green borderless w-100">
 				<div class="card-body">
-					<h2>UniPixel WordPress Plugin</h2>
-					<h4>Meta (Facebook) Pixel and CAPI Integration</h4>
+					
 				</div>
 			</div>
 		</div>

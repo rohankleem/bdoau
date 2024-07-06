@@ -40,7 +40,7 @@
 						<a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
 
 						<div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
-							<a class="dropdown-item" href="#">UniPixel WordPress Plugin</a>
+							<a class="dropdown-item" href="/unipixel/">UniPixel WordPress Plugin</a>
 						</div>
 					</li>
 
