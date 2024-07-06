@@ -32,7 +32,7 @@
 						<div class="ps-md-2">
 							<h4>Included</h4>
 							<p>Full integration guidance and advice.</p>
-							<a class="link d-none" href="#">Get Started <i class="bi-chevron-right small ms-1"></i></a>
+							<a class="link d-none tempHide" href="#">Get Started <i class="bi-chevron-right small ms-1"></i></a>
 						</div>
 					</div>
 

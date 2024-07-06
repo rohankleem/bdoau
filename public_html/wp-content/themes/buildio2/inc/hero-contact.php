@@ -16,14 +16,12 @@
 				
 				<div class="mb-5 ">
 					<span class="text-cap">We help businesses streamline</span>
-					<h1 class="display-5 mb-3">Your Partner for Business Growth</h1>
-					<p class="lead">Unlock business potential through digital solutions, integrations and automation. Based right here in Australia.</p>
+					<h1 class="display-5 mb-3">Get In Touch</h1>
+					<p class="lead">Buildio</p>
+					<p>Melbourne, Australia</p>
+					<p>contact@buildio.dev</p>
 				</div>
 
-				<div class="d-grid d-sm-flex gap-3">
-					<a class="btn btn-primary btn-transition" href="/contact">Contact</a>
-					<a class="btn btn-link" href="#">Zoho CRM Specialists <i class="bi-chevron-right small ms-1"></i></a>
-				</div>
 
 			</div>
 

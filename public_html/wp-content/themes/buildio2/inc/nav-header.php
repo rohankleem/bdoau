@@ -31,6 +31,16 @@
 							<a class="dropdown-item" href="#">Reporting and insights</a>
 							<a class="dropdown-item" href="#">Phone and SMS systems</a>
 							<a class="dropdown-item" href="#">Hosting and infrastructure</a>
+							<a class="dropdown-item" href="#">WordPress Development</a>
+						</div>
+					</li>
+
+					<!-- Products -->
+					<li class="hs-has-sub-menu nav-item">
+						<a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+
+						<div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
+							<a class="dropdown-item" href="#">UniPixel WordPress Plugin</a>
 						</div>
 					</li>
 
@@ -81,7 +91,7 @@
 
 
 					<li class="nav-item">
-						<a class="btn btn-primary btn-transition" href="/contact/" target="_blank">Get In Touch</a>
+						<a class="btn btn-primary btn-transition" href="/contact/">Get In Touch</a>
 					</li>
 
 				</ul>

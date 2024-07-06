@@ -33,6 +33,35 @@
 }
 
 
+.tempHide{
+  display:none
+}
+
+
+
+.bg-light-green {
+  background-color: #D6F3DF;
+}
+
+.bg-light-purple {
+  background-color: #D1D4FC;
+}
+
+.bg-light-blue {
+  background-color: #DEEAFD;
+}
+
+.bg-light-green, .bg-light-purple, .bg-light-blue {
+  border-radius: .25rem; /* Optional: to match Bootstrap card border radius */
+  padding: 1rem; /* Optional: to add some padding */
+  margin-bottom: 1rem; /* Optional: to add some space between cards */
+}
+
+
+.borderless {
+  border: none;
+}
+
 
 
 

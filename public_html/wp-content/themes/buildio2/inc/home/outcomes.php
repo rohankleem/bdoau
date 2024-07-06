@@ -87,7 +87,7 @@
 		</div>
 
 
-		<div class="text-center">
+		<div class="text-center tempHide">
 			<div class="d-grid d-sm-flex justify-content-center gap-2 mb-3">
 				<a class="btn btn-primary btn-transition d-none d-md-block" href="#">Get in touch</a>
 				<a class="btn btn-link d-none" href="/contact">Find our more<i class="bi-chevron-right small ms-1"></i></a>

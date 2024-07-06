@@ -16,7 +16,7 @@
 						<p>We build with your customers in mind and create delightful flows to take them on a journey to conversion.</p>
 					</div>
 
-					<a class="btn btn-outline-primary" href="#">Discover more</a>
+					<a class="btn btn-outline-primary tempHide" href="#">Discover more</a>
 				</div>
 
 				<div class="col-12 col-md-6 col-lg-5">
@@ -65,7 +65,7 @@
 						<p>Start creating effortless and accurate flows that save time and increase consistency, leverage the power of linking CRM, accounting, SMS and website into one elegant ecosystem.</p>
 					</div>
 
-					<a class="btn btn-outline-primary" href="#">Discover more</a>
+					<a class="btn btn-outline-primary tempHide" href="#">Discover more</a>
 				</div>
 
 				
@@ -91,7 +91,7 @@
 						<p>Get rid of tasks that take up time and start direct your staff skill to areas that matter. We help create systems that reduce the amount of manual labour in day-to-day operations.</p>
 					</div>
 
-					<a class="btn btn-outline-primary" href="../page-login.html">Sign up today</a>
+					<a class="btn btn-outline-primary tempHide" href="../page-login.html">Sign up today</a>
 				</div>
 
 				<div class="col-12 col-md-6 col-lg-5">
@@ -142,7 +142,7 @@
 						<p>Start filling your day with insights that drive great decisions. Bring data to the forefront so you and your team can get the information they need to excel.</p>
 					</div>
 
-					<a class="btn btn-outline-primary" href="../page-login.html">Sign up today</a>
+					<a class="btn btn-outline-primary tempHide" href="../page-login.html">Sign up today</a>
 				</div>
 
 				

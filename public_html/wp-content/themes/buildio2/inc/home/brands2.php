@@ -12,8 +12,8 @@
 						<span class="card-subtitle text-warning">We Connect You to Anything</span>
 						<h2 class="card-title text-white">We specialize in integrating and streamlining the platforms that make your business</h2>
 					</div>
-					<div class="d-grid">
-						<a class="btn btn-soft-light btn-transition" href="#">View more</a>
+					<div class="d-grid ">
+						<a class="btn btn-soft-light btn-transition tempHide" href="#">View more</a>
 					</div>
 				</div>
 			</div>
