@@ -77,7 +77,7 @@ get_header();
 		</ol>
 		<h3>Setting Up Facebook with UniPixel</h3>
 		View these important setups on preparing your facebook account to work with UniPixel.<br />
-		<a href="/unipixel-documentation-meta/">Facebook Conversion API steps &raquo;</a>.
+		<a href="/unipixel-documentation-meta/">Facebook Conversion API Setup steps &raquo;</a>.
 	</section>
 
 
