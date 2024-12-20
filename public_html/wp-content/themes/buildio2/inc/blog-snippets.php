@@ -6,7 +6,7 @@
 
     <?php
     $args = array(
-        'posts_per_page' => 6,
+        'posts_per_page' => 8,
         'orderby' => 'date',
         'order' => 'DESC'
     );
@@ -22,7 +22,7 @@
                 <?php while ($blog_snippet_list->have_posts()) : $blog_snippet_list->the_post(); ?>
 
                     <div class="swiper-slide">
-                        <a class="card h-100 bg-light shadow-none card-transition" href="#">
+                        <a class="card h-100 bg-light shadow-none card-transition" href="<?php echo esc_url(get_permalink()); ?>">
                             <?php if (has_post_thumbnail()) : ?>
                                 <img src="<?php the_post_thumbnail_url('medium'); ?>" class="card-img-top" alt="<?php the_title(); ?>">
                             <?php endif; ?>

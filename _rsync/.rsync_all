@@ -10,7 +10,8 @@
 - public_html/.well-known/
 - public_html/.htaccess
 - public_html/php.ini
-- public_html/wp-content/plugins/formidable/css/formidableforms.css
+#- public_html/wp-content/plugins/formidable/css/formidableforms.css
+- public_html/wp-content/plugins/***
 + public_html/***
 + vendor/***
 + src/***

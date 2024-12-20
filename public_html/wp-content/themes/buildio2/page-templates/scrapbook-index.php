@@ -13,7 +13,7 @@ get_header(); ?>
         $paged = get_query_var('paged') ? get_query_var('paged') : 1;
         $args = array(
             'post_type' => 'post', // Fetch post type post
-            'posts_per_page' => 9, // Number of posts per page
+            'posts_per_page' => 19, // Number of posts per page
             'paged' => $paged, // Current page number for pagination
         );
         $scrapbook_query = new WP_Query($args);

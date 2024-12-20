@@ -4,7 +4,7 @@
 
 <?php $imgpath = get_stylesheet_directory_uri() . "/dist/assets" ?>
 
-<div class="position-relative bg-img-start mb-5 mb-md-7" style="background-image: url(<?php echo $imgpath ?>/svg/components/card-11.svg);">
+<div class="position-relative bg-img-start mb-5 mb-md-7" style="background-image: url(<?php echo $imgpath ?>/svg/components/card-15.svg);">
 	<div class="container content-space-t-2 content-space-b-1 content-space-b-lg-3">
 
 	
@@ -14,15 +14,15 @@
 			<div class="col-md-6 col-lg-5 mb-7 mb-md-0 position-relative position-relative zi-1">
 
 				
-				<div class="mb-5 ">
-					<span class="text-cap">We help businesses streamline</span>
-					<h1 class="display-5 mb-3">Your Partner for Business Growth</h1>
-					<p class="lead">Unlock business potential through digital solutions, integrations and automation. Based right here in Australia.</p>
+				<div class="mb-5">
+					<span class="text-cap text-white">We help businesses grow</span>
+					<h1 class="display-5 mb-3 text-white">Digital Steamlining for Business Growth</h1>
+					<p class="lead text-white">Unlock business potential through digital solutions, integrations and automation. Based right here in Australia.</p>
 				</div>
 
 				<div class="d-grid d-sm-flex gap-3">
 					<a class="btn btn-primary btn-transition" href="/contact">Contact</a>
-					<a class="btn btn-link" href="#">Zoho CRM Specialists <i class="bi-chevron-right small ms-1"></i></a>
+					<a class="btn btn-link text-white" href="#">Zoho CRM Specialists <i class="bi-chevron-right small ms-1"></i></a>
 				</div>
 
 			</div>
