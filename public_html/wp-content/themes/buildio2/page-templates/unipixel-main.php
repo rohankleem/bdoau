@@ -15,7 +15,7 @@ get_header();
 
 <?php include get_template_directory() . '/inc/hero-unipixel.php'; ?>
 
-<div class="container mt-5">
+<div class="container px-4 mt-5">
 
 
 

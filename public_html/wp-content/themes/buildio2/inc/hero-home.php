@@ -4,8 +4,8 @@
 
 <?php $imgpath = get_stylesheet_directory_uri() . "/dist/assets" ?>
 
-<div class="position-relative bg-img-start mb-5 mb-md-7" style="background-image: url(<?php echo $imgpath ?>/svg/components/card-15.svg);">
-	<div class="container content-space-t-2 content-space-b-1 content-space-b-lg-3">
+<div class="position-relative bg-img-start mb-5 mb-md-7" style="background-image: url(<?php echo $imgpath ?>/svg/components/card-5.svg);">
+	<div class="container content-space-t-2 content-space-b-1 content-space-b-lg-2">
 
 	
 		<div class="row justify-content-lg-between align-items-lg-center pt-lg-5">

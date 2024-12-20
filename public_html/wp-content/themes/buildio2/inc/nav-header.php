@@ -2,7 +2,7 @@
 	<div class="container">
 		<nav class="js-mega-menu navbar-nav-wrap">
 			<a class="navbar-brand" href="/" aria-label="Buildio">
-				<img class="navbar-brand-logo" src="<?php echo get_template_directory_uri(); ?>/img/buildio-hori-clean-b.svg" alt="Buildio">
+				<img class="navbar-brand-logo" src="<?php echo get_template_directory_uri(); ?>/img/buildio-hori-clean-c.svg" alt="Buildio">
 			</a>
 
 
