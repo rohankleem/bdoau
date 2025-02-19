@@ -157,3 +157,59 @@ function pagination_echo_bootstrap($custom_query = null, $echo = true) {
 }
 
 
+
+
+// Register a custom REST API endpoint for the Monday.com webhook
+add_action('rest_api_init', function () {
+    register_rest_route('custom/v1', '/monday-webhook', [
+        'methods'  => 'POST',
+        'callback' => 'handle_monday_webhook',
+        'permission_callback' => '__return_true', // No authentication required
+    ]);
+});
+// Validate Monday Webhook Request (Permission Callback)
+// function validate_monday_webhook_request(WP_REST_Request $request) {
+//     // Optional: Add custom token validation
+//     $headers = $request->get_headers();
+//     $auth_token = $headers['authorization'][0] ?? null; // Example: "Bearer your_custom_token"
+
+//     // Validate the token (Replace with your actual token)
+//     $expected_token = 'your_custom_token_here';
+//     if ($auth_token !== "Bearer {$expected_token}") {
+//         return new WP_Error(
+//             'rest_forbidden',
+//             __('Unauthorized request.'),
+//             ['status' => 403]
+//         );
+//     }
+
+//     return true; // Request is authorized
+// }
+
+// Handle Monday Webhook
+function handle_monday_webhook(WP_REST_Request $request) {
+    $data = $request->get_json_params();
+
+    // Handle Challenge Verification
+    if (isset($data['challenge'])) {
+        return ['challenge' => $data['challenge']];
+    }
+
+    // Process the Webhook Payload
+    // if (isset($data['event'])) {
+    //     $itemId = $data['event']['itemId'] ?? null;
+    //     $columnId = $data['event']['columnId'] ?? null;
+    //     $columnValue = $data['event']['columnValue'] ?? null;
+
+    //     // Your custom logic goes here
+    //     error_log("Webhook Event: Item ID: $itemId, Column ID: $columnId, Value: $columnValue");
+
+    //     // Example response to Monday.com
+    //     return ['success' => true];
+    // }
+
+    return ['error' => 'Invalid payload.'];
+}
+
+
+

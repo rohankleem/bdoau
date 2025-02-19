@@ -1,4 +1,5 @@
 - cgi-bin/
+- public_html/wp-content/themes/buildio2/custom-logs/
 - public_html/wp-content/uploads/
 - public_html/wp-content/cache/
 - public_html/wp-content/mcloud-reports/
