@@ -54,8 +54,6 @@ define('WP_DEBUG_DISPLAY', 	$wp_debug_display);
 define('WP_HOME', 			$_ENV['WP_HOME']);
 define('WP_SITEURL', 		$_ENV['WP_SITEURL']);
 
-define ('DEFAULT_LISTING_IMAGE', 'wp-content/themes/steelchief/img/img-default-location.jpg');
-
 $table_prefix = $_ENV['TABLE_PREFIX'];
 
 /** Absolute path to the WordPress directory. */

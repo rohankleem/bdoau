@@ -2,7 +2,34 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+// Email Handling
+add_action('phpmailer_init', 'send_smtp_email');
+add_action('wp_mail_failed', 'log_mailer_errors', 10, 1);
 
+
+function send_smtp_email($phpmailer)
+{
+    $phpmailer->isSMTP();
+    $phpmailer->Host       = $_ENV['SMTP_HOST'];
+    $phpmailer->Port       = $_ENV['SMTP_PORT'];
+    $phpmailer->SMTPSecure = $_ENV['SMTP_SECURE'];
+    $phpmailer->SMTPAuth   = $_ENV['SMTP_AUTH'];
+    $phpmailer->Username   = $_ENV['SMTP_USERNAME'];
+    $phpmailer->Password   = $_ENV['SMTP_PASSWORD'];
+    $phpmailer->From       = $_ENV['SMTP_FROMEMAIL'];
+    $phpmailer->FromName   = $_ENV['SMTP_FROMNAME'];
+    //$phpmailer->addReplyTo('info@example.com', 'Information');
+}
+
+
+function log_mailer_errors($wp_error)
+{
+    $fn = __DIR__ . '/../' . 'email.log';
+    $fp = fopen($fn, 'a');
+    fputs($fp, "Mailer Error: " . $wp_error->get_error_message() . "\n");
+    fclose($fp);
+
+}
 
 function do_enqueue()
 {
