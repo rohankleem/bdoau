@@ -6,8 +6,8 @@
 			<div class="card-body">
 				<div class="row col-md-divider align-items-md-center">
 					<div class="col-md-9">
-						<h3>Dedicated app development platform</h3>
-						<p>From open source to premium services.</p>
+						<h3>Comprehensive Services to Grow Your Business</h3>
+						<p>From marketing to automation.</p>
 
 						<div class="row">
 							<div class="col-sm-6 mb-2 mb-sm-0">
