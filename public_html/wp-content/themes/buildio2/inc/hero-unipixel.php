@@ -18,7 +18,7 @@
 
 					<span class="text-cap">Start tracking Meta events properly</span>
 					<h1 class="display-5 mb-3">
-						<img class="img-fluid" src="<?php echo $imgpath ?>/unipixel-logo-hori-1.svg" alt="UniPixel Logo"><br/>
+						<img class="img-fluid" src="<?php echo $imgpath ?>/unipixel-logo-hori-2.svg" alt="UniPixel Logo"><br/>
 						WordPress Plugin
 					</h1>
 					<p class="lead">Meta (Facebook) Pixel and Conversions API Integration. Simple, reliable and effective.</p>
