@@ -8,7 +8,7 @@
       <!-- Image (left desktop, top mobile) -->
       <div class="col-12 col-md-5 order-1 order-md-1 mb-4 mb-md-0">
         <figure class="">
-          <img class="img-fluid rounded-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/illus-experiences-1.png" alt="Customer journey illustration">
+          <img class="img-fluid rounded-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/illus-experiences-3.png" alt="Customer journey illustration">
         </figure>
       </div>
 
@@ -34,7 +34,7 @@
       <!-- Image (right desktop, top mobile) -->
       <div class="col-12 col-md-5 order-1 order-md-2 mb-4 mb-md-0">
         <figure class="">
-          <img class="img-fluid rounded-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/illus-connect-3.png" alt="System integration illustration">
+          <img class="img-fluid rounded-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/illus-connect-5.png" alt="System integration illustration">
         </figure>
       </div>
 
@@ -60,7 +60,7 @@
       <!-- Image (left desktop, top mobile) -->
       <div class="col-12 col-md-5 order-1 order-md-1 mb-4 mb-md-0">
         <figure class="">
-          <img class="img-fluid rounded-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/illus-automate.png" alt="Automation process illustration">
+          <img class="img-fluid rounded-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/illus-automate-4.png" alt="Automation process illustration">
         </figure>
       </div>
 
@@ -86,7 +86,7 @@
       <!-- Image (right desktop, top mobile) -->
       <div class="col-12 col-md-5 order-1 order-md-2 mb-4 mb-md-0">
         <figure class="">
-          <img class="img-fluid rounded-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/illus-reports.png" alt="Data analytics illustration">
+          <img class="img-fluid rounded-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/illus-reports-2.png" alt="Data analytics illustration">
         </figure>
       </div>
 

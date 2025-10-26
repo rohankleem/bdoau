@@ -25,6 +25,8 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<link rel="icon" sizes="192x192" href="<?php echo get_stylesheet_directory_uri() ?>/img/icon-android-192x192.png">
 	<link rel="icon" sizes="512x512" href="<?php echo get_stylesheet_directory_uri() ?>/img/icon-android-512x512.png">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
 
 
 	<?php wp_head() ?>
