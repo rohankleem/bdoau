@@ -40,6 +40,7 @@ get_header();
 						<!-- List Checked -->
 						<ul class="list-checked list-checked-soft-bg-primary list-checked-lg mb-5">
 							<li class="list-checked-item">Send events client-side and server-side</li>
+							<li class="list-checked-item">No extra apps, servers, or separate domains</li>
 							<li class="list-checked-item">Automatic deduplication across platforms</li>
 							<li class="list-checked-item">Consent-aware and fully privacy compliant</li>
 							<li class="list-checked-item">WooCommerce and custom event support</li>
@@ -143,7 +144,7 @@ get_header();
 					<div class="position-relative mx-auto" data-aos="fade-up">
 
 						<div class="svg-icon text-primary me-3">
-							<span class="svg-icon text-primary gen002Svg largeSvgIcon mx-auto text-center w-100" style="color: #f5ca99 !important;"></span>
+							<span class="svg-icon text-primary gen002Svg largeSvgIcon mx-auto text-center w-100"></span>
 						</div>
 
 
@@ -155,7 +156,7 @@ get_header();
 
 	<!-- Section 2: How UniPixel Helps -->
 	<div class="overflow-hidden bg-light">
-		<div class="container content-space-t-2 content-space-t-lg-3 content-space-b-lg-2">
+		<div class="container content-space-t-2 content-space-t-lg-2 content-space-b-lg-2">
 			<div class="row justify-content-lg-between align-items-lg-center flex-lg-row-reverse">
 				<div class="col-lg-6 mb-9 mb-lg-0">
 					<div class="mb-4">
@@ -178,7 +179,7 @@ get_header();
 				<div class="col-lg-5">
 					<div class="position-relative mx-auto" data-aos="fade-up">
 						<div class="svg-icon text-primary me-3">
-							<span class="svg-icon text-primary cod007Svg largeSvgIcon mx-auto text-center w-100" style="color: #f5ca99 !important;"></span>
+							<span class="svg-icon text-primary cod007Svg largeSvgIcon mx-auto text-center w-100"></span>
 						</div>
 					</div>
 				</div>
@@ -188,7 +189,7 @@ get_header();
 
 	<!-- Section 3: The Outcome -->
 	<div class="overflow-hidden">
-		<div class="container content-space-t-2 content-space-t-lg-3 content-space-b-lg-2">
+		<div class="container content-space-t-2 content-space-t-lg-2 content-space-b-lg-2">
 			<div class="row justify-content-lg-between align-items-lg-center">
 				<div class="col-lg-5 mb-9 mb-lg-0">
 					<div class="mb-4">
@@ -203,7 +204,7 @@ get_header();
 				<div class="col-lg-6">
 					<div class="position-relative mx-auto" data-aos="fade-up">
 						<div class="svg-icon text-primary me-3">
-							<span class="svg-icon text-primary gra012Svg largeSvgIcon mx-auto text-center w-100" style="color: #f5ca99 !important;"></span>
+							<span class="svg-icon text-primary gra012Svg largeSvgIcon mx-auto text-center w-100"></span>
 						</div>
 					</div>
 				</div>
@@ -250,8 +251,8 @@ get_header();
 					</div>
 
 					<div class="flex-grow-1 ms-3">
-						<h4>Works with Meta and Google</h4>
-						<p>Fully integrated with Meta Conversion API and Google server-side tracking, with TikTok support coming soon.</p>
+						<h4>Works with Meta, TikTok and Google</h4>
+						<p>Fully integrated with Meta Conversion API, TikTok Events API, and Google server-side tagging.</p>
 					</div>
 				</div>
 				<!-- End Icon Block -->
@@ -405,6 +406,72 @@ get_header();
 		</div>
 	</div>
 	<!-- End CTA -->
+
+
+
+<!-- More About -->
+<div class="container my-5">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">More About UniPixel</h2>
+    <p class="text-muted">Learn how UniPixel’s features work together to provide accurate, privacy-safe tracking.</p>
+  </div>
+
+  <div class="mb-5">
+    <h3 class="h4">Consent & Popup Banner</h3>
+    <p>
+      UniPixel includes a built-in consent manager that aligns with your site's existing cookie banner or provides its own lightweight popup. 
+      It pauses all tracking until the visitor gives consent for marketing or performance categories, ensuring compliance with privacy laws. 
+      Because it runs natively in WordPress, consent handling is immediate and consistent across all UniPixel events.
+    </p>
+  </div>
+
+  <div class="mb-5">
+    <h3 class="h4">Custom Events</h3>
+    <p>
+      Beyond standard WooCommerce actions, UniPixel allows you to define custom events for clicks, views, form submissions, and more. 
+      Each custom event can send data via client-side, server-side, or both, using the same event ID system that powers deduplication. 
+      This flexibility turns any site interaction into measurable, optimized event data without complex code or external tag managers.
+    </p>
+  </div>
+
+  <div class="mb-5">
+    <h3 class="h4">WooCommerce Coverage</h3>
+    <p>
+      UniPixel automatically tracks all major WooCommerce events — including ViewContent, AddToCart, InitiateCheckout, and Purchase. 
+      Each event includes structured order and product details that match platform expectations for Meta, Google, and TikTok. 
+      This ensures your campaign data reflects the full customer journey and supports reliable conversion optimization.
+    </p>
+  </div>
+
+  <div class="mb-5">
+    <h3 class="h4">Recommended Settings</h3>
+    <p>
+      The “Recommended Settings” option in UniPixel applies balanced defaults for each platform, optimized for event accuracy and performance. 
+      It automatically enables safe combinations of client and server sending, respects consent logic, and applies deduplication automatically. 
+      These presets are ideal for most stores, giving a solid foundation that can be customized anytime.
+    </p>
+  </div>
+
+  <div class="mb-5">
+    <h3 class="h4">Logging & Testing Features</h3>
+    <p>
+      UniPixel’s built-in Testing Console lets you see every event fire in real time right from your browser, while server-side logs record each 
+      platform request for later review. The console lives inside your WordPress admin and displays full event details as they occur. 
+      Combined with optional database storage, this gives you full visibility into your event flow for easy debugging and verification.
+    </p>
+  </div>
+
+  <div class="mb-5">
+    <h3 class="h4">Deduplication</h3>
+    <p>
+      Every UniPixel event includes a unique identifier so that browser and server versions of the same action are merged automatically. 
+      Meta and TikTok use this event ID for one-to-one matching, while Google relies on shared client and session identifiers. 
+      This approach prevents inflated counts and ensures consistent, trustworthy reporting across all advertising platforms.
+    </p>
+  </div>
+</div>
+<!-- End More About -->
+
 
 
 	<!-- Pull in the content from the editor -->
