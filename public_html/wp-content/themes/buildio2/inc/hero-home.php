@@ -2,7 +2,7 @@
 
 <?php $imgpath = get_stylesheet_directory_uri() . "/dist/assets"; ?>
 
-<div class="position-relative mb-5 mb-md-7 hero-bg">
+<div class="position-relative mb-5 mb-md-7 hero-bg px-3 px-md-0">
 
   <!-- SVG BACKGROUND (INLINE) -->
   <svg class="hero-bg-svg" viewBox="0 0 1440 550" preserveAspectRatio="none"  aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -43,14 +43,14 @@
 
     <div class="row justify-content-lg-between align-items-lg-center pt-lg-5">
 
-      <div class="col-md-6 col-lg-6 mb-7 mb-md-0 position-relative zi-1">
+      <div class="col-md-6 col-lg-6 mb-7 mb-md-0 position-relative zi-1 g-0">
 
         <div class="mb-5">
           <span class="text-cap text-white">Local experience, proven outcomes</span>
-          <h1 class="display-6 mb-3  text-white">
+          <h1 class="display-5 mb-3  text-white">
             Expert Digital Solutions to Transform Your Business
           </h1>
-          <p class="lead  text-white">
+          <p class="lead text-white">
             Unlock business potential through digital solutions, AI, integrations and automation.
             Based right here in Australia.
           </p>
@@ -65,9 +65,9 @@
 
       </div>
 
-      <div class="col-md-5 zi-1">
+      <div class="col-md-6 col-lg-6 zi-1 g-0">
         <div class="position-relative">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/hero-8.png" alt="Buildio">
+          <img class="img-fluid xImgHero1" src="<?php echo get_template_directory_uri(); ?>/img/main-hero-3.png" alt="Buildio">
         </div>
       </div>
 

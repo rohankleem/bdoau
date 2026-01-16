@@ -19,7 +19,7 @@
 						<img class="img-fluid" src="<?php echo $imgpath ?>/unipixel-logo-hori-4.svg" alt="UniPixel Logo"><br/>
 						WordPress Plugin
 					</h1>
-					<p class="lead">More accurate measurement through server-side data delivery for richer website events and eCommerce data for Meta and Google.</p>
+					<p class="lead">More accurate measurement through server-side data delivery for richer website events and eCommerce data for Meta, TikTok and Google.</p>
 				</div>
 
 

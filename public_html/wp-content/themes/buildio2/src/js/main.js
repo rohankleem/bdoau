@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const track = marquee.querySelector('.stats-marquee__track');
   if (!scroller || !track) return;
 
-  const speed = 40;
+  const speed = 50;
 
   let dragging = false;
   let startX = 0;

@@ -14,7 +14,7 @@ Template Post Type: page
 
 <?php include get_template_directory() . '/inc/home/skillsets.php'; ?>
 
-<?php include get_template_directory() . '/inc/home/approaches7.php'; ?>
+<?php include get_template_directory() . '/inc/home/approaches8.php'; ?>
 
 <?php include get_template_directory() . '/inc/home/what.php'; ?>
 
