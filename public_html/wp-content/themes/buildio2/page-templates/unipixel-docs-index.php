@@ -10,21 +10,38 @@ get_header();
  * CONFIG
  * The "UniPixel Documentation" parent page ID.
  */
-$unipixel_docs_root_id = $_ENV['UNIPIXEL_DOC_PARENT_PAGE_ID'];
+$unipixel_docs_root_id = 0;
+
+if (isset($_ENV['UNIPIXEL_DOC_PARENT_PAGE_ID'])) {
+	$unipixel_docs_root_id = (int) $_ENV['UNIPIXEL_DOC_PARENT_PAGE_ID'];
+}
+
+if ($unipixel_docs_root_id < 1) {
+	$unipixel_docs_root_id = 346;
+}
+
 
 /**
  * Pagination
  */
 $paged = 1;
+
 $paged_var = get_query_var('paged');
 if (!empty($paged_var)) {
 	$paged = (int) $paged_var;
 }
+
+$page_var = get_query_var('page');
+if ($paged === 1 && !empty($page_var)) {
+	$paged = (int) $page_var;
+}
+
 if ($paged < 1) {
 	$paged = 1;
 }
 
-$per_page = 12;
+
+$per_page = 40;
 
 /**
  * Query: pages that are direct children of the docs root

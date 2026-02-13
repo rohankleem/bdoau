@@ -10,11 +10,20 @@ get_header();
  * CONFIG
  * The "UniPixel Documentation" parent page ID.
  */
-$unipixel_docs_root_id = $_ENV['UNIPIXEL_DOC_PARENT_PAGE_ID'];
+$unipixel_docs_root_id = 0;
+
+if (isset($_ENV['UNIPIXEL_DOC_PARENT_PAGE_ID'])) {
+	$unipixel_docs_root_id = (int) $_ENV['UNIPIXEL_DOC_PARENT_PAGE_ID'];
+}
+
+if ($unipixel_docs_root_id < 1) {
+	// Fallback to your known value if env var missing
+	$unipixel_docs_root_id = 346;
+}
 
 $current_id = 0;
 if (is_singular('page')) {
-	$current_id = get_the_ID();
+	$current_id = (int) get_queried_object_id();
 }
 
 /**
@@ -24,16 +33,14 @@ if (is_singular('page')) {
 $ancestors = array();
 if ($current_id > 0) {
 	$ancestors = get_post_ancestors($current_id);
+
+	if (!is_array($ancestors)) {
+		$ancestors = array();
+	}
+
+	$ancestors = array_map('intval', $ancestors);
 }
 
-$is_root_or_descendant = false;
-if ($current_id === $unipixel_docs_root_id) {
-	$is_root_or_descendant = true;
-} else {
-	if (!empty($ancestors) && in_array($unipixel_docs_root_id, $ancestors, true)) {
-		$is_root_or_descendant = true;
-	}
-}
 
 /**
  * Get the root page object.

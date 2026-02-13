@@ -1,4 +1,13 @@
-<header id="header" class="navbar navbar-expand-lg navbar-end navbar-light bg-white">
+<?php
+$header_bg_class = 'header-soft'; // default for non-hero pages
+
+if (!empty($has_hero)) {
+	$header_bg_class = 'bg-white';
+}
+?>
+
+<header id="header" class="navbar navbar-expand-lg navbar-end navbar-light <?php echo esc_attr($header_bg_class); ?>">
+
 	<div class="container">
 		<nav class="js-mega-menu navbar-nav-wrap">
 			<a class="navbar-brand" href="/" aria-label="Buildio">

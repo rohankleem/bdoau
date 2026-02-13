@@ -6,6 +6,8 @@
  * A custom page template.
  */
 
+$has_hero = true;
+
 get_header();
 
 

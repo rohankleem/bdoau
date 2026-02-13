@@ -3,6 +3,9 @@
 Template Name: Home Page
 Template Post Type: page
 */
+
+$has_hero = true;
+
 ?>
 
 
