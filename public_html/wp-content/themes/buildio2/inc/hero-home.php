@@ -47,7 +47,7 @@
 
         <div class="mb-5">
           <span class="text-cap text-white">Local experience, proven outcomes</span>
-          <h1 class="display-5 mb-3  text-white">
+          <h1 class="display-6 mb-3  text-white">
             Expert Digital Solutions to Transform Your Business
           </h1>
           <p class="lead text-white">

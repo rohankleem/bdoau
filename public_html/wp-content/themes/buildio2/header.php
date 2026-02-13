@@ -25,8 +25,11 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<link rel="icon" sizes="192x192" href="<?php echo get_stylesheet_directory_uri() ?>/img/icon-android-192x192.png">
 	<link rel="icon" sizes="512x512" href="<?php echo get_stylesheet_directory_uri() ?>/img/icon-android-512x512.png">
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
 
 
 	<?php wp_head() ?>

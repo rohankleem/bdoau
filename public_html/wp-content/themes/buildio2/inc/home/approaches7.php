@@ -34,7 +34,7 @@
       <!-- Image (right desktop, top mobile) -->
       <div class="col-12 col-md-5 order-1 order-md-2 mb-4 mb-md-0">
         <figure class="">
-          <img class="img-fluid rounded-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/illus-experiences-4.png" alt="System integration illustration">
+          <img class="img-fluid rounded-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/illus-experiences-5.png" alt="System integration illustration">
         </figure>
       </div>
 
