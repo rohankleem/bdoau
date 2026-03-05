@@ -7,7 +7,7 @@ Template Post Type: page
 get_header(); ?>
 
 <div class="container mt-5">
-    <h1 class="mb-4">From the Scrapbook</h1>
+    <h1 class="mb-4">From the Notebook</h1>
     <div class="row">
         <?php
         $paged = get_query_var('paged') ? get_query_var('paged') : 1;

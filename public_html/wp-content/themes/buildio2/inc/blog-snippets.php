@@ -1,7 +1,7 @@
 <div class="container">
 
     <span class="text-cap">From the</span>
-    <h2>Scrapbook</h2>
+    <h2>Notebook</h2>
 
 
     <?php

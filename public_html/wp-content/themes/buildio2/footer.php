@@ -27,7 +27,7 @@
         <h6 class="text-uppercase small fw-bold mb-3 text-white">Navigate</h6>
         <ul class="list-unstyled mb-0 text-white">
           <li class="mb-2"><a class="link-secondary text-decoration-none text-white" href="/">Home</a></li>
-          <li class="mb-2"><a class="link-secondary text-decoration-none text-white" href="/scrapbook/">Scrapbook</a></li>
+          <li class="mb-2"><a class="link-secondary text-decoration-none text-white" href="/notebook/">Notebook</a></li>
           <li class="mb-2"><a class="link-secondary text-decoration-none text-white" href="/contact/">Contact</a></li>
           <li class="mb-2"><a class="link-secondary text-decoration-none text-white" href="/wp-json/">API</a></li>
           <li class="mb-2"><a class="link-secondary text-decoration-none text-white" href="/feed/">RSS</a></li>
@@ -53,6 +53,7 @@
         <h6 class="text-uppercase small fw-bold mb-3 text-white">Products</h6>
         <ul class="list-unstyled mb-4">
           <li class="mb-2"><a class="link-secondary text-decoration-none text-white" href="/unipixel/">UniPixel WordPress Plugin</a></li>
+          <li class="mb-2"><a class="link-secondary text-decoration-none text-white" href="/unipixel-docs/">UniPixel Documentation</a></li>
           <li class="mb-2">
             <a class="link-secondary text-decoration-none text-white" href="https://wordpress.org/plugins/unipixel/" target="_blank" rel="noopener noreferrer">
               UniPixel on WordPress.org

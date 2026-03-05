@@ -108,11 +108,11 @@ get_header();
 
 					<!-- Button -->
 					<div class="ms-md-4 mt-3 mt-md-0">
-						<a class="btn btn-primary btn-transition"
+						<a class="btn btn-primary btn-transition btnUniPixelDownload"
 							href="https://wordpress.org/plugins/unipixel/"
 							target="_blank"
 							rel="noopener noreferrer">
-							Visit Plugin Page
+							Download Plugin (free)
 						</a>
 					</div>
 
@@ -376,7 +376,7 @@ get_header();
 
 
 	<!-- CTA -->
-	<div class="container bg-light">
+	<div class="container">
 		<div class="w-lg-75 mx-lg-auto mt-2 mb-8">
 			<div class="card card-sm overflow-hidden">
 				<div class="card-body d-flex align-items-center justify-content-center justify-content-md-between text-center text-md-start">
@@ -395,11 +395,44 @@ get_header();
 
 					<!-- Button -->
 					<div class="ms-md-4 mt-3 mt-md-0">
-						<a class="btn btn-primary btn-transition"
+						<a class="btn btn-primary btn-transition btnUniPixelDownload"
 							href="https://wordpress.org/plugins/unipixel/"
 							target="_blank"
 							rel="noopener noreferrer">
-							Visit Plugin Page
+							Download Plugin (free)
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End CTA -->
+
+	<!-- CTA -->
+	<div class="container">
+		<div class="w-lg-75 mx-lg-auto mt-2 mb-8">
+			<div class="card card-sm overflow-hidden">
+				<div class="card-body d-flex align-items-center justify-content-center justify-content-md-between text-center text-md-start">
+
+					<!-- Icon -->
+					<div class="svg-icon text-primary me-3">
+						<span class="svg-icon text-primary txt001Svg"></span>
+					</div>
+					<!-- End Icon -->
+
+					<!-- Text -->
+					<div class="flex-grow-1">
+						<h4 class="card-title mb-1">View the Docs for UniPixel</h4>
+						<p class="mb-0">We post articles to help support users</p>
+					</div>
+
+					<!-- Button -->
+					<div class="ms-md-4 mt-3 mt-md-0">
+						<a class="btn btn-primary btn-transition"
+							href="/unipixel-docs/"
+							rel="noopener noreferrer">
+							View the Support Docs
 						</a>
 					</div>
 
@@ -472,7 +505,42 @@ get_header();
     </p>
   </div>
 </div>
-<!-- End More About -->
+
+
+<!-- CTA -->
+	<div class="container">
+		<div class="w-lg-75 mx-lg-auto mt-2 mb-8">
+			<div class="card card-sm overflow-hidden">
+				<div class="card-body d-flex align-items-center justify-content-center justify-content-md-between text-center text-md-start">
+
+					<!-- Icon -->
+					<div class="svg-icon text-primary me-3">
+						<span class="svg-icon text-primary fil021Svg"></span>
+					</div>
+					<!-- End Icon -->
+
+					<!-- Text -->
+					<div class="flex-grow-1">
+						<h4 class="card-title mb-1">View the Docs for UniPixel</h4>
+						<p class="mb-0">We post articles to help support users</p>
+					</div>
+
+					<!-- Button -->
+					<div class="ms-md-4 mt-3 mt-md-0">
+						<a class="btn btn-primary btn-transition"
+							href="/unipixel-docs/"
+							target="_blank"
+							rel="noopener noreferrer">
+							View the Support Docs
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End CTA -->
+
 
 
 

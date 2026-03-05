@@ -52,6 +52,17 @@
 						WordPress Plugin
           </h1>
           <p class="lead text-white">More accurate measurement through server-side data delivery for richer website events and eCommerce data for Meta, TikTok and Google.</p>
+
+          <a class="btn btn-lg btn-dark btn-transition btnUniPixelDownload"
+							href="https://wordpress.org/plugins/unipixel/"
+							target="_blank"
+							rel="noopener noreferrer">
+							Download Plugin (free)
+						</a>
+            <a class="text-white"
+							href="/unipixel-docs/">
+							Support &amp; Help Docs &raquo;
+						</a>
         </div>
 
 

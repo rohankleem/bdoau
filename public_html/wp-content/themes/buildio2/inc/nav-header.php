@@ -61,7 +61,7 @@ if (!empty($has_hero)) {
 
 					<!-- Scrapbook -->
 					<li class="hs-has-sub-menu nav-item">
-						<a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Scrapbook</a>
+						<a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notebook</a>
 						<div class="hs-sub-menu dropdown-menu" aria-labelledby="blogMegaMenu" style="min-width: 14rem;">
 
 

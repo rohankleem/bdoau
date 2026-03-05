@@ -19,6 +19,7 @@ import cod006Svg from '../vendor/duotone-icons/cod/cod006.svg';
 import fil021Svg from '../vendor/duotone-icons/fil/fil021.svg';
 import gen002Svg from '../vendor/duotone-icons/gen/gen002.svg';
 import cod007Svg from '../vendor/duotone-icons/cod/cod007.svg';
+import txt001Svg from '../vendor/duotone-icons/txt/txt001.svg';
 
 // 2. Store your imported SVGs and their respective container IDs in an array.
 const icons = [
@@ -39,6 +40,7 @@ const icons = [
     { svg: fil021Svg, container: 'fil021Svg' }, // download
     { svg: gen002Svg, container: 'gen002Svg' }, // rocket
     { svg: cod007Svg, container: 'cod007Svg' }, // link
+    { svg: txt001Svg, container: 'txt001Svg' }, // link
     // ... add more icons as needed
 ];
 
