@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 
 <head>
 	<meta charset="utf-8">
@@ -35,7 +35,7 @@
 	<?php wp_head() ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
 
 	<?php include get_template_directory() . '/inc/nav-header.php'; ?>

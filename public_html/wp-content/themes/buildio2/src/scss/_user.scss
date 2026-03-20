@@ -48,8 +48,15 @@ p,td,div,body, ul, li {
 
 
 
+#header {
+	padding-top: 0.85rem;
+	padding-bottom: 0.85rem;
+}
+
+
 .header-soft {
-	background-color: #f5f4f5 !important;
+	background-color: transparent !important;
+	border-bottom: 1px solid #ddd;
 }
 
 
@@ -234,4 +241,106 @@ height:14rem;
 @keyframes statsMarqueeMove {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
+}
+
+
+/*------------------------------------
+  Offcanvas mobile menu
+------------------------------------*/
+
+#navbarOffcanvas {
+  --bs-offcanvas-width: 95%;
+  --bs-offcanvas-padding-x: 0.75rem;
+  --bs-offcanvas-padding-y: 0.75rem;
+  --bs-offcanvas-transition: transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out !important;
+
+  .offcanvas-body {
+    overflow-x: hidden;
+  }
+
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .dropdown-item .text-truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .dropdown-item .badge {
+    flex-shrink: 0;
+  }
+
+  .hs-sub-menu.dropdown-menu {
+    min-width: 0 !important;
+    max-width: 100%;
+  }
+}
+
+
+/*------------------------------------
+  Mega menu animation speed
+------------------------------------*/
+
+.hs-sub-menu.animated,
+.hs-mega-menu.animated {
+  animation-duration: 300ms;
+}
+
+
+/*------------------------------------
+  Blog single post
+------------------------------------*/
+
+.blog-single {
+  max-width: 60rem; /* ~960px — readable content width */
+  padding-left: 2.5rem;
+  padding-right: 2.4rem;
+}
+
+.blog-single p {
+  margin-bottom: 1.4rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.blog-single h1,
+.blog-single h2,
+.blog-single h3,
+.blog-single h4,
+.blog-single h5,
+.blog-single h6 {
+  color: $primary;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-single h1 {
+  margin-top: 0;
+}
+
+.blog-single .entry-meta {
+  font-size: 0.875rem;
+}
+
+.blog-single .entry-content img {
+  border-radius: 0.5rem;
+}
+
+.blog-single .wp-block-code code {
+  display: block;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  background-color: #f9f9f9;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.625rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
 }

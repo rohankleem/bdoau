@@ -89,12 +89,7 @@ if (!empty($root_post) && !is_wp_error($root_post)) {
 			the_content();
 			echo '</div>';
 		} else {
-			// If no editor content, show a sensible default
-			if (!empty($root_title)) {
-				echo '<p class="text-muted mb-4">';
-				echo 'Browse all documentation articles under <a href="' . esc_url($root_url) . '">' . esc_html($root_title) . '</a>.';
-				echo '</p>';
-			}
+			// No editor content — skip the self-referential link
 		}
 	endwhile;
 	?>

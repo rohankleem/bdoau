@@ -5,7 +5,11 @@
  */
 
 get_header();
+?>
 
+<main id="main-content" role="main">
+
+<?php
 /* Start the Loop */
 while ( have_posts() ) :
 	the_post();
@@ -18,5 +22,9 @@ while ( have_posts() ) :
 	}
 
 endwhile; // End of the loop.
+?>
 
+</main>
+
+<?php
 get_footer();

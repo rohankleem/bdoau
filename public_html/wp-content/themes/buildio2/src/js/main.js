@@ -1,6 +1,6 @@
 console.log("Main js code");
 
-
+import HSMegaMenu from '../vendor/hs-mega-menu/dist/hs-mega-menu';
 import Swiper from 'swiper/bundle';
 //import { Navigation, Pagination } from 'swiper/modules';
 
@@ -95,6 +95,20 @@ import Swiper from 'swiper/bundle';
 })();
 
 
+
+
+// INITIALIZATION OF MEGA MENU
+// =======================================================
+document.addEventListener('DOMContentLoaded', function () {
+  var megaMenu = document.querySelector('.js-mega-menu');
+  if (megaMenu) {
+    new HSMegaMenu(megaMenu, {
+      eventType: 'hover',
+      direction: 'horizontal',
+      hideTimeOut: 600
+    });
+  }
+});
 
 
 document.addEventListener('DOMContentLoaded', function () {

@@ -38,8 +38,8 @@ function do_enqueue()
 
 	global $stylesversion;
     global $scriptsversion;
-    $stylesversion = "1";
-    $scriptsversion = "1";
+    $stylesversion = "1.3";
+    $scriptsversion = "1.3";
 
 	wp_enqueue_style('styles-dist-main', get_stylesheet_directory_uri() . '/dist/main.bundle.css?ver=' . $stylesversion, array(), 1);
 	wp_enqueue_script('scripts-dist-main', get_stylesheet_directory_uri() . '/dist/main.bundle.js?ver=' . $scriptsversion, array(), 1, true);
