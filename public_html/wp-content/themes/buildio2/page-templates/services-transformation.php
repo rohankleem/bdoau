@@ -67,7 +67,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>Discovery &amp; diagnosis</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/transformation/discovery/">Discovery &amp; diagnosis</a></h4>
 						<p>A short, focused engagement to find what&rsquo;s actually holding the business back. Not a glossy audit deck &mdash; a ranked picture of constraints and opportunities, in plain language, with the highest-leverage starting point named. The cheapest, lowest-risk way to start.</p>
 					</div>
 				</div>
@@ -82,7 +82,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>Process streamlining</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/transformation/streamlining/">Process streamlining</a></h4>
 						<p>Cutting friction out of how the day-to-day actually runs. Mapping the current state honestly, then redesigning the parts where the cost of doing it the old way exceeds the cost of changing. Includes the hand-offs, the approvals, and the &ldquo;but we&rsquo;ve always done it this way&rdquo; conversations.</p>
 					</div>
 				</div>
@@ -99,7 +99,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>Business systems design</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/transformation/systems/">Business systems design</a></h4>
 						<p>The systems your business runs on &mdash; CRM, operations, finance, marketing &mdash; redesigned so they fit the work, not the other way around. Where data flows, where it stops, where roles change at handovers. Includes the integrations that take handovers off the team&rsquo;s plate (see Automations).</p>
 					</div>
 				</div>

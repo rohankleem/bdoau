@@ -67,7 +67,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>Search visibility audit</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/marketing-search-visibility/audit/">Search visibility audit</a></h4>
 						<p>A clear, ranked picture of where you are and aren&rsquo;t being found &mdash; across traditional search and AI engines &mdash; and which gap closes first for the most return.</p>
 					</div>
 				</div>
@@ -82,7 +82,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>SEO &mdash; traditional search</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/marketing-search-visibility/seo/">SEO &mdash; traditional search</a></h4>
 						<p>The right people finding you on Google with the right intent, and converting once they land. Keyword research focused on commercial intent, technical audit and remediation, on-page and local SEO &mdash; with honest reporting, no ranking guarantees.</p>
 					</div>
 				</div>
@@ -99,7 +99,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>GEO / AEO &mdash; AI search visibility</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/marketing-search-visibility/geo-aeo/">GEO / AEO &mdash; AI search visibility</a></h4>
 						<p>You get cited and surfaced by ChatGPT, Perplexity, Google AI Overviews and Bing Chat &mdash; not just Google&rsquo;s blue links. Schema, citation-ready content, entity signals, and continuous monitoring across the AI surfaces.</p>
 					</div>
 				</div>
@@ -114,7 +114,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>Content for humans and AI</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/marketing-search-visibility/content/">Content for humans and AI</a></h4>
 						<p>One asset, two audiences. Content that earns its read from a human and gets cited verbatim by an answer engine. Topic clusters, answer-first structure, evidence-backed claims &mdash; not rephrased web.</p>
 					</div>
 				</div>
@@ -131,7 +131,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>Digital PR in AI ecosystems</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/marketing-search-visibility/digital-pr/">Digital PR in AI ecosystems</a></h4>
 						<p>Show up in the places AI engines actually learn from &mdash; credible mentions, references, and presence across the surfaces (LinkedIn, podcasts, industry publications, community spaces) that get pulled into AI training and retrieval.</p>
 					</div>
 				</div>
@@ -146,7 +146,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>Search visibility measurement</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/marketing-search-visibility/measurement/">Search visibility measurement</a></h4>
 						<p>Honest reporting on what&rsquo;s working &mdash; AI citations, sentiment, salience, alongside traditional Google rankings and Search Console. No vanity metrics. Outcomes only.</p>
 					</div>
 				</div>

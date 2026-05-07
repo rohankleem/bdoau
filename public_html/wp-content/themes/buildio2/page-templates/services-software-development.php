@@ -7,9 +7,9 @@
 
 $has_hero = true;
 
-$service_caption = 'Software Development';
-$service_heading = 'Advanced software development, focused on ROI.';
-$service_lead    = 'Custom software, CRM systems, integrations and apps that move the business — not just ship code. We scope the actual problem before building, and the solution stays useful after we leave.';
+$service_caption = 'Software & Web';
+$service_heading = 'Software, websites, and the systems behind them &mdash; focused on ROI.';
+$service_lead    = 'Custom software, websites, CRM systems, integrations and apps that move the business &mdash; not just ship code. We scope the actual problem before building, and the solution stays useful after we leave.';
 $service_icon    = 'teh001Svg';
 
 get_header();
@@ -53,7 +53,7 @@ include get_template_directory() . '/inc/hero-service.php';
 	<div class="container content-space-b-1 pt-4">
 		<div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
 			<span class="text-cap">Core capabilities</span>
-			<h2>The work we do, in plain language</h2>
+			<h2>What we build, in plain language</h2>
 		</div>
 
 		<div class="row justify-content-lg-center">
@@ -67,7 +67,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>CRM systems</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/software-development/crm-systems/">CRM systems</a></h4>
 						<p>Zoho CRM is our deepest expertise. We design the data model around how your business actually runs, customise the interface so the team uses it, and integrate it into the rest of your stack so the data flows. We work with other CRMs too.</p>
 					</div>
 				</div>
@@ -82,7 +82,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>API integrations</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/software-development/api-integrations/">API integrations</a></h4>
 						<p>Connecting systems together so the business stops doing manual handovers between them. CRM &harr; accounting, e-commerce &harr; fulfilment, marketing &harr; CRM, custom REST and webhook integrations &mdash; whatever the systems are, we connect them.</p>
 					</div>
 				</div>
@@ -99,7 +99,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>Custom apps and software</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/software-development/custom-apps/">Custom apps and software</a></h4>
 						<p>When off-the-shelf doesn&rsquo;t fit and the cost of forcing a workaround is bigger than the cost of building the right thing. Internal tools, customer portals, data dashboards, business-specific software &mdash; built on the right stack for the job.</p>
 					</div>
 				</div>
@@ -114,8 +114,25 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>WordPress development</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/software-development/wordpress/">WordPress sites &amp; plugins</a></h4>
 						<p>Custom themes, custom plugins, real performance, real SEO foundations. Not a page builder dragged onto a stock theme. We&rsquo;ve built and shipped WordPress products at the plugin-directory level &mdash; we know what good looks like under the hood.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-100"></div>
+
+			<!-- Websites & web design -->
+			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7" id="web">
+				<div class="d-flex pe-md-5">
+					<div class="flex-shrink-0">
+						<div class="svg-icon text-primary">
+							<span class="svg-icon text-primary gen002Svg"></span>
+						</div>
+					</div>
+					<div class="flex-grow-1 ms-3">
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/software-development/web-design/">Websites &amp; web design</a></h4>
+						<p>Marketing websites, e-commerce, brochure sites, landing pages, redesigns of the site that&rsquo;s holding the brand back. Built so they actually convert &mdash; and so the business owns the result, not the platform.</p>
 					</div>
 				</div>
 			</div>

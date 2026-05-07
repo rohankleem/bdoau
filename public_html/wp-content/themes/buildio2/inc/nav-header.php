@@ -29,74 +29,67 @@ if (!empty($has_hero)) {
 				<div class="offcanvas-body">
 					<ul class="navbar-nav">
 
-						<!-- ===== SERVICES (mega menu, 4 columns) ===== -->
-						<li class="hs-has-sub-menu nav-item"
-							data-hs-mega-menu-item-options='{
-								"desktop": { "position": "left", "maxWidth": "60rem" }
-							}'>
-							<a id="servicesMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Services</a>
+						<!-- ===== SOFTWARE & WEB ===== -->
+						<li class="hs-has-sub-menu nav-item">
+							<a id="softwareMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Software &amp; Web</a>
 
-							<div class="hs-mega-menu hs-sub-menu dropdown-menu" aria-labelledby="servicesMegaMenu" style="min-width: 60rem;">
-								<div class="row">
-
-									<!-- Software Development -->
-									<div class="col-md-3">
-										<span class="dropdown-header">Software Development</span>
-										<a class="dropdown-item" href="/software-development/">All software services</a>
-										<a class="dropdown-item" href="/software-development/#crm">CRM systems (Zoho)</a>
-										<a class="dropdown-item" href="/software-development/#api">API integrations</a>
-										<a class="dropdown-item" href="/software-development/#custom">Custom apps &amp; software</a>
-										<a class="dropdown-item" href="/software-development/#wordpress">WordPress development</a>
-									</div>
-
-									<!-- Marketing & Search Visibility -->
-									<div class="col-md-3">
-										<span class="dropdown-header">Marketing &amp; Search</span>
-										<a class="dropdown-item" href="/marketing-search-visibility/">All marketing services</a>
-										<a class="dropdown-item" href="/marketing-search-visibility/#audit">Search visibility audit</a>
-										<a class="dropdown-item" href="/marketing-search-visibility/#seo">SEO &mdash; traditional search</a>
-										<a class="dropdown-item" href="/marketing-search-visibility/#geo">GEO / AEO &mdash; AI search</a>
-										<a class="dropdown-item" href="/marketing-search-visibility/#content">Content for AI &amp; humans</a>
-										<a class="dropdown-item" href="/marketing-search-visibility/#digital-pr">Digital PR in AI ecosystems</a>
-										<a class="dropdown-item" href="/marketing-search-visibility/#measurement">Visibility measurement</a>
-									</div>
-
-									<!-- Transformation & Streamlining -->
-									<div class="col-md-3">
-										<span class="dropdown-header">Transformation</span>
-										<a class="dropdown-item" href="/transformation/">All transformation services</a>
-										<a class="dropdown-item" href="/transformation/#discovery">Discovery &amp; diagnosis</a>
-										<a class="dropdown-item" href="/transformation/#streamlining">Process streamlining</a>
-										<a class="dropdown-item" href="/transformation/#systems">Business systems design</a>
-									</div>
-
-									<!-- Automations -->
-									<div class="col-md-3">
-										<span class="dropdown-header">Automations</span>
-										<a class="dropdown-item" href="/automations/">All automations</a>
-										<a class="dropdown-item" href="/automations/#workflow">Workflow automation</a>
-										<a class="dropdown-item" href="/automations/#integrations">System integrations</a>
-										<a class="dropdown-item" href="/automations/#ai-agents">AI &amp; agent automation</a>
-									</div>
-
-								</div>
+							<div class="hs-sub-menu dropdown-menu" aria-labelledby="softwareMenu" style="min-width: 18rem;">
+								<a class="dropdown-item" href="/software-development/">All Software &amp; Web services</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="/software-development/crm-systems/">CRM systems (Zoho)</a>
+								<a class="dropdown-item" href="/software-development/api-integrations/">API integrations</a>
+								<a class="dropdown-item" href="/software-development/custom-apps/">Custom apps &amp; software</a>
+								<a class="dropdown-item" href="/software-development/wordpress/">WordPress sites &amp; plugins</a>
+								<a class="dropdown-item" href="/software-development/web-design/">Websites &amp; web design</a>
 							</div>
 						</li>
 
-						<!-- ===== PRODUCTS ===== -->
+						<!-- ===== MARKETING & SEARCH ===== -->
 						<li class="hs-has-sub-menu nav-item">
-							<a id="productsMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Products</a>
+							<a id="marketingMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Marketing &amp; Search</a>
 
-							<div class="hs-sub-menu dropdown-menu" aria-labelledby="productsMegaMenu" style="min-width: 16rem;">
-								<a class="dropdown-item" href="/unipixel/">UniPixel WordPress Plugin</a>
-								<a class="dropdown-item" href="/unipixel-docs/">UniPixel Documentation</a>
+							<div class="hs-sub-menu dropdown-menu" aria-labelledby="marketingMenu" style="min-width: 18rem;">
+								<a class="dropdown-item" href="/marketing-search-visibility/">All Marketing &amp; Search services</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="/marketing-search-visibility/audit/">Search visibility audit</a>
+								<a class="dropdown-item" href="/marketing-search-visibility/seo/">SEO &mdash; traditional search</a>
+								<a class="dropdown-item" href="/marketing-search-visibility/geo-aeo/">GEO / AEO &mdash; AI search</a>
+								<a class="dropdown-item" href="/marketing-search-visibility/content/">Content for AI &amp; humans</a>
+								<a class="dropdown-item" href="/marketing-search-visibility/digital-pr/">Digital PR in AI ecosystems</a>
+								<a class="dropdown-item" href="/marketing-search-visibility/measurement/">Visibility measurement</a>
+							</div>
+						</li>
+
+						<!-- ===== TRANSFORMATION ===== -->
+						<li class="hs-has-sub-menu nav-item">
+							<a id="transformationMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Transformation</a>
+
+							<div class="hs-sub-menu dropdown-menu" aria-labelledby="transformationMenu" style="min-width: 18rem;">
+								<a class="dropdown-item" href="/transformation/">All Transformation services</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="/transformation/discovery/">Discovery &amp; diagnosis</a>
+								<a class="dropdown-item" href="/transformation/streamlining/">Process streamlining</a>
+								<a class="dropdown-item" href="/transformation/systems/">Business systems design</a>
+							</div>
+						</li>
+
+						<!-- ===== AUTOMATIONS ===== -->
+						<li class="hs-has-sub-menu nav-item">
+							<a id="automationsMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Automations</a>
+
+							<div class="hs-sub-menu dropdown-menu" aria-labelledby="automationsMenu" style="min-width: 18rem;">
+								<a class="dropdown-item" href="/automations/">All Automation services</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="/automations/workflow/">Workflow automation</a>
+								<a class="dropdown-item" href="/automations/integrations/">System integrations</a>
+								<a class="dropdown-item" href="/automations/ai-agents/">AI &amp; agent automation</a>
 							</div>
 						</li>
 
 						<!-- ===== NOTEBOOK (blog, dynamic) ===== -->
 						<li class="hs-has-sub-menu nav-item">
-							<a id="notebookMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Notebook</a>
-							<div class="hs-sub-menu dropdown-menu" aria-labelledby="notebookMegaMenu" style="min-width: 18rem;">
+							<a id="notebookMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Notebook</a>
+							<div class="hs-sub-menu dropdown-menu" aria-labelledby="notebookMenu" style="min-width: 18rem;">
 
 								<?php
 								$post_query = new WP_Query(array('post_type' => 'post'));

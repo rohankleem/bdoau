@@ -67,7 +67,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>Workflow automation</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/automations/workflow/">Workflow automation</a></h4>
 						<p>The repeated, rules-based work that&rsquo;s currently sitting in someone&rsquo;s inbox. Lead routing, quote generation, onboarding sequences, status updates, internal notifications, document generation. Implemented in Zapier, Make, n8n, or custom &mdash; whichever fits the job and the team that has to live with it.</p>
 					</div>
 				</div>
@@ -82,7 +82,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>System integrations</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/automations/integrations/">System integrations</a></h4>
 						<p>Where the manual handovers between systems are eating time. CRM &harr; accounting, e-commerce &harr; fulfilment, marketing &harr; CRM, custom REST and webhook integrations &mdash; including the messy edge cases other firms quote and then ghost on. We work with the systems you already use; we don&rsquo;t replace them unless that&rsquo;s the right move.</p>
 					</div>
 				</div>
@@ -99,7 +99,7 @@ include get_template_directory() . '/inc/hero-service.php';
 						</div>
 					</div>
 					<div class="flex-grow-1 ms-3">
-						<h4>AI &amp; agent automation</h4>
+						<h4><a class="text-dark text-decoration-none stretched-link" href="/automations/ai-agents/">AI &amp; agent automation</a></h4>
 						<p>AI applied where it actually earns its keep &mdash; classification, summarisation, drafting, structured data extraction, customer triage, internal Q&amp;A on your own data. Including the ongoing work of running it: monitoring outputs, maintaining prompts, watching for drift. Someone has to manage the robots; we do that part too.</p>
 					</div>
 				</div>
