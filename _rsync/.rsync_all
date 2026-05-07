@@ -16,6 +16,7 @@
 #- public_html/wp-content/plugins/formidable/css/formidableforms.css
 + public_html/wp-content/plugins/unipixelmetrics/***
 + public_html/wp-content/plugins/unipixelemailapi/***
++ public_html/wp-content/plugins/buildio-seo/***
 - public_html/wp-content/plugins/**
 
 + public_html/***

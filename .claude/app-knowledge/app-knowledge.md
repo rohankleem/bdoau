@@ -170,7 +170,8 @@ To get the live list: `./wp plugin list --status=active`. Don't hardcode it here
 
 Plugins of note that affect the stack (not just content):
 - **iThemes Security (now Solid Security)** — owns parts of `.htaccess` and `wp-config.php`. See above.
-- **Yoast SEO** — sitemap at `/sitemap_index.xml`. Configuration captured in `buildio2-theme.md`'s SEO section.
+- **Yoast SEO** (`wordpress-seo`) — present, but its frontend output is suppressed by `buildio-seo` (see below). Yoast is kept active as the *editor* surface — when you set a title, meta description, OG image, canonical, or noindex in the Yoast post sidebar, those values are written to `wp_postmeta` and `buildio-seo` reads them from there. Sitemap at `/sitemap_index.xml` gets redirected by `buildio-seo` to the core `/wp-sitemap.xml`.
+- **Buildio SEO** (`buildio-seo`) — custom single-file SEO + GEO layer at [`public_html/wp-content/plugins/buildio-seo/buildio-seo.php`](../../public_html/wp-content/plugins/buildio-seo/buildio-seo.php). Replaces Yoast / Rank Math frontend output. Outputs `<title>`, meta description, robots, canonical, Open Graph, Twitter Card, plus JSON-LD schema (ProfessionalService, WebSite, BlogPosting, Article) for AI-engine citation. **All config via PHP constants at the top of the file** — no UI. Ported from UniPixelHQ SEO 2026-05-07; brain entry at `marketing-knowledge/content-offering-positioning.json` → `offering.owned_assets[asset_buildio_seo_plugin]`.
 - **better-search-replace** — currently untracked in git. Used for serialised find/replace at the DB level (an alternative to `wp db search-replace`). Decide whether to commit when the plugin set is next reviewed.
 
 ## Data Flow & Integrations

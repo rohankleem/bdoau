@@ -35,8 +35,14 @@
       "angles": "angle_*",
       "competitors": "comp_*",
       "messaging_points": "msg_*",
-      "concepts": "concept_*",
+      "concepts (in concepts node)": "concept_*",
+      "modern_concepts": "concept_modern_*",
       "pages": "page_*",
+      "services": "svc_*",
+      "differentiators": "diff_*",
+      "expertise_surfaces": "surf_*",
+      "customer_pain_points": "pain_*",
+      "customer_concerns": "concern_*",
       "decisions": "dec_YYYY-MM-DD_*",
       "open_questions": "q_*"
     },
@@ -51,7 +57,12 @@
     "local_url": "https://bdoau.local.site",
     "production_url": "https://buildio.au",
     "category": "Digital transformation consultancy",
-    "geography": "Australia — flagship .au brand",
+    "geography": {
+      "primary_market": "Ballarat (regional Victoria) — Buildio wants to be a strong local candidate here",
+      "broader_reach": "Victoria, Australia",
+      "national": "Australia — .au is the flagship Australian brand",
+      "captured_2026-05-07": "User added 'I also want to be a good candidate for the local Ballarat market.' This sharpens geography from generic VIC/AU to a specific primary market with broader reach beyond it."
+    },
     "family_of_sites": [
       { "site": "buildio.au", "role": "Flagship consultancy brand — customer-facing" },
       { "site": "buildio.dev", "role": "Supporting brand presentation + UniPixel offload backend" },
@@ -62,11 +73,152 @@
 
   "offering": {
     "_note": "What Buildio.au sells. Services, engagement models, typical deliverables. Source of truth for any 'what we do' messaging.",
-    "core_offering": null,
-    "services": [],
+    "core_offering": {
+      "verbatim_2026-05-07_a": "Buildio is my software, business transformation and streamlining services website.",
+      "parsed_categories": ["software", "business transformation", "streamlining services"]
+    },
+    "aim": {
+      "verbatim_2026-05-07": "The aim is to provide sensational support advice, skill and expertise to help business growth, identify areas for growth, streamline, do great marketing, automations, achieving their goals through great digital systems.",
+      "themes_extracted": [
+        "Sensational support, advice, skill, expertise (tone marker — high-care, expert)",
+        "Help business growth",
+        "Identify areas for growth (advisory / diagnostic)",
+        "Streamline (process optimisation)",
+        "Great marketing (marketing services)",
+        "Automations (workflow / process automation)",
+        "Goals achieved through great digital systems (the throughline — digital systems are the medium)"
+      ],
+      "implicit_throughline": "Buildio helps businesses grow and run better via great digital systems. The work spans diagnostic (where to grow), implementation (marketing, automations, streamlining), and the underlying systems."
+    },
+    "services": [
+      {
+        "id": "svc_software",
+        "name": "Software / digital systems",
+        "description_raw": "Advanced software development solutions focused on ROI (verbatim 2026-05-07). Custom software development as a service for clients — outcome-led, not output-led. Possibly also includes Rohan's own products (UniPixel) under the same umbrella, but the primary service framing is bespoke ROI-driven development. See q_offering_software_meaning.",
+        "verbatim_pieces": [
+          { "date": "2026-05-07", "phrase": "Advanced software development solutions focused on ROI" }
+        ],
+        "status": "captured_partial"
+      },
+      {
+        "id": "svc_business_transformation",
+        "name": "Business transformation",
+        "description_raw": "Includes diagnostic work — identifying areas for growth — and the broader 'navigate digital transformation for optimisation' positioning from sites-overview.md. From aim statement 2026-05-07.",
+        "status": "captured_partial"
+      },
+      {
+        "id": "svc_streamlining",
+        "name": "Streamlining services",
+        "description_raw": "Process optimisation. Specific functional areas / typical engagement TBD.",
+        "status": "captured_pending_detail"
+      },
+      {
+        "id": "svc_marketing",
+        "name": "Marketing",
+        "description_raw": "Named in aim statement 2026-05-07 ('do great marketing'). Refined 2026-05-07 with sub-services around search visibility (SEO + GEO/AEO), content, and measurement. Inspired by the framing in Arcadian Digital's blog and service pages — see comp_arcadian_digital.",
+        "status": "captured_with_sub_services_2026-05-07",
+        "sub_services": [
+          {
+            "id": "subsvc_search_visibility_audit",
+            "name": "Search Visibility Audit",
+            "outcome": "A clear, ranked picture of where the business is and isn't being found — across Google, AI Overviews, ChatGPT, Perplexity, Bing Chat — and which gap closes first for the most return.",
+            "shape": "Diagnostic engagement before any optimisation work. Maps directly to diff_correct_scoping — diagnosis before prescription.",
+            "tags": ["seo", "geo", "aeo", "diagnostic", "core-capability"],
+            "status": "candidate"
+          },
+          {
+            "id": "subsvc_seo_traditional",
+            "name": "SEO (traditional)",
+            "outcome": "Right people finding the business through Google search, with the right intent, and converting once they land.",
+            "shape": "Keyword research focused on high-intent terms, technical SEO audit and remediation, on-page optimisation, local SEO (Google My Business, NAP consistency, regional Victoria geo-targeting), performance tracking with honest reporting (no ranking guarantees — outcome reporting only).",
+            "tags": ["seo", "marketing", "local-seo", "core-capability"],
+            "status": "candidate"
+          },
+          {
+            "id": "subsvc_geo_aeo",
+            "name": "GEO / AEO — AI search visibility",
+            "outcome": "The business gets cited and surfaced by ChatGPT, Perplexity, Google AI Overviews, Bing Chat — not just blue-link Google. Brand becomes part of the answer, not just an option in the list.",
+            "shape": "Schema implementation (FAQPage, HowTo, Speakable, QAPage, organization, author, product), answer-first content restructure, citation-ready content design, cross-platform monitoring of brand mentions in AI environments, entity signal alignment (consistent naming across website, LinkedIn, directories, knowledge graph). Continuous refresh — AI citations decay if not maintained.",
+            "tags": ["geo", "aeo", "ai-search", "schema", "core-capability"],
+            "status": "candidate"
+          },
+          {
+            "id": "subsvc_content_for_humans_and_ai",
+            "name": "Content for humans and AI",
+            "outcome": "Content that earns its read from a human AND gets cited by an answer engine. One asset, two audiences — neither shortchanged.",
+            "shape": "Topic clustering for topical authority, connected content series rather than isolated posts, 50-word answer summaries that lead each major section, question-based headings, evidence-backed insights, first-party authoritative content rather than rephrased web. Content is shaped so it can be cited verbatim by AI without losing the human read.",
+            "tags": ["content", "geo", "aeo", "marketing"],
+            "status": "candidate"
+          },
+          {
+            "id": "subsvc_digital_pr_in_ai_ecosystems",
+            "name": "Digital PR in AI ecosystems",
+            "outcome": "The business shows up in the places AI engines learn from — credible mentions, citations, and presence across the surfaces (LinkedIn, YouTube, podcasts, community spaces, industry publications) that AI training and retrieval pull from.",
+            "shape": "Outreach + presence-building strategy, brand-mention tracking, expansion across video/audio/long-form/social — measured by how often and how positively the brand is referenced in AI answers, not just by traditional backlinks.",
+            "tags": ["digital-pr", "geo", "aeo", "marketing"],
+            "status": "candidate"
+          },
+          {
+            "id": "subsvc_search_visibility_measurement",
+            "name": "Search visibility measurement",
+            "outcome": "Honest reporting on what's working — including the new metrics (AI citations, sentiment, salience) alongside traditional rankings and Search Console data. No vanity metrics; outcomes only.",
+            "shape": "Continuous tracking of brand mentions in ChatGPT/Perplexity/AI Overviews, alignment with Search Console + GA4, sentiment vs salience monitoring (how brand is talked about, not just how often), translated into a quarterly read of 'is this working' against business goals.",
+            "tags": ["measurement", "geo", "seo", "marketing"],
+            "status": "candidate"
+          }
+        ],
+        "framing_notes": [
+          "Buildio's marketing isn't standalone — it integrates with svc_software (the systems it surfaces), svc_business_transformation (the goals it serves), svc_streamlining (the operational reality behind it), and svc_automations (the workflows that scale it). Marketing service offered in isolation is weaker than marketing tied to the rest of Buildio.",
+          "Specifically: Buildio competes differently from a pure-play SEO/GEO agency (e.g. Arcadian Digital — Melbourne-based, narrower scope). Arcadian is a stronger choice if marketing is the *only* thing the business needs help with. Buildio is the choice when the business needs the marketing AND the systems behind it to actually grow."
+        ]
+      },
+      {
+        "id": "svc_automations",
+        "name": "Automations",
+        "description_raw": "Named in aim statement 2026-05-07. Scope TBD — marketing automation (Zapier/Make/custom workflows), business process automation, AI/agent-based automation, or specific systems integration?",
+        "status": "captured_pending_detail"
+      }
+    ],
     "engagement_models": [],
     "typical_deliverables": [],
-    "what_we_dont_do": []
+    "what_we_dont_do": [],
+    "owned_assets": [
+      {
+        "id": "asset_buildio_seo_plugin",
+        "type": "wordpress_plugin",
+        "name": "Buildio SEO",
+        "path": "public_html/wp-content/plugins/buildio-seo/buildio-seo.php",
+        "purpose": "Custom SEO + GEO layer. Supports good schema structures so AI engines (ChatGPT, Perplexity, Google AI Overviews, Bing Chat) can cite Buildio content correctly. Also handles classic SEO (title, meta description, canonical, OG, Twitter Card, robots, sitemap redirect).",
+        "ported_from": {
+          "source": "C:/xampp/htdocs/uphq/public_html/wp-content/plugins/unipixelhq-seo/unipixelhq-seo.php",
+          "date": "2026-05-07",
+          "key_changes": [
+            "UPHQ_ constants → BUILDIO_ constants",
+            "uphq_ functions → buildio_ functions",
+            "Brand values updated for Buildio",
+            "Removed SoftwareApplication schema (Buildio doesn't sell a plugin)",
+            "Organization schema → ProfessionalService (more semantically correct for a consultancy + better local SEO)",
+            "Added address (Ballarat, Victoria, Australia) and areaServed for local SEO",
+            "BUILDIO_DOCS_URL_SEGMENT defaults to /scrapbook/ (instead of /unipixel-docs/)",
+            "Locale default en_AU instead of en_US",
+            "Social URLs (LinkedIn, Facebook, Twitter) all empty by default — set when accounts exist"
+          ]
+        },
+        "status": "active_local_and_production_2026-05-07",
+        "activated_local": "2026-05-07 — verified clean head output, ProfessionalService + WebSite schema rendering, no duplicate title/canonical, Yoast frontend suppressed",
+        "activated_production": "2026-05-07 — deployed via rsync, activated remotely via wp-cli on buildiod@vda4300.is.cc. Verified at https://buildio.au — ProfessionalService schema with Ballarat/Victoria/Australia signals live, BlogPosting schema rendering on a sample post (tailwind-vs-bootstrap), Yoast frontend suppressed",
+        "rollback_snapshot": "Pre-activation active_plugins JSON saved on production at ~/backups/buildio-active-plugins-pre-buildio-seo-2026-05-07-2328.json. Rollback: `ssh buildiod@vda4300.is.cc 'cd domains/buildio.au/public_html && wp plugin deactivate buildio-seo'`",
+        "supports_services": ["subsvc_seo_traditional", "subsvc_geo_aeo", "subsvc_search_visibility_audit"],
+        "placeholders_to_resolve": [
+          "BUILDIO_BRAND_LOGO — confirm logo URL once uploaded to media library",
+          "BUILDIO_BRAND_OG_IMAGE — design and upload a 1200x630 OG image",
+          "BUILDIO_LINKEDIN_URL — set when LinkedIn presence exists",
+          "BUILDIO_FACEBOOK_URL — set when FB presence exists",
+          "BUILDIO_TWITTER_HANDLE — set when X account exists"
+        ],
+        "note": "Same single-file pattern as the UPHQ original. No UI, no settings — config via PHP constants at the top of the file. Reads Yoast postmeta so any title/description/OG/canonical/noindex set in Yoast UI continues to work even if Yoast is deactivated. Acts as a defensive replacement: when activated, it suppresses Yoast/Rank Math frontend output entirely."
+      }
+    ]
   },
 
   "positioning": {
@@ -75,15 +227,530 @@
     "wedge": null,
     "sales_pillars": [],
     "industry_problem": null,
-    "differentiators": [],
+    "differentiators": [
+      {
+        "id": "diff_advanced_software_roi",
+        "verbatim_2026-05-07": "Advanced software development solutions focused on ROI",
+        "status": "candidate"
+      },
+      {
+        "id": "diff_correct_scoping",
+        "verbatim_2026-05-07": "Correct scoping",
+        "status": "candidate",
+        "note": "Implies the alternative (incorrect scoping by competitors / typical agencies) is a real pain. Worth probing — what does 'incorrect scoping' look like in the market?"
+      },
+      {
+        "id": "diff_business_understanding",
+        "verbatim_2026-05-07": "Understanding your business",
+        "status": "candidate",
+        "note": "Cousin of diff_business_nous and diff_commercially_focused. Cluster theme emerging: Buildio gets the business, not just the tech."
+      },
+      {
+        "id": "diff_trust",
+        "verbatim_2026-05-07": "Trust!",
+        "status": "candidate",
+        "note": "Exclamation in the original — emphasised. Standalone value, not just a feature."
+      },
+      {
+        "id": "diff_reliable_expertise_advice",
+        "verbatim_2026-05-07": "Reliable expertise advice",
+        "status": "candidate"
+      },
+      {
+        "id": "diff_local_vic_au",
+        "verbatim_2026-05-07": "Victoria, Australia local",
+        "status": "candidate",
+        "note": "Geographic differentiator. Local presence vs offshore / interstate / remote-only competitors. Sharpened 2026-05-07 to a primary Ballarat focus — see diff_ballarat_local."
+      },
+      {
+        "id": "diff_ballarat_local",
+        "verbatim_2026-05-07": "I also want to be a good candidate for the local Ballarat market.",
+        "status": "candidate",
+        "note": "Primary geographic market. Ballarat is regional Victoria — buyers here often prefer a local partner over a Melbourne or interstate firm. Local presence + understanding of regional business reality is a real advantage. Cousin to diff_local_vic_au but more specific. Likely warrants surfacing in content (e.g. 'based in Ballarat, working across regional Victoria')."
+      },
+      {
+        "id": "diff_experience",
+        "verbatim_2026-05-07": "Experience",
+        "status": "candidate",
+        "note": "Years/depth of experience TBD — captured as raw."
+      },
+      {
+        "id": "diff_tested",
+        "verbatim_2026-05-07": "Tested",
+        "status": "candidate",
+        "note": "Battle-tested approaches / proven solutions. Not theoretical."
+      },
+      {
+        "id": "diff_commercially_focused",
+        "verbatim_2026-05-07": "Commercially focused",
+        "status": "candidate"
+      },
+      {
+        "id": "diff_business_nous",
+        "verbatim_2026-05-07_typed_as": "with business nause",
+        "interpreted": "with business nous",
+        "status": "candidate",
+        "note": "'Nous' = practical intelligence / business sense. Cluster with diff_business_understanding and diff_commercially_focused."
+      }
+    ],
     "honest_gaps": []
   },
 
-  "audiences": [],
+  "modern_concepts": {
+    "_note": "The current discourse Buildio fits inside. Topics, buzzwords, and themes prospects are already being exposed to from elsewhere — Buildio plugs into them rather than introducing the concept cold. Each item has the concept + Buildio's relationship to it (own-it / fit-with / push-against). Tags connect to expertise_surfaces, audiences, pain_points so we can pull all 'AI'-tagged or all 'roi'-tagged items across the brain.",
+    "tag_glossary": {
+      "own": "Buildio wants to be a recognisable name in this concept area",
+      "fit-with": "Buildio addresses this without claiming it as its primary identity",
+      "push-against": "Buildio actively positions against the concept (e.g. against vapour, against off-the-shelf SaaS for everything)"
+    },
+    "items": [
+      {
+        "id": "concept_modern_digital_transformation",
+        "concept": "Digital transformation",
+        "stance": "fit-with",
+        "tags": ["transformation", "core-vocabulary"],
+        "rationale": "Buildio.au is a digital transformation consultancy per sites-overview.md. The phrase is in the brand's own framing."
+      },
+      {
+        "id": "concept_modern_automation",
+        "concept": "Automation",
+        "stance": "own",
+        "tags": ["automation", "core-vocabulary"],
+        "rationale": "Named in offering aim 2026-05-07 ('do great marketing, automations')."
+      },
+      {
+        "id": "concept_modern_roi",
+        "concept": "ROI / commercial outcomes",
+        "stance": "own",
+        "tags": ["roi", "commercial", "outcome"],
+        "rationale": "Named in svc_software differentiator 2026-05-07 ('Advanced software development solutions focused on ROI')."
+      },
+      {
+        "id": "concept_modern_business_systems",
+        "concept": "Business systems / digital systems",
+        "stance": "own",
+        "tags": ["systems", "operations"],
+        "rationale": "The throughline of the aim statement — 'achieving their goals through great digital systems'."
+      },
+      {
+        "id": "concept_modern_geo",
+        "concept": "GEO — Generative Engine Optimisation",
+        "stance": "own",
+        "tags": ["seo", "geo", "ai-search"],
+        "rationale": "The discipline of being cited by AI generators (ChatGPT, Perplexity, Google AI Overviews, Bing Chat). New, growing, and underserved by traditional SEO firms. Buildio offers it as a service — see subsvc_geo_aeo."
+      },
+      {
+        "id": "concept_modern_aeo",
+        "concept": "AEO — Answer Engine Optimisation",
+        "stance": "own",
+        "tags": ["seo", "aeo", "ai-search"],
+        "rationale": "Closely related to GEO but specifically about being the *answer* not just a result. Schema-driven, content-shape-driven."
+      },
+      {
+        "id": "concept_modern_ai_overviews",
+        "concept": "AI Overviews",
+        "stance": "fit-with",
+        "tags": ["seo", "geo", "google", "ai-search"],
+        "rationale": "Google's AI-summarised answer at the top of search. Specific surface to optimise for — captured separately from generic 'AI search' because it has its own behaviours."
+      },
+      {
+        "id": "concept_search_optimisation_everywhere",
+        "concept": "Search Optimisation Everywhere",
+        "stance": "fit-with",
+        "tags": ["seo", "geo", "aeo"],
+        "rationale": "Umbrella concept (term coined by Arcadian Digital) covering the integrated approach across traditional SEO + AI engines + social/community surfaces. Useful framing — not Buildio-original. Use sparingly and credit the source if quoting; rephrase for Buildio voice when applying."
+      },
+      {
+        "id": "concept_modern_eeat",
+        "concept": "E-E-A-T — Experience, Expertise, Authoritativeness, Trustworthiness",
+        "stance": "fit-with",
+        "tags": ["seo", "geo", "google"],
+        "rationale": "Google's quality framework. Determines how content is weighted by both traditional ranking and AI citation. Buildio's diff_trust + diff_experience map to this directly — the Trust + Experience differentiators are E-E-A-T signals when surfaced in content."
+      }
+    ],
+    "candidates_to_consider": [
+      "AI / agentic systems",
+      "Generative AI for business",
+      "Low-code / no-code",
+      "Headless / composable architecture",
+      "Operational excellence",
+      "Process intelligence / process mining",
+      "Business intelligence / data-led decisions",
+      "Cost of doing business (current macro pressure)",
+      "Workflow orchestration",
+      "API economy / integration-first",
+      "Customer experience (CX) digital"
+    ]
+  },
 
-  "angles": [],
+  "customer_pain_points": {
+    "_note": "Pains the prospect already feels, paired with the rainbow (the named relief / outcome) Buildio resolves into. Pain on the left, rainbow on the right. Marketing copy uses pain in the hook/headline and rainbow in the body/CTA. Each pain cross-references audiences, modern_concepts, and (when known) the Buildio service that resolves it. Status field tracks whether the pain is captured from real client conversations (proven), inferred from market signal (candidate), or scaffolded as a slot to fill (placeholder).",
+    "schema_per_item": {
+      "id": "pain_*",
+      "pain": "How the prospect would describe the problem in their own words",
+      "rainbow": "The resolution / named outcome they get on the other side — what 'better' looks like",
+      "audience_refs": "[aud_*]",
+      "concept_refs": "[concept_modern_*]",
+      "service_refs": "[svc_*]",
+      "evidence": "Where this pain has been observed — sales conversation, forum post, support ticket, hypothesis",
+      "status": "proven | candidate | placeholder"
+    },
+    "items": [
+      {
+        "id": "pain_ai_made_things_worse",
+        "pain": "We tried AI / a digital transformation and it made things worse. Or we spent money on it and nothing landed.",
+        "rainbow": "Things actually run better, day-to-day. The system serves the business, not the other way around.",
+        "audience_refs": [],
+        "concept_refs": ["concept_modern_automation", "concept_modern_digital_transformation"],
+        "service_refs": ["svc_streamlining", "svc_business_transformation"],
+        "evidence": "Inferred from Andrew Dunn's LinkedIn post resonance — the 'AI on broken processes breaks them faster' framing implies this pain is widely felt.",
+        "status": "candidate"
+      },
+      {
+        "id": "pain_org_didnt_keep_up",
+        "pain": "Our people work differently now (with AI tools, with new platforms) but our org structure, processes, and roles haven't caught up. Productivity is supposedly up but the friction is up too.",
+        "rainbow": "The structure matches how the work actually happens — fewer constraints, less fragmentation, end-to-end ownership of outcomes.",
+        "audience_refs": [],
+        "concept_refs": ["concept_modern_business_systems"],
+        "service_refs": ["svc_business_transformation", "svc_streamlining"],
+        "evidence": "From David Chinn (Lexer) post — flagged by user 2026-05-07 as resonating.",
+        "status": "candidate"
+      },
+      {
+        "id": "pain_dont_know_where_to_start",
+        "pain": "I know we need to do something — automation, better systems, transformation — but I don't know where to start, what to scope, what's reasonable to ask for, or whether the partner I'm talking to actually understands my business.",
+        "rainbow": "A clear next step. Someone who diagnoses before they prescribe, scopes the actual problem, and starts where the value is — not where their template says to start.",
+        "audience_refs": [],
+        "concept_refs": [],
+        "service_refs": ["svc_business_transformation", "svc_streamlining"],
+        "concern_refs": ["concern_getting_started", "concern_finding_a_partner"],
+        "evidence": "Direct from user concerns 2026-05-07 + Andrew Dunn's diagnosis-not-prescription framing.",
+        "status": "candidate"
+      },
+      {
+        "id": "pain_placeholder_more_to_capture",
+        "pain": "[TBD — additional pains to capture as user feeds them]",
+        "rainbow": "[TBD]",
+        "audience_refs": [],
+        "concept_refs": [],
+        "service_refs": [],
+        "evidence": null,
+        "status": "placeholder"
+      }
+    ]
+  },
 
-  "competitors": [],
+  "customer_concerns": {
+    "_note": "The buyer's psychological objections — what's holding them back from engaging. Distinct from pain_points: pain is what's already wrong; concern is what they fear about acting on it. Each concern has Buildio's intended response (placeholder until the response is sharpened). Trust runs underneath all of these — captured as both a standalone concern and an underlying texture noted on each item.",
+    "underlying_texture": "All concerns below sit on a substrate of 'can I trust this partner with my money, my business, and my outcome?' The trust differentiator (diff_trust) is the unifying response.",
+    "items": [
+      {
+        "id": "concern_finding_a_partner",
+        "concern": "How do I find the right partner — someone competent, reliable, and a fit for our business?",
+        "verbatim_2026-05-07": "key concerns with finding a partner",
+        "category": "selection",
+        "buildio_response": "[TBD — likely combines diff_local_vic_au + diff_experience + diff_tested + diff_business_understanding. Sharpen later.]",
+        "status": "captured"
+      },
+      {
+        "id": "concern_spending_money",
+        "concern": "How do I justify the spend — what's the ROI, will the budget hold, is this worth it?",
+        "verbatim_2026-05-07": "spending money",
+        "category": "investment",
+        "buildio_response": "[TBD — diff_advanced_software_roi + diff_correct_scoping + diff_commercially_focused. The 'correct scoping' point is especially load-bearing here: incorrect scoping is what blows budgets. Sharpen later.]",
+        "status": "captured"
+      },
+      {
+        "id": "concern_how_to_use_it",
+        "concern": "How do I actually use what we get — will my team adopt it, will it sit unused?",
+        "verbatim_2026-05-07": "how to use it",
+        "category": "adoption",
+        "buildio_response": "[TBD — likely connects to 'sensational support' (concept_sensational_support) and the post-delivery experience. Probably points at handover, training, ongoing support practices that need to be defined.]",
+        "status": "captured"
+      },
+      {
+        "id": "concern_getting_started",
+        "concern": "Where do I even begin? I have a problem but I don't know how to scope it, what to ask for, or what's reasonable to expect.",
+        "verbatim_2026-05-07": "where do I go with this, how do I use it ... and get started",
+        "category": "starting",
+        "buildio_response": "[TBD — diff_correct_scoping is the obvious connection. Worth a deliberate 'first conversation' or 'discovery' offering that makes the start cheap and low-risk. Sharpen later.]",
+        "status": "captured"
+      },
+      {
+        "id": "concern_trust",
+        "concern": "Can I trust this partner with my money, my business, my outcome?",
+        "verbatim_2026-05-07": "but with trust...",
+        "category": "trust",
+        "buildio_response": "[TBD — diff_trust is the headline differentiator; built up via diff_reliable_expertise_advice, diff_local_vic_au, diff_tested, diff_experience. Trust is earned via specifics (named work, real outcomes, local presence) not stated as a slogan.]",
+        "status": "captured",
+        "note": "Trust is also the underlying_texture for every other concern in this list — see node-level note above."
+      }
+    ]
+  },
+
+  "expertise_surfaces": {
+    "_note": "Topics, keywords, and surfaces Buildio addresses. Two distinct purposes mixed here, tagged so we can filter: (1) core_goal=true items are what Buildio wants to be known for and rank for; (2) market_capture=true items are search terms / topics where the intent matches what Buildio can deliver, even if it's not the headline goal. Both belong on the site — but framed differently. Tags cross-cut categories so we can pull all 'crm' or all 'integration' items regardless of grouping. Each item is a candidate for SEO targeting, page content, or in-article mention.",
+    "tag_glossary": {
+      "core-capability": "Named expertise — what Buildio wants to be known for",
+      "market-capture": "High search volume where Buildio can deliver but it's not the brand goal",
+      "needs-enumeration": "Parent term — specific items underneath need to be listed",
+      "platform-specific": "Tied to a named third-party platform",
+      "generic": "Not tied to a specific platform — capability category",
+      "crm": "CRM-related",
+      "websites": "Website / web design / web build",
+      "api": "API integration work",
+      "integration": "Connecting systems together",
+      "process": "Business process / workflow",
+      "marketing": "Marketing-related"
+    },
+    "items": [
+      {
+        "id": "surf_wordpress",
+        "term": "WordPress",
+        "category": "Websites / website design",
+        "tags": ["websites", "wordpress", "cms", "market-capture", "platform-specific"],
+        "core_goal": false,
+        "market_capture": true,
+        "rationale_2026-05-07": "Not a core goal, more a key market capture point if people are looking for that. We can do anything but want to surface words people use and look for."
+      },
+      {
+        "id": "surf_websites_website_design",
+        "term": "Websites / website design",
+        "category": "Websites / website design",
+        "tags": ["websites", "generic", "market-capture"],
+        "core_goal": false,
+        "market_capture": true,
+        "rationale_2026-05-07": "Parent category for WordPress and any other web-build sub-surfaces. Surface for capture; not the brand goal.",
+        "needs_enumeration": "Other website surfaces (web apps, headless, e-commerce specifically, etc.) — TBD"
+      },
+      {
+        "id": "surf_zoho_crm_development",
+        "term": "Zoho CRM development",
+        "category": "CRM development",
+        "tags": ["crm", "zoho", "core-capability", "platform-specific"],
+        "core_goal": true,
+        "market_capture": true,
+        "rationale_2026-05-07": "Named expertise. Specific named CRM platform."
+      },
+      {
+        "id": "surf_crm_development_general",
+        "term": "CRM development (general)",
+        "category": "CRM development",
+        "tags": ["crm", "generic", "core-capability"],
+        "core_goal": true,
+        "market_capture": true,
+        "needs_enumeration": "List of specific CRMs Buildio works with beyond Zoho — TBD",
+        "rationale_2026-05-07": "Generic CRM development capability. Specific platforms to be listed underneath."
+      },
+      {
+        "id": "surf_apis_integrations",
+        "term": "APIs and integrations",
+        "category": "Integrations",
+        "tags": ["api", "integration", "core-capability"],
+        "core_goal": true,
+        "market_capture": true,
+        "needs_enumeration": "Specific APIs and integration patterns — TBD (Zapier, Make, n8n, custom REST, webhooks, specific platform APIs e.g. Stripe / Xero / Mailchimp / etc.)",
+        "rationale_2026-05-07": "Adjacent to CRM development — most CRM work involves integrations. Captured as a parent surface."
+      },
+      {
+        "id": "surf_business_process_design",
+        "term": "Business process design",
+        "category": "Business process",
+        "tags": ["process", "design", "core-capability"],
+        "core_goal": true,
+        "market_capture": false,
+        "rationale_2026-05-07": "Where the 'understand your business' differentiator gets exercised. Adjacent to streamlining services."
+      },
+      {
+        "id": "surf_seo",
+        "term": "SEO (search engine optimisation)",
+        "category": "Marketing — search visibility",
+        "tags": ["seo", "marketing", "core-capability"],
+        "core_goal": true,
+        "market_capture": true,
+        "rationale_2026-05-07": "High-volume search term. Buildio offers traditional SEO as part of marketing service — see subsvc_seo_traditional."
+      },
+      {
+        "id": "surf_local_seo",
+        "term": "Local SEO (Ballarat / regional Victoria)",
+        "category": "Marketing — search visibility",
+        "tags": ["seo", "local-seo", "marketing", "core-capability"],
+        "core_goal": true,
+        "market_capture": true,
+        "rationale_2026-05-07": "Regional Victorian businesses need to rank locally. Aligns with diff_ballarat_local."
+      },
+      {
+        "id": "surf_geo",
+        "term": "GEO — Generative Engine Optimisation",
+        "category": "Marketing — search visibility",
+        "tags": ["geo", "ai-search", "marketing", "core-capability"],
+        "core_goal": true,
+        "market_capture": true,
+        "rationale_2026-05-07": "Newer term, growing search volume. Buildio service: subsvc_geo_aeo."
+      },
+      {
+        "id": "surf_aeo",
+        "term": "AEO — Answer Engine Optimisation",
+        "category": "Marketing — search visibility",
+        "tags": ["aeo", "ai-search", "marketing", "core-capability"],
+        "core_goal": true,
+        "market_capture": true,
+        "rationale_2026-05-07": "Cousin term to GEO; some buyers will search this rather than GEO."
+      },
+      {
+        "id": "surf_ai_overviews",
+        "term": "AI Overviews / ChatGPT / Perplexity visibility",
+        "category": "Marketing — search visibility",
+        "tags": ["ai-search", "geo", "marketing"],
+        "core_goal": true,
+        "market_capture": true,
+        "rationale_2026-05-07": "Buyers will increasingly search for 'how do I show up in ChatGPT' or 'AI Overviews' before they know the term GEO. Capture this surface."
+      },
+      {
+        "id": "surf_schema_structured_data",
+        "term": "Schema markup / structured data",
+        "category": "Marketing — search visibility",
+        "tags": ["schema", "seo", "geo", "technical"],
+        "core_goal": true,
+        "market_capture": true,
+        "rationale_2026-05-07": "Technical surface that often comes up as a project on its own — businesses get told they need schema and look for someone to do it."
+      }
+    ]
+  },
+
+  "audiences": [
+    {
+      "id": "aud_business_owner_navigating_tech",
+      "name": "Business owner navigating tech",
+      "verbatim_2026-05-07": "Business owners trying to navigate tech, grow businesses, and take advantage of the opportunities to reach their goals and potential.",
+      "description": "A business owner — typically running an established business — who knows technology and digital systems are crucial to their growth and competitiveness, but is trying to figure out where to invest, what to fix, who to trust, and how to actually capture the opportunities that are clearly out there. Proactive (looking to grow and capture upside), not just defensive (fixing what's broken).",
+      "geography": "Primary: Ballarat / regional Victoria. Secondary: broader Victoria, Australia.",
+      "what_they_need": [
+        "A trustworthy partner who understands their business, not just the tech",
+        "A clear next step they can take with confidence",
+        "Honest scoping — what's actually worth doing first",
+        "Reassurance that the spend will land",
+        "Hands they can shake locally (or at least within regional reach)"
+      ],
+      "what_they_fear": [
+        "Spending money on tech that doesn't move the business",
+        "Being sold something they don't need by someone who hasn't understood them",
+        "Falling behind competitors who *are* taking advantage of the opportunities",
+        "Their team not adopting whatever gets built",
+        "Being treated as a small fish by a big-city consultancy"
+      ],
+      "concern_refs": ["concern_finding_a_partner", "concern_spending_money", "concern_getting_started", "concern_how_to_use_it", "concern_trust"],
+      "pain_refs": ["pain_dont_know_where_to_start", "pain_ai_made_things_worse", "pain_org_didnt_keep_up"],
+      "angle_refs": ["angle_diagnosis_before_prescription", "angle_fix_the_processes_first", "angle_one_workflow_at_a_time"],
+      "differentiator_refs": ["diff_ballarat_local", "diff_local_vic_au", "diff_business_understanding", "diff_business_nous", "diff_correct_scoping", "diff_trust"],
+      "status": "captured_first_persona",
+      "note_2026-05-07": "First concrete audience captured. Likely the primary persona for buildio.au — the brand's centre of gravity. Future audiences will probably split this further (e.g. by sector, by business size, by stage — startup-ish vs established) once specifics surface."
+    }
+  ],
+
+  "angles": [
+    {
+      "id": "angle_diagnosis_before_prescription",
+      "angle": "Diagnosis before prescription. A partner pitching a solution on the first call is guessing — and prescription without diagnosis is malpractice.",
+      "applies_to_concerns": ["concern_finding_a_partner", "concern_getting_started"],
+      "applies_to_differentiators": ["diff_correct_scoping", "diff_business_understanding"],
+      "applies_to_pages_tbd": ["page_home", "page_how_we_work"],
+      "source_inspiration": {
+        "captured_2026-05-07": true,
+        "from": "Andrew Dunn (CEO & Chief AI Officer, '450+ Companies'), LinkedIn post 'Yes. I eat Kit Kats like this.'",
+        "lifted_verbatim": "If your AI consultant pitches a solution on the first call, they're guessing. Prescription without diagnosis is malpractice.",
+        "use_note": "Don't lift verbatim. Paraphrase into Buildio voice — connects to diff_correct_scoping. The 'malpractice' framing is sharp; consider whether to soften."
+      },
+      "status": "candidate"
+    },
+    {
+      "id": "angle_fix_the_processes_first",
+      "angle": "Most businesses don't need AI — they need their processes fixed first. AI on broken processes just breaks them faster.",
+      "applies_to_services": ["svc_streamlining", "svc_business_transformation"],
+      "applies_to_modern_concepts": ["concept_modern_automation"],
+      "source_inspiration": {
+        "captured_2026-05-07": true,
+        "from": "Andrew Dunn, same Kit Kat post — points 1 and 7.",
+        "lifted_verbatim_pieces": [
+          "Most companies don't need AI. They need their processes fixed first.",
+          "AI won't save your business. It'll just break it faster. Fix the foundation first."
+        ],
+        "use_note": "Strong fit for Buildio — streamlining service explicitly addresses this. Differentiation against 'AI consultancies' that lead with the AI hammer."
+      },
+      "status": "candidate"
+    },
+    {
+      "id": "angle_one_workflow_at_a_time",
+      "angle": "Don't bite the whole transformation in one go. One workflow at a time. Break the change into pieces and deliver each piece end-to-end.",
+      "applies_to_concerns": ["concern_spending_money", "concern_getting_started", "concern_how_to_use_it"],
+      "applies_to_differentiators": ["diff_correct_scoping"],
+      "source_inspiration": {
+        "captured_2026-05-07": true,
+        "from": "Andrew Dunn Kit Kat post — point 6.",
+        "lifted_verbatim": "Most companies trying to implement AI are doing the same thing I'm doing with this Kit Kat. Trying to bite the whole thing at once instead of breaking it into pieces. One workflow at a time. One finger at a time.",
+        "use_note": "Excellent metaphor (Kit Kat). Don't reuse the metaphor — Buildio needs its own — but the structural angle (incremental, one workflow at a time) is portable."
+      },
+      "status": "candidate"
+    },
+    {
+      "id": "angle_ai_org_design_gap",
+      "angle": "AI changed how your people work; org design hasn't caught up. That widening gap is where the structural and economic upside sits — closing it is the work.",
+      "applies_to_services": ["svc_business_transformation", "svc_streamlining"],
+      "applies_to_modern_concepts": ["concept_modern_business_systems"],
+      "source_inspiration": {
+        "captured_2026-05-07": true,
+        "from": "David Chinn (CEO & Co-Founder, Lexer), LinkedIn post.",
+        "lifted_verbatim_pieces": [
+          "AI has changed how you and your people work. However organisation design hasn't caught up.",
+          "That gap is widening every week. Closing it is where the structural and economic upside sits.",
+          "find the constraints hiding in your own org chart"
+        ],
+        "use_note": "Powerful framing for Buildio's transformation work. The constraints-hiding-in-the-org-chart line is particularly strong. Paraphrase into Buildio voice."
+      },
+      "status": "candidate"
+    },
+    {
+      "id": "angle_complexity_paradox",
+      "angle": "AI increases productivity, but it also increases the complexity of the systems behind that productivity. You need people who can manage and maintain the robots — that's a new skill, and most businesses don't have it yet.",
+      "applies_to_services": ["svc_software", "svc_streamlining"],
+      "applies_to_concerns": ["concern_how_to_use_it"],
+      "source_inspiration": {
+        "captured_2026-05-07": true,
+        "from": "Thomas Mackenzie (Director of Client Services, Scale by Avec), via TechDay Australia.",
+        "lifted_verbatim": "We need to remember that AI does increase productivity, but it also increases the complexity of the systems and delivery... [you'll] need people to manage and maintain the robots. It's a different skill that people will need to learn.",
+        "use_note": "Buildio's natural counter-position: 'Buildio manages the robots for you while your team learns to.' Combines the 'sensational support' concept with the technical capability."
+      },
+      "status": "candidate"
+    }
+  ],
+
+  "competitors": [
+    {
+      "id": "comp_arcadian_digital",
+      "name": "Arcadian Digital",
+      "url": "https://arcadiandigital.com.au",
+      "category": "Pure-play digital marketing agency (SEO / GEO / AEO / CRO)",
+      "geography": "Melbourne-based, Australia-wide reach",
+      "what_they_do_well": [
+        "Strong, current GEO/AEO content and service offering — clearly articulated",
+        "Owned 'Search Optimisation Everywhere' framing across traditional SEO + AI engines + social",
+        "Five Pillars framework (Answer-First Content, Entity Signals, First-Party Authoritative Content, Digital PR Within AI Ecosystems, New Discovery Signals)",
+        "Honest framing — explicitly acknowledge no ranking guarantees",
+        "Specific schema set named (FAQPage, HowTo, Speakable, QAPage)"
+      ],
+      "where_buildio_differs": [
+        "Buildio is broader — SEO/GEO is one service among five (svc_software, svc_business_transformation, svc_streamlining, svc_marketing, svc_automations). Arcadian is a marketing specialist.",
+        "Buildio is regional-Victoria-led (Ballarat). Arcadian is Melbourne-based with broader Australian reach.",
+        "Buildio's SEO/GEO connects to systems and operations — when Buildio writes content for AI citation, the underlying data (CRM, systems, automations) is being shaped at the same time. Pure-play agencies don't touch that layer."
+      ],
+      "where_buildio_loses": [
+        "Depth in pure-play marketing — Arcadian likely has deeper content ops, more team specialisation, more case studies in pure-marketing engagements.",
+        "Brand recognition in marketing-only buyer searches — Arcadian's content depth gives them better SEO for SEO-related terms."
+      ],
+      "use_as_inspiration": "Arcadian's blog and service pages are useful reference for current GEO/SEO vocabulary and best practice. Borrow concepts (with credit and rephrasing); don't lift verbatim. Their 'Search Optimisation Everywhere' frame is a useful umbrella but we shouldn't claim it.",
+      "captured_2026-05-07": true
+    }
+  ],
 
   "messaging_points": {
     "_note": "Classic lines, framings, and recurring messages that have landed (or are being tested). Promoted from concepts when they prove themselves.",
@@ -94,7 +761,48 @@
 
   "concepts": {
     "_note": "Ideas and framings before they're polished into messaging. Where new thinking lives. Promote to messaging_points.in_testing when worth trying live.",
-    "active": [],
+    "active": [
+      {
+        "id": "concept_sensational_support",
+        "raw": "Provide sensational support, advice, skill and expertise.",
+        "captured_2026-05-07": "Tone marker from the aim statement. 'Sensational' is a deliberately warm, high-care word — not corporate, not generic 'great service'. Suggests Buildio differentiates on the *quality of attention* clients receive, not just the deliverable. Holds open the possibility of a positioning around how Buildio supports clients vs how big consultancies treat them.",
+        "promote_to": "messaging_points.in_testing once a concrete line is drafted (e.g. 'Real support, real attention — not a junior consultant on a slide deck')"
+      },
+      {
+        "id": "concept_growth_through_digital_systems",
+        "raw": "Achieving their goals through great digital systems.",
+        "captured_2026-05-07": "The throughline of the aim — digital systems are the medium through which all the work (growth diagnosis, streamlining, marketing, automations) gets delivered. Could become the wedge: 'Your goals, through systems that actually work for you.' Cornerstone candidate.",
+        "promote_to": "Possibly positioning.wedge once sharpened"
+      },
+      {
+        "id": "concept_the_edge_question",
+        "raw": "If everyone can create polished, on-brand content instantly, what becomes your edge?",
+        "captured_2026-05-07": "From the Canva-Claude post (LinkedIn 2026-05-07). The framing: AI has collapsed the gap between idea, execution, and presentation. The advantage shifts from 'who can design/build better' to 'who can think clearer, prompt better, and move faster.' Strong adjacent thinking for Buildio's positioning — Buildio's edge is judgement applied to systems, not just delivery speed. Useful for thinking about why Buildio still matters when AI tooling commoditises execution.",
+        "source": "Canva + Claude Design announcement post, LinkedIn",
+        "promote_to": "Could become a Notebook article angle — 'The edge is no longer execution. It's the diagnosis.'"
+      },
+      {
+        "id": "concept_ai_native_roles",
+        "raw": "AI-native role categories emerging — Customer Engineer, AI Quality Engineer, Agent Librarian, Agent Orchestrator. Built on AI skills as reusable, codified capabilities. NOT about fewer people — about end-to-end ownership and less fragmentation.",
+        "captured_2026-05-07": "From Tom Skeggs (Senior Manager AI at Westpac). Useful vocabulary for Buildio when talking about how it builds for clients — not 'replacing people' but 'restructuring around capability'. The 'less fragmentation, end-to-end ownership' line is strong and aligns with diff_correct_scoping (one team owning the outcome, not handoffs).",
+        "source": "Tom Skeggs LinkedIn post '4 Roles of the Future'",
+        "promote_to": "Could inform a Notebook piece on what AI-era org structure looks like in practice."
+      },
+      {
+        "id": "concept_managing_the_robots",
+        "raw": "Someone needs to manage and maintain the robots. It's a different skill that people will need to learn.",
+        "captured_2026-05-07": "From Thomas Mackenzie (Scale by Avec) via TechDay Australia. The Buildio-shaped framing: 'We manage the robots for you' or 'We help your team learn to manage the robots'. Either positions Buildio as a permanent partner not a one-shot vendor — feeds engagement_models thinking (retainer? fractional?).",
+        "source": "Thomas Mackenzie / Scale by Avec / TechDay Australia",
+        "promote_to": "Engagement model design + service framing. Possibly tagline candidate: 'We manage the robots so your business doesn't have to learn how.'"
+      },
+      {
+        "id": "concept_diagnosis_is_the_edge",
+        "raw": "AI flattens execution. Diagnosis is what's left as the differentiator. The 'where to apply this' question is the value — and most consultancies dodge it.",
+        "captured_2026-05-07": "Synthesised from across the captured posts (Dunn's diagnosis-not-prescription, Chinn's constraints-hiding-in-org-chart, Canva's edge question). Cornerstone candidate for Buildio's positioning — the work is the diagnosis, the implementation is just delivery.",
+        "source": "Synthesis of Dunn + Chinn + Canva posts",
+        "promote_to": "Strong wedge candidate for positioning.wedge. Worth sharpening into a sharp line in next session."
+      }
+    ],
     "parked": []
   },
 
@@ -117,6 +825,15 @@
 
   "decisions_log": [
     {
+      "id": "dec_2026-05-07_buildio_seo_plugin_live",
+      "date": "2026-05-07",
+      "decision": "Ported the UPHQ SEO plugin to Buildio (buildio-seo, ProfessionalService schema, Ballarat local SEO signals, Yoast suppression with Yoast-meta passthrough). Activated locally, then deployed to production via rsync and activated remotely via wp-cli. Verified head output and schema rendering on both environments.",
+      "rationale": "Buildio.au needs proper GEO/AEO foundations to be cited by AI engines (ChatGPT, Perplexity, Google AI Overviews) and proper SEO foundations to be found via traditional search. UPHQ already had a battle-tested single-file plugin doing both — porting beats writing from scratch. Local-first activation + dry-run rsync + remote backup of active_plugins gave a safe rollback path.",
+      "rsync_filter_change": "Added '+ public_html/wp-content/plugins/buildio-seo/***' to _rsync/.rsync_all (the filter is whitelist-style; plugins are excluded by default).",
+      "wp_config_change": "wp-config.php was also pushed (the dotenv-block guards we added earlier today). Behaviour is identical to the un-guarded version in web context; the guards only matter for WP-CLI bootstrap idempotency.",
+      "by": "Rohan + Claude"
+    },
+    {
       "id": "dec_2026-05-07_create_brain",
       "date": "2026-05-07",
       "decision": "Created content-offering-positioning.json as the structured brain for Buildio.au content and positioning, scoped narrower than the Midlands full-project brain (this brain is content/offering/positioning only; app/domain knowledge live in their own .claude/ folders).",
@@ -129,9 +846,20 @@
     {
       "id": "q_buildio_offering_definition",
       "question": "What does Buildio.au actually sell? Service shape (project / retainer / advisory), typical deliverable, who buys, price range. Required to populate offering.* and positioning.*.",
-      "status": "open",
+      "status": "partially_answered_2026-05-07",
       "raised": "2026-05-07",
-      "blocks": ["offering.core_offering", "offering.services", "positioning.wedge", "positioning.sales_pillars"]
+      "blocks": ["offering.engagement_models", "offering.typical_deliverables", "positioning.wedge", "positioning.sales_pillars"],
+      "answered_so_far": "Five service categories named (added marketing + automations to the original three on 2026-05-07): software/digital systems, business transformation, streamlining, marketing, automations. Aim statement captured: support businesses to grow and achieve goals through great digital systems, with sensational support/advice/skill/expertise as the tone.",
+      "still_open": "Per-category detail (what software exactly, what kind of transformation, what kind of streamlining, what kind of marketing, what kind of automations), engagement shape (project / retainer / advisory / fractional), typical deliverable, who buys, price range, geographic focus within Australia."
+    },
+    {
+      "id": "q_offering_software_meaning",
+      "question": "Does 'software' in Buildio's offering refer to (a) selling/promoting Rohan's own software products (like UniPixel) under the Buildio umbrella, (b) custom software development as a service for clients, or (c) both? Affects how Buildio.au relates to unipixelhq.com and how the Software service is framed on the site.",
+      "status": "answered_2026-05-07_primarily_b",
+      "raised": "2026-05-07",
+      "answered": "Primarily (b) — 'Advanced software development solutions focused on ROI' confirms the service framing is custom development for clients. Doesn't rule out (c); UniPixel could still appear on Buildio.au as one of Rohan's own products, but it's not the central Software offer. The headline is bespoke ROI-driven development.",
+      "still_open": "Whether/how UniPixel and other own products are positioned on Buildio.au — sibling brand mention, products portfolio, neither?",
+      "blocks": []
     },
     {
       "id": "q_audience_personas",
