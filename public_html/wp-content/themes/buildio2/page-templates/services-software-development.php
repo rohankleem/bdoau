@@ -59,7 +59,7 @@ include get_template_directory() . '/inc/hero-service.php';
 		<div class="row justify-content-lg-center">
 
 			<!-- CRM systems -->
-			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7">
+			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7" id="crm">
 				<div class="d-flex pe-md-5">
 					<div class="flex-shrink-0">
 						<div class="svg-icon text-primary">
@@ -74,7 +74,7 @@ include get_template_directory() . '/inc/hero-service.php';
 			</div>
 
 			<!-- API integrations -->
-			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7">
+			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7" id="api">
 				<div class="d-flex ps-md-5">
 					<div class="flex-shrink-0">
 						<div class="svg-icon text-primary">
@@ -91,7 +91,7 @@ include get_template_directory() . '/inc/hero-service.php';
 			<div class="w-100"></div>
 
 			<!-- Custom apps -->
-			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7">
+			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7" id="custom">
 				<div class="d-flex pe-md-5">
 					<div class="flex-shrink-0">
 						<div class="svg-icon text-primary">
@@ -106,7 +106,7 @@ include get_template_directory() . '/inc/hero-service.php';
 			</div>
 
 			<!-- WordPress development -->
-			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7">
+			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7" id="wordpress">
 				<div class="d-flex ps-md-5">
 					<div class="flex-shrink-0">
 						<div class="svg-icon text-primary">

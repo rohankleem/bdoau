@@ -59,7 +59,7 @@ include get_template_directory() . '/inc/hero-service.php';
 		<div class="row justify-content-lg-center">
 
 			<!-- Search Visibility Audit -->
-			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7">
+			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7" id="audit">
 				<div class="d-flex pe-md-5">
 					<div class="flex-shrink-0">
 						<div class="svg-icon text-primary">
@@ -74,7 +74,7 @@ include get_template_directory() . '/inc/hero-service.php';
 			</div>
 
 			<!-- SEO -->
-			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7">
+			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7" id="seo">
 				<div class="d-flex ps-md-5">
 					<div class="flex-shrink-0">
 						<div class="svg-icon text-primary">
@@ -91,7 +91,7 @@ include get_template_directory() . '/inc/hero-service.php';
 			<div class="w-100"></div>
 
 			<!-- GEO / AEO -->
-			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7">
+			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7" id="geo">
 				<div class="d-flex pe-md-5">
 					<div class="flex-shrink-0">
 						<div class="svg-icon text-primary">
@@ -106,7 +106,7 @@ include get_template_directory() . '/inc/hero-service.php';
 			</div>
 
 			<!-- Content for AI + humans -->
-			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7">
+			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7" id="content">
 				<div class="d-flex ps-md-5">
 					<div class="flex-shrink-0">
 						<div class="svg-icon text-primary">
@@ -123,7 +123,7 @@ include get_template_directory() . '/inc/hero-service.php';
 			<div class="w-100"></div>
 
 			<!-- Digital PR -->
-			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7">
+			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7" id="digital-pr">
 				<div class="d-flex pe-md-5">
 					<div class="flex-shrink-0">
 						<div class="svg-icon text-primary">
@@ -138,7 +138,7 @@ include get_template_directory() . '/inc/hero-service.php';
 			</div>
 
 			<!-- Measurement -->
-			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7">
+			<div class="col-md-6 col-lg-5 mb-3 mb-md-5 mb-lg-7" id="measurement">
 				<div class="d-flex ps-md-5">
 					<div class="flex-shrink-0">
 						<div class="svg-icon text-primary">
