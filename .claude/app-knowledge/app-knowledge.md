@@ -38,7 +38,8 @@ bdoau/                                  ← Git root (= C:\xampp\htdocs\bdoau, d
 | Web server | Apache 2.4.66 | Laragon-managed |
 | PHP (web) | 8.3.30 | `C:\laragon\bin\php\php-8.3.30-Win32-vs16-x64\` |
 | PHP (CLI) | Same 8.3.30 | The `wp` wrappers force this; XAMPP's bundled PHP is 8.2.12 and unused |
-| Database | MySQL 8.4.3 | `C:\laragon\bin\mysql\mysql-8.4.3-winx64\`. Uses `caching_sha2_password` auth. |
+| Database (local) | MySQL 8.4.3 | `C:\laragon\bin\mysql\mysql-8.4.3-winx64\`. Uses `caching_sha2_password` auth. |
+| Database (production) | **MariaDB 10.6.25** | InterServer-managed. Different fork from local — see "Local vs production DB" below. |
 | WordPress | 6.9.4 | Tracked in git, not via `wp core update` |
 | CMS theme | `buildio2` | Custom theme — Bootstrap 5 + Webpack build (see `buildio2-theme.md`) |
 | Composer | Used only for `vlucas/phpdotenv` | `vendor/` is committed |
@@ -102,10 +103,35 @@ If you upgrade Laragon and the wrappers can't find PHP or MySQL, they error out 
 
 - **Database name:** `bdoau` (per `.env`)
 - **Table prefix:** `wx4gk_` (non-default — set in `.env` via `TABLE_PREFIX`)
-- **Auth:** `root` / no password (Laragon default)
+- **Auth (local):** `root` / no password (Laragon default)
 - **Charset:** `utf8mb4`
 
 When writing raw SQL, use `wx4gk_` not `wp_`.
+
+### Local vs production DB
+
+The two environments run **different database engines**, not just different versions:
+
+| | Local | Production |
+|---|---|---|
+| Engine | MySQL 8.4.3 | MariaDB 10.6.25 |
+| Auth plugin | `caching_sha2_password` | `mysql_native_password` |
+| Reached EOL | — | July 2026 |
+
+**Implications:**
+
+- **Most SQL ports cleanly.** `SELECT`, `INSERT`, `UPDATE`, `DELETE`, JOINs, basic functions, WP's `$wpdb` queries, `wp db search-replace` — all work on both.
+- **Edge cases differ:** JSON path syntax, certain window function details, some `INFORMATION_SCHEMA` columns, GIS functions, recent MySQL 8.x-only features (e.g. `INTERSECT`/`EXCEPT` set ops added in 8.x are also in MariaDB 11.x but not 10.6). If you write anything beyond standard CRUD, test on both.
+- **Auth surprise:** server's `mysql` client "just works" with no plugin DLL drama because MariaDB uses native auth. Don't generalise from server to local — local needs Laragon's mysql client, not XAMPP's.
+- **Version skew direction:** local is *newer* than production, which is the harder direction to detect (a query that works locally may fail in prod). Reverse direction (prod-newer) would have given a build-time error.
+- **MariaDB 10.6 EOL July 2026** — roughly 2 months from today (2026-05-07). Worth scheduling a bump to 10.11 or 11.x via the InterServer panel before that date.
+
+**Quick reference for prod DB ops** (run from local terminal — server WP-CLI talks to MariaDB transparently):
+
+```bash
+ssh buildiod@vda4300.is.cc "cd domains/buildio.au/public_html && wp db export ~/backups/prod-$(date +%F).sql"
+ssh buildiod@vda4300.is.cc "cd domains/buildio.au/public_html && wp db search-replace 'old' 'new' --dry-run"
+```
 
 ## Conventions
 

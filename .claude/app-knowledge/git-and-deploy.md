@@ -110,6 +110,8 @@ See `_rsync/.rsync_all` for the authoritative list. Notable excludes:
 - `public_html/wp-content/uploads/` — uploads live only on the server (you don't deploy them)
 - `public_html/wp-content/cache/`
 
+> **Gap to fix:** the current filter does NOT exclude project-level dev directories — `.claude/`, `_deploy/`, `_rsync/`, `_tools/`, `.git/`, `wp-cli.yml`, `wp`, `wp.bat`. Until added, the next deploy will push them to the server. They sit outside `public_html/` so they're not web-accessible, but they're noise. Tighten the filter when convenient.
+
 ### `git push` does NOT deploy
 
 Pushing to GitHub puts code on the remote repo, not on the server. Production only changes when you run `_deploy/deploy_all_LIVE.sh`. There is no GitHub Actions workflow for deploy on this project (yet).
@@ -129,10 +131,39 @@ Pushing to GitHub puts code on the remote repo, not on the server. Production on
 
 ### Server access
 
-- **Host:** `vda4300.is.cc`
+- **Host:** `vda4300.is.cc` (InterServer, CloudLinux 8 — kernel `4.18.0-553.111.1.lve.el8`)
 - **SSH user:** `buildiod`
-- **Project path on server:** `domains/buildio.au`
-- **Panel:** DirectAdmin (URL TBD — check InterServer welcome email)
+- **Auth:** SSH key (already trusted — known_hosts has the host fingerprint, no password prompt). No specific entry needed in `~/.ssh/config` — default keys (`id_ed25519` then `id_rsa`) are tried.
+- **Connection test:** `ssh buildiod@vda4300.is.cc 'hostname && pwd'`
+- **Home dir:** `/home/buildiod/`
+- **Domains dir:** `/home/buildiod/domains/` (one subdir per site)
+- **Project path:** `/home/buildiod/domains/buildio.au/`
+- **Panel:** DirectAdmin — {TBD: panel URL, check InterServer welcome email}
+
+### Server-side stack
+
+- **PHP:** 8.3.30 at `/usr/local/bin/php` — matches local exactly. (Was 8.0.30 prior to 2026-05-07; switched to 8.3 in InterServer panel for parity.)
+- **WP-CLI:** installed globally at `/usr/local/bin/wp` — no wrapper needed on the server
+- **Web root:** `/home/buildiod/domains/buildio.au/public_html/`
+- **`.env` lives on the server** at the project root (separate from local `.env` — production DB creds live here, not in the repo)
+- **`vendor/`** is rsynced from local (committed to git) — composer is not run on the server
+- **`private_html`** is a symlink to `public_html` (DirectAdmin convention)
+
+### Quick SSH commands
+
+```bash
+# Open shell in the project directory
+ssh buildiod@vda4300.is.cc -t "cd domains/buildio.au && bash"
+
+# Run a one-off WP-CLI command
+ssh buildiod@vda4300.is.cc "cd domains/buildio.au/public_html && wp option get siteurl"
+
+# Tail debug log
+ssh buildiod@vda4300.is.cc "tail -f domains/buildio.au/public_html/debug_buildio.log"
+
+# Check disk usage for the site
+ssh buildiod@vda4300.is.cc "du -sh domains/buildio.au"
+```
 
 > {TBD: Server-side post-deploy steps — cache flushes, opcache reset, anything that needs to run after rsync completes. To be filled in after the next deploy.}
 
