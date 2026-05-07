@@ -61,6 +61,22 @@ import Swiper from 'swiper/bundle';
 
 
 
+  // Home page hero slider
+  var swiperHomeHero = new Swiper('.js-swiper-home-hero', {
+    slidesPerView: 1,
+    loop: true,
+    speed: 800,
+    autoplay: {
+      delay: 6500,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    pagination: {
+      el: '.home-hero-pagination',
+      clickable: true,
+    },
+  });
+
   var swiper = new Swiper(".swiperBlogSnippets", {
     slidesPerView: 3,
     spaceBetween: 30,
