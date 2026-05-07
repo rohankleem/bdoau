@@ -1,0 +1,165 @@
+{
+  "_meta": {
+    "what": "Growing map of Buildio.au content, offering, and positioning. Concepts, ideas, classic messaging points, page titles + notes, differences and similarities to competitors. Structured companion to the markdown docs in .claude/marketing-knowledge/.",
+    "how_to_use": "Reference and update as new ideas, pages, copy versions, audiences, or messaging surface. Markdown files in the same folder hold narrative (voice rules, positioning principles); this file holds structured data — versioned content, audience records, page records, classic lines, decisions, open questions. Read both. Update both when relevant.",
+    "contains": [
+      "Offering — what Buildio sells (services, engagements, deliverables)",
+      "Positioning — core message, wedge, pillars, differentiators, honest gaps",
+      "Audiences — concrete prospect personas with cross-references to pages and angles",
+      "Angles — core messaging cuts that map to audience and page",
+      "Competitors — alternatives Buildio is chosen against, with where-they-win and where-Buildio-wins",
+      "Classic messaging points — recurring lines and framings that have landed",
+      "Concepts — ideas and framings, separate from polished copy. Where new thinking lives before it's promoted to messaging.",
+      "Pages — site page records with titles, intent, status, content versions, wireframe sections, cross-references",
+      "Decisions log — timestamped positioning/content/site decisions",
+      "Open questions — tracked to resolution"
+    ],
+    "principles": [
+      "Nothing gets destroyed — content is versioned, not overwritten",
+      "Selections are recorded ('selected: true/false'), losing options remain visible for context",
+      "Decisions are logged with dates",
+      "Open questions are tracked to resolution",
+      "The schema grows — new nodes added as needed; don't force ideas into the wrong shape",
+      "Cross-references use stable string IDs (e.g. 'aud_consultancy_buyer', 'page_home', 'angle_real_outcomes')"
+    ],
+    "companion_docs": {
+      "positioning": ".claude/marketing-knowledge/positioning.md",
+      "writing_style": ".claude/marketing-knowledge/writing-style.md",
+      "content_inventory": ".claude/marketing-knowledge/bdoau-content.md",
+      "priorities": ".claude/marketing-knowledge/priorities.md",
+      "campaigns": ".claude/marketing-knowledge/campaigns.md",
+      "article_hooks": ".claude/marketing-knowledge/article-hook-patterns.md"
+    },
+    "id_conventions": {
+      "audiences": "aud_*",
+      "angles": "angle_*",
+      "competitors": "comp_*",
+      "messaging_points": "msg_*",
+      "concepts": "concept_*",
+      "pages": "page_*",
+      "decisions": "dec_YYYY-MM-DD_*",
+      "open_questions": "q_*"
+    },
+    "last_updated": "2026-05-07",
+    "version": "0.1",
+    "schema_status": "scaffold — mostly empty, populate as we go"
+  },
+
+  "project": {
+    "brand": "Buildio",
+    "site": "buildio.au",
+    "local_url": "https://bdoau.local.site",
+    "production_url": "https://buildio.au",
+    "category": "Digital transformation consultancy",
+    "geography": "Australia — flagship .au brand",
+    "family_of_sites": [
+      { "site": "buildio.au", "role": "Flagship consultancy brand — customer-facing" },
+      { "site": "buildio.dev", "role": "Supporting brand presentation + UniPixel offload backend" },
+      { "site": "unipixelhq.com", "role": "UniPixel plugin marketing" },
+      { "site": "dev.unipixelhq.com", "role": "UniPixel plugin dev base + docs hub" }
+    ]
+  },
+
+  "offering": {
+    "_note": "What Buildio.au sells. Services, engagement models, typical deliverables. Source of truth for any 'what we do' messaging.",
+    "core_offering": null,
+    "services": [],
+    "engagement_models": [],
+    "typical_deliverables": [],
+    "what_we_dont_do": []
+  },
+
+  "positioning": {
+    "_note": "Structured positioning facts. Companion to positioning.md narrative.",
+    "core_message": null,
+    "wedge": null,
+    "sales_pillars": [],
+    "industry_problem": null,
+    "differentiators": [],
+    "honest_gaps": []
+  },
+
+  "audiences": [],
+
+  "angles": [],
+
+  "competitors": [],
+
+  "messaging_points": {
+    "_note": "Classic lines, framings, and recurring messages that have landed (or are being tested). Promoted from concepts when they prove themselves.",
+    "established": [],
+    "in_testing": [],
+    "retired": []
+  },
+
+  "concepts": {
+    "_note": "Ideas and framings before they're polished into messaging. Where new thinking lives. Promote to messaging_points.in_testing when worth trying live.",
+    "active": [],
+    "parked": []
+  },
+
+  "differences_and_similarities": {
+    "_note": "Cross-cuts. Where Buildio is similar to or different from a competitor, an alternative approach, or a sibling brand. Useful when writing 'vs' content or sharpening positioning.",
+    "vs_competitors": [],
+    "vs_in_house": [],
+    "shared_with_sibling_brands": [],
+    "deliberately_different_from_sibling_brands": []
+  },
+
+  "pages": [],
+
+  "content_versions": {
+    "_note": "Top-level versioned content not tied to a specific page (e.g. taglines, hero variants tested across multiple surfaces, recurring CTAs). Page-specific versions live inside the page record.",
+    "taglines": [],
+    "ctas": [],
+    "boilerplates": []
+  },
+
+  "decisions_log": [
+    {
+      "id": "dec_2026-05-07_create_brain",
+      "date": "2026-05-07",
+      "decision": "Created content-offering-positioning.json as the structured brain for Buildio.au content and positioning, scoped narrower than the Midlands full-project brain (this brain is content/offering/positioning only; app/domain knowledge live in their own .claude/ folders).",
+      "rationale": "Markdown handles narrative well but doesn't structure cross-references (audience → page → angle). JSON gives a queryable, versionable, growable map for content development without the markdown becoming a tangle of cross-links.",
+      "by": "Rohan + Claude"
+    }
+  ],
+
+  "open_questions": [
+    {
+      "id": "q_buildio_offering_definition",
+      "question": "What does Buildio.au actually sell? Service shape (project / retainer / advisory), typical deliverable, who buys, price range. Required to populate offering.* and positioning.*.",
+      "status": "open",
+      "raised": "2026-05-07",
+      "blocks": ["offering.core_offering", "offering.services", "positioning.wedge", "positioning.sales_pillars"]
+    },
+    {
+      "id": "q_audience_personas",
+      "question": "Who are the concrete prospect personas — by role, sector, company size, where they're searching, what brought them here? Required before audiences[] can be populated and before pages can be cross-referenced to audiences.",
+      "status": "open",
+      "raised": "2026-05-07",
+      "blocks": ["audiences", "pages.*.audiences"]
+    },
+    {
+      "id": "q_competitor_set",
+      "question": "What are Buildio.au's actual competitors / alternatives the prospect considers? Big-4 (Deloitte/PwC etc.), boutique consultancies (named), in-house build, freelance, SaaS-only, status quo? Each needs a record with strength + where Buildio wins.",
+      "status": "open",
+      "raised": "2026-05-07",
+      "blocks": ["competitors", "differences_and_similarities.vs_competitors"]
+    },
+    {
+      "id": "q_existing_site_content_audit",
+      "question": "What's already on buildio.au — page titles, hero copy, sections, current CTAs? An extraction pass against the live site or local theme content (inc/home/* partials) populates pages[] with the current state as a starting baseline before iteration.",
+      "status": "open",
+      "raised": "2026-05-07",
+      "blocks": ["pages"]
+    },
+    {
+      "id": "q_canonical_cta",
+      "question": "What is the single canonical CTA across the site? ('Book a discovery call', 'Talk to Buildio', etc.) Drives the writing-style.md placeholder and content_versions.ctas[].",
+      "status": "open",
+      "raised": "2026-05-07",
+      "blocks": ["content_versions.ctas", "writing-style.md (closing CTA section)"]
+    }
+  ]
+}

@@ -138,7 +138,8 @@ CLAUDE.md                              ← You are here. Operating manual.
 │   ├── bdoau-content.md               ← Per-section content inventory of buildio.au.
 │   ├── priorities.md                  ← Where the brand is now, current focus, blockers.
 │   ├── campaigns.md                   ← Active channels and campaigns.
-│   └── article-hook-patterns.md       ← Article-opening formulas for Notebook content.
+│   ├── article-hook-patterns.md       ← Article-opening formulas for Notebook content.
+│   └── content-offering-positioning.json   ← Structured brain — pages, audiences, angles, competitors, classic messaging, concepts, decisions, open questions. Companion to the .md files; JSON for queryable structure.
 ├── projects/                          ← Per-initiative working docs. Kept forever.
 │   └── {name}.md                      ← Each has a Status header (Active/Planned/Design/Complete/Parked/Reference)
 └── settings.local.json                ← Per-dev harness settings. Gitignored.
@@ -173,6 +174,7 @@ When you learn something new, where does it go?
 - **Current brand priorities, what's blocking growth** → `marketing-knowledge/priorities.md`
 - **Active channels, campaigns, what's working** → `marketing-knowledge/campaigns.md`
 - **Article-opening hook formulas, worked examples of which hook landed** → `marketing-knowledge/article-hook-patterns.md`
+- **Structured records — a new audience persona, competitor entry, page record, classic messaging line, concept, decision, open question** → `marketing-knowledge/content-offering-positioning.json` (cross-references via stable IDs; markdown holds the narrative, JSON holds the structure)
 - **A rule about how Claude and the team collaborate** (scope, commits, modes, documentation protocol)? → `CLAUDE.md`
 - **Something we're actively building?** → `projects/{initiative-name}.md`
 - **Something that happened this session?** → `session-state-rohan.md`
