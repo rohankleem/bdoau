@@ -60,26 +60,22 @@ if (!empty($has_hero)) {
 							</div>
 						</li>
 
-						<!-- ===== TRANSFORMATION ===== -->
+						<!-- ===== TRANSFORM & AUTOMATE (merged: Transformation + Automations) ===== -->
 						<li class="hs-has-sub-menu nav-item">
-							<a id="transformationMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Transformation</a>
+							<a id="transformAutomateMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Transform &amp; Automate</a>
 
-							<div class="hs-sub-menu dropdown-menu" aria-labelledby="transformationMenu" style="min-width: 18rem;">
+							<div class="hs-sub-menu dropdown-menu" aria-labelledby="transformAutomateMenu" style="min-width: 22rem;">
+
+								<h6 class="dropdown-header">Transformation</h6>
 								<a class="dropdown-item" href="/transformation/">All Transformation services</a>
-								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="/transformation/discovery/">Discovery &amp; diagnosis</a>
 								<a class="dropdown-item" href="/transformation/streamlining/">Process streamlining</a>
 								<a class="dropdown-item" href="/transformation/systems/">Business systems design</a>
-							</div>
-						</li>
 
-						<!-- ===== AUTOMATIONS ===== -->
-						<li class="hs-has-sub-menu nav-item">
-							<a id="automationsMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Automations</a>
-
-							<div class="hs-sub-menu dropdown-menu" aria-labelledby="automationsMenu" style="min-width: 18rem;">
-								<a class="dropdown-item" href="/automations/">All Automation services</a>
 								<div class="dropdown-divider"></div>
+
+								<h6 class="dropdown-header">Automate</h6>
+								<a class="dropdown-item" href="/automations/">All Automation services</a>
 								<a class="dropdown-item" href="/automations/workflow/">Workflow automation</a>
 								<a class="dropdown-item" href="/automations/integrations/">System integrations</a>
 								<a class="dropdown-item" href="/automations/ai-agents/">AI &amp; agent automation</a>
