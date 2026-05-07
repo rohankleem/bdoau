@@ -27,85 +27,112 @@ if (!empty($has_hero)) {
 					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
 				<div class="offcanvas-body">
-				<ul class="navbar-nav">
+					<ul class="navbar-nav">
 
+						<!-- ===== SERVICES (mega menu, 4 columns) ===== -->
+						<li class="hs-has-sub-menu nav-item"
+							data-hs-mega-menu-item-options='{
+								"desktop": { "position": "left", "maxWidth": "60rem" }
+							}'>
+							<a id="servicesMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Services</a>
 
-					<!-- Services -->
-					<li class="hs-has-sub-menu nav-item">
-						<a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Services</a>
+							<div class="hs-mega-menu hs-sub-menu dropdown-menu" aria-labelledby="servicesMegaMenu" style="min-width: 60rem;">
+								<div class="row">
 
-						<div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
-							<a class="dropdown-item" href="#">CRM system development</a>
-							<a class="dropdown-item" href="#">API integration</a>
-							<a class="dropdown-item" href="#">Custom apps and software</a>
-							<a class="dropdown-item" href="#">Reporting and insights</a>
-							<a class="dropdown-item" href="#">Phone and SMS systems</a>
-							<a class="dropdown-item" href="#">Hosting and infrastructure</a>
-							<a class="dropdown-item" href="#">WordPress Development</a>
-						</div>
-					</li>
+									<!-- Software Development -->
+									<div class="col-md-3">
+										<span class="dropdown-header">Software Development</span>
+										<a class="dropdown-item" href="/software-development/">All software services</a>
+										<a class="dropdown-item" href="/software-development/#crm">CRM systems (Zoho)</a>
+										<a class="dropdown-item" href="/software-development/#api">API integrations</a>
+										<a class="dropdown-item" href="/software-development/#custom">Custom apps &amp; software</a>
+										<a class="dropdown-item" href="/software-development/#wordpress">WordPress development</a>
+									</div>
 
-					<!-- Products -->
-					<li class="hs-has-sub-menu nav-item">
-						<a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Products</a>
+									<!-- Marketing & Search Visibility -->
+									<div class="col-md-3">
+										<span class="dropdown-header">Marketing &amp; Search</span>
+										<a class="dropdown-item" href="/marketing-search-visibility/">All marketing services</a>
+										<a class="dropdown-item" href="/marketing-search-visibility/#audit">Search visibility audit</a>
+										<a class="dropdown-item" href="/marketing-search-visibility/#seo">SEO &mdash; traditional search</a>
+										<a class="dropdown-item" href="/marketing-search-visibility/#geo">GEO / AEO &mdash; AI search</a>
+										<a class="dropdown-item" href="/marketing-search-visibility/#content">Content for AI &amp; humans</a>
+										<a class="dropdown-item" href="/marketing-search-visibility/#digital-pr">Digital PR in AI ecosystems</a>
+										<a class="dropdown-item" href="/marketing-search-visibility/#measurement">Visibility measurement</a>
+									</div>
 
-						<div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
-							<a class="dropdown-item" href="/unipixel/">UniPixel WordPress Plugin</a>
-							<a class="dropdown-item" href="/unipixel-docs/">UniPixel Documentation</a>
-						</div>
-					</li>
+									<!-- Transformation & Streamlining -->
+									<div class="col-md-3">
+										<span class="dropdown-header">Transformation</span>
+										<a class="dropdown-item" href="/transformation/">All transformation services</a>
+										<a class="dropdown-item" href="/transformation/#discovery">Discovery &amp; diagnosis</a>
+										<a class="dropdown-item" href="/transformation/#streamlining">Process streamlining</a>
+										<a class="dropdown-item" href="/transformation/#systems">Business systems design</a>
+									</div>
 
-					<!-- Scrapbook -->
-					<li class="hs-has-sub-menu nav-item">
-						<a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Notebook</a>
-						<div class="hs-sub-menu dropdown-menu" aria-labelledby="blogMegaMenu" style="min-width: 14rem;">
+									<!-- Automations -->
+									<div class="col-md-3">
+										<span class="dropdown-header">Automations</span>
+										<a class="dropdown-item" href="/automations/">All automations</a>
+										<a class="dropdown-item" href="/automations/#workflow">Workflow automation</a>
+										<a class="dropdown-item" href="/automations/#integrations">System integrations</a>
+										<a class="dropdown-item" href="/automations/#ai-agents">AI &amp; agent automation</a>
+									</div>
 
+								</div>
+							</div>
+						</li>
 
+						<!-- ===== PRODUCTS ===== -->
+						<li class="hs-has-sub-menu nav-item">
+							<a id="productsMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Products</a>
 
+							<div class="hs-sub-menu dropdown-menu" aria-labelledby="productsMegaMenu" style="min-width: 16rem;">
+								<a class="dropdown-item" href="/unipixel/">UniPixel WordPress Plugin</a>
+								<a class="dropdown-item" href="/unipixel-docs/">UniPixel Documentation</a>
+							</div>
+						</li>
 
-							<?php
+						<!-- ===== NOTEBOOK (blog, dynamic) ===== -->
+						<li class="hs-has-sub-menu nav-item">
+							<a id="notebookMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Notebook</a>
+							<div class="hs-sub-menu dropdown-menu" aria-labelledby="notebookMegaMenu" style="min-width: 18rem;">
 
-							$args = array(
-								'post_type' => 'post'
-							);
+								<?php
+								$post_query = new WP_Query(array('post_type' => 'post'));
+								$limit = 9;
+								$count = 0;
 
-							$post_query = new WP_Query($args);
-							$limit = 9;
-							$count = 0;
-
-							if ($post_query->have_posts()) {
-
-								while ($post_query->have_posts() && $count < $limit) {
-									$post_query->the_post();
-
-							?>
-									<a class="dropdown-item" href="<?php the_permalink(); ?>"><span class="text-truncate"><?php echo esc_html(get_the_title()); ?></span>
-										<?php if ($count === 0) { ?>
-											<span class="badge bg-success rounded-pill ms-2">New</span>
-										<?php } else { ?>
-											<span class="badge bg-primary rounded-pill ms-2">Recent</span>
-										<?php } ?>
-									</a>
-							<?php
-									$count++;
+								if ($post_query->have_posts()) {
+									while ($post_query->have_posts() && $count < $limit) {
+										$post_query->the_post();
+								?>
+										<a class="dropdown-item" href="<?php the_permalink(); ?>">
+											<span class="text-truncate"><?php echo esc_html(get_the_title()); ?></span>
+											<?php if ($count === 0) : ?>
+												<span class="badge bg-success rounded-pill ms-2">New</span>
+											<?php else : ?>
+												<span class="badge bg-primary rounded-pill ms-2">Recent</span>
+											<?php endif; ?>
+										</a>
+								<?php
+										$count++;
+									}
+									wp_reset_postdata();
 								}
+								?>
 
-								wp_reset_postdata();
-							}
-
-							?>
-
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="/scrapbook/"><strong>View all articles...</strong></a>
-						</div>
-					</li>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="/scrapbook/"><strong>View all articles...</strong></a>
+							</div>
+						</li>
 
 
-					<li class="nav-item">
-						<a class="btn btn-primary btn-transition" href="/contact/">Get In Touch</a>
-					</li>
+						<li class="nav-item">
+							<a class="btn btn-primary btn-transition" href="/contact/">Get In Touch</a>
+						</li>
 
-				</ul>
+					</ul>
 
 				</div><!-- .offcanvas-body -->
 			</div><!-- .offcanvas -->

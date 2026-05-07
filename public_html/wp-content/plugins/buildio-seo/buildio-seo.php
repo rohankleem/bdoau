@@ -236,6 +236,11 @@ function buildio_page_context() {
         $context['url'] = home_url(add_query_arg([], $GLOBALS['wp']->request));
     }
 
+    // Final fallback — never let description be empty.
+    if (empty($context['description'])) {
+        $context['description'] = BUILDIO_DEFAULT_DESCRIPTION;
+    }
+
     $cached = $context;
     return $context;
 }
