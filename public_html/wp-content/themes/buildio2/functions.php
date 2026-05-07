@@ -36,13 +36,15 @@ function do_enqueue()
 
 	//echo "HELLOOOOOOxxxxxxxxxxxx";
 
-	global $stylesversion;
-    global $scriptsversion;
-    $stylesversion = "1.3";
-    $scriptsversion = "1.3";
+	// Use the file's modification time as the cache-busting version so every
+	// webpack build automatically invalidates the browser cache.
+	$css_path = get_stylesheet_directory() . '/dist/main.bundle.css';
+	$js_path  = get_stylesheet_directory() . '/dist/main.bundle.js';
+	$css_ver  = file_exists($css_path) ? filemtime($css_path) : '1';
+	$js_ver   = file_exists($js_path)  ? filemtime($js_path)  : '1';
 
-	wp_enqueue_style('styles-dist-main', get_stylesheet_directory_uri() . '/dist/main.bundle.css?ver=' . $stylesversion, array(), 1);
-	wp_enqueue_script('scripts-dist-main', get_stylesheet_directory_uri() . '/dist/main.bundle.js?ver=' . $scriptsversion, array(), 1, true);
+	wp_enqueue_style('styles-dist-main',  get_stylesheet_directory_uri() . '/dist/main.bundle.css', array(), $css_ver);
+	wp_enqueue_script('scripts-dist-main', get_stylesheet_directory_uri() . '/dist/main.bundle.js', array(), $js_ver, true);
 
 }
 
