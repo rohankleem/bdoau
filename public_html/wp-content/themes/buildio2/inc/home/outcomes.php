@@ -4,7 +4,7 @@
   <div class="row d-block d-md-none">
 
     <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-4 mb-md-8">
-      <h2>What we help fix</h2>
+      <h2>What we help with</h2>
     </div>
 
     <div class="col-12 mb-3">
@@ -13,10 +13,10 @@
           <span class="svg-icon text-primary arr031Svg"></span>
         </div>
         <div class="flex-grow-1 ms-3">
-          <h4 class="mb-0">Workflows that fight you</h4>
+          <h4 class="mb-0">Smoother workflows</h4>
         </div>
       </div>
-      <p>Streamlined processes that get out of your way. Less friction in the day-to-day.</p>
+      <p>Streamlined day-to-day. Time on the work that matters.</p>
     </div>
 
     <div class="col-12 mb-3">
@@ -25,10 +25,10 @@
           <span class="svg-icon text-primary teh001Svg"></span>
         </div>
         <div class="flex-grow-1 ms-3">
-          <h4 class="mb-0">Tools that don&rsquo;t talk</h4>
+          <h4 class="mb-0">Systems that talk</h4>
         </div>
       </div>
-      <p>Systems connected so data flows automatically. Fewer manual handovers.</p>
+      <p>Your tools share data automatically. Cleaner records.</p>
     </div>
 
     <div class="col-12 mb-3">
@@ -37,16 +37,16 @@
           <span class="svg-icon text-primary gra010Svg"></span>
         </div>
         <div class="flex-grow-1 ms-3">
-          <h4 class="mb-0">Data the team can&rsquo;t see</h4>
+          <h4 class="mb-0">Insights at a glance</h4>
         </div>
       </div>
-      <p>Reporting that answers the questions, without anyone digging.</p>
+      <p>Reporting that surfaces the answers in plain language.</p>
     </div>
 
   </div>
 
 
-  <!-- DESKTOP / TABLET (6 items, pain -> rainbow) -->
+  <!-- DESKTOP / TABLET (6 items, positive solutions) -->
   <div class="row d-none d-md-flex">
 
     <div class="col-sm-6 col-md-4 mb-4">
@@ -55,10 +55,10 @@
           <span class="svg-icon text-primary arr031Svg"></span>
         </div>
         <div class="flex-grow-1 ms-3">
-          <h4 class="mb-0">Workflows that fight the team</h4>
+          <h4 class="mb-0">Smoother workflows</h4>
         </div>
       </div>
-      <p>Streamlined processes that get out of your way. The day-to-day stops dragging.</p>
+      <p>Streamlined day-to-day. Time and energy on the work that matters.</p>
     </div>
 
     <div class="col-sm-6 col-md-4 mb-3 mb-sm-6 mb-md-0">
@@ -67,10 +67,10 @@
           <span class="svg-icon text-primary teh001Svg"></span>
         </div>
         <div class="flex-grow-1 ms-3">
-          <h4 class="mb-0">Tools that don&rsquo;t talk to each other</h4>
+          <h4 class="mb-0">Systems that talk</h4>
         </div>
       </div>
-      <p>Systems connected so data flows automatically. Fewer manual handovers, less double-entry.</p>
+      <p>Your tools share data automatically. Cleaner records, faster handovers.</p>
     </div>
 
     <div class="col-sm-6 col-md-4 mb-3 mb-sm-6 mb-md-0">
@@ -79,10 +79,10 @@
           <span class="svg-icon text-primary art002Svg"></span>
         </div>
         <div class="flex-grow-1 ms-3">
-          <h4 class="mb-0">Same task, five different ways</h4>
+          <h4 class="mb-0">Consistent quality</h4>
         </div>
       </div>
-      <p>Consistent processes your team can actually follow. Fewer mistakes, less rework.</p>
+      <p>The same task done the same way, every time. More accuracy across the team.</p>
     </div>
 
     <div class="col-sm-6 col-md-4 mb-3 mb-sm-6">
@@ -91,10 +91,10 @@
           <span class="svg-icon text-primary ecm003Svg"></span>
         </div>
         <div class="flex-grow-1 ms-3">
-          <h4 class="mb-0">Marketing spend that disappears</h4>
+          <h4 class="mb-0">Smarter marketing spend</h4>
         </div>
       </div>
-      <p>Real visibility into what&rsquo;s working, AI search included. Your spend goes further.</p>
+      <p>Real visibility into what&rsquo;s working, AI search included. Your spend works harder.</p>
     </div>
 
     <div class="col-sm-6 col-md-4 mb-3 mb-sm-6 mb-md-0">
@@ -103,10 +103,10 @@
           <span class="svg-icon text-primary gen012Svg"></span>
         </div>
         <div class="flex-grow-1 ms-3">
-          <h4 class="mb-0">Staff doing software&rsquo;s job</h4>
+          <h4 class="mb-0">Free up your team</h4>
         </div>
       </div>
-      <p>Automation that gives the hours back. People on the work that matters.</p>
+      <p>Automation handles the routine. People focus on the work that matters.</p>
     </div>
 
     <div class="col-sm-6 col-md-4 mb-3 mb-sm-6 mb-md-0">
@@ -115,10 +115,10 @@
           <span class="svg-icon text-primary gra010Svg"></span>
         </div>
         <div class="flex-grow-1 ms-3">
-          <h4 class="mb-0">Data nobody can find anything in</h4>
+          <h4 class="mb-0">Insights at a glance</h4>
         </div>
       </div>
-      <p>Reporting that answers the questions, without anyone digging.</p>
+      <p>Reporting that surfaces the answers, in plain language.</p>
     </div>
 
   </div>
