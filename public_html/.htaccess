@@ -65,6 +65,13 @@
 	</IfModule>
 # END iThemes Security - Do not modify or remove this line
 
+# BEGIN Custom Redirects
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^unipixel/?$ https://unipixelhq.com/ [R=301,L]
+</IfModule>
+# END Custom Redirects
+
 # BEGIN WordPress
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
 # dynamically generated, and should only be modified via WordPress filters.
