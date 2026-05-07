@@ -86,12 +86,11 @@ if (!empty($has_hero)) {
 							</div>
 						</li>
 
-						<!-- ===== NOTEBOOK (blog, dynamic) ===== -->
+						<?php /* ===== NOTEBOOK (blog) — hidden from nav until content is filled out =====
 						<li class="hs-has-sub-menu nav-item">
 							<a id="notebookMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle dropdown-toggle" href="#" role="button" aria-expanded="false">Notebook</a>
 							<div class="hs-sub-menu dropdown-menu" aria-labelledby="notebookMenu" style="min-width: 18rem;">
 
-								<?php
 								$post_query = new WP_Query(array('post_type' => 'post'));
 								$limit = 9;
 								$count = 0;
@@ -99,26 +98,24 @@ if (!empty($has_hero)) {
 								if ($post_query->have_posts()) {
 									while ($post_query->have_posts() && $count < $limit) {
 										$post_query->the_post();
-								?>
-										<a class="dropdown-item" href="<?php the_permalink(); ?>">
-											<span class="text-truncate"><?php echo esc_html(get_the_title()); ?></span>
-											<?php if ($count === 0) : ?>
-												<span class="badge bg-success rounded-pill ms-2">New</span>
-											<?php else : ?>
-												<span class="badge bg-primary rounded-pill ms-2">Recent</span>
-											<?php endif; ?>
-										</a>
-								<?php
+										echo '<a class="dropdown-item" href="' . get_permalink() . '">';
+										echo '<span class="text-truncate">' . esc_html(get_the_title()) . '</span>';
+										if ($count === 0) {
+											echo '<span class="badge bg-success rounded-pill ms-2">New</span>';
+										} else {
+											echo '<span class="badge bg-primary rounded-pill ms-2">Recent</span>';
+										}
+										echo '</a>';
 										$count++;
 									}
 									wp_reset_postdata();
 								}
-								?>
 
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="/scrapbook/"><strong>View all articles...</strong></a>
 							</div>
 						</li>
+						*/ ?>
 
 
 						<li class="nav-item">
