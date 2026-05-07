@@ -7,9 +7,12 @@ define( 'DISALLOW_FILE_EDIT', true ); // Disable File Editor - Security > Settin
 
 define( 'ITSEC_ENCRYPTION_KEY', 'emF4Pj1KVUxMa3NuKGBmQVlSazUqM3FwPUQ5eWNVa1hqQU9hL1kjOzRrdGlFK085XkRJSl1vX307NltAey00aA==' );
 
-require_once(__DIR__ . '/../vendor/autoload.php');
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/../');
-$dotenv->load();
+if ( ! class_exists( 'Dotenv\\Dotenv' ) ) {
+	require_once __DIR__ . '/../vendor/autoload.php';
+}
+if ( empty( $_ENV['DB_NAME'] ) ) {
+	Dotenv\Dotenv::createImmutable( __DIR__ . '/../' )->load();
+}
 
 //turn off errors and warnings////
 // ini_set('display_errors','On');

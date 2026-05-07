@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# WP-CLI wrapper. Auto-discovers the newest Laragon PHP and MySQL.
+set -e
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+php_dir=$(ls -d /c/laragon/bin/php/php-*/ 2>/dev/null | sort -V | tail -1)
+mysql_dir=$(ls -d /c/laragon/bin/mysql/mysql-*-winx64/ 2>/dev/null | sort -V | tail -1)
+if [ -z "$php_dir" ] || [ -z "$mysql_dir" ]; then
+  echo "wp: cannot find Laragon PHP/MySQL under C:\\laragon\\bin" >&2
+  exit 1
+fi
+export PATH="${php_dir%/}:${mysql_dir%/}/bin:$PATH"
+exec php "$DIR/_tools/wp-cli.phar" "$@"

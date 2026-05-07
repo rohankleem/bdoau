@@ -9,3 +9,6 @@ public_html/wp-content/uploads
 public_html/wp-content/plugins/unipixel/*
 .claude/settings.local.json
 .claude/worktrees/
+_tools/wp-cli.phar
+.wp-cli/cache/
+*.bak
