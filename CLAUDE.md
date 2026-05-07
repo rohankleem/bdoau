@@ -128,10 +128,17 @@ CLAUDE.md                              ← You are here. Operating manual.
 ├── session-state-rohan.md             ← Rolling handoff. Updated on "update session state".
 ├── app-knowledge/                     ← How the site is built.
 │   ├── app-knowledge.md               ← Stack, architecture, dev setup, WP-CLI, conventions.
-│   ├── git-and-deploy.md              ← Git workflow, rsync deploy, onboarding.
-│   └── buildio2-theme.md              ← Theme deep-dive: build chain, SCSS, JS, nav, blog styling.
-├── domain-knowledge/                  ← What the site is about. Buildio brand, products, audience.
-│   └── domain-knowledge.md            ← Truth doc — Buildio.au identity, family of sites, products, audience.
+│   ├── git-and-deploy.md              ← Git workflow, rsync deploy, onboarding, server access.
+│   └── buildio2-theme.md              ← Theme reference: build chain, SCSS, JS, nav, blog styling.
+├── domain-knowledge/                  ← What the site is about. Buildio identity, family of sites.
+│   └── domain-knowledge.md            ← Buildio.au identity, family-of-sites map, integrations.
+├── marketing-knowledge/               ← How the brand reaches customers. Positioning, voice, content, channels.
+│   ├── positioning.md                 ← What Buildio is, sales pillars, audience, differentiators. Foundational.
+│   ├── writing-style.md               ← Voice + structural rules for all published content.
+│   ├── bdoau-content.md               ← Per-section content inventory of buildio.au.
+│   ├── priorities.md                  ← Where the brand is now, current focus, blockers.
+│   ├── campaigns.md                   ← Active channels and campaigns.
+│   └── article-hook-patterns.md       ← Article-opening formulas for Notebook content.
 ├── projects/                          ← Per-initiative working docs. Kept forever.
 │   └── {name}.md                      ← Each has a Status header (Active/Planned/Design/Complete/Parked/Reference)
 └── settings.local.json                ← Per-dev harness settings. Gitignored.
@@ -145,6 +152,7 @@ CLAUDE.md                              ← You are here. Operating manual.
 | `session-state-rohan.md` | Every session, on "update session state" | Claude |
 | `app-knowledge/` | App architecture or patterns change | Both |
 | `domain-knowledge/` | New domain understanding crystallises | Both |
+| `marketing-knowledge/` | Positioning shifts, voice rules change, channel changes, content strategy moves | Both |
 | `projects/` | Initiative starts, progresses, or completes | Both |
 
 ---
@@ -155,14 +163,19 @@ CLAUDE.md                              ← You are here. Operating manual.
 
 When you learn something new, where does it go?
 
-- **Fact about the domain** (Buildio products, audience, content strategy, brand voice)? → `domain-knowledge/domain-knowledge.md` (split later if it grows dense)
+- **Fact about the brand identity, family of sites, integrations, vocabulary** → `domain-knowledge/domain-knowledge.md`
 - **Fact about the app stack or build** (PHP, MySQL, Laragon, deploy infra)? → `app-knowledge/app-knowledge.md`
 - **Fact about the buildio2 theme specifically** (a new component, a CSS pattern, a JS module)? → `app-knowledge/buildio2-theme.md`
 - **Operational reference** (git workflow, rsync rules, restore steps, server access)? → `app-knowledge/git-and-deploy.md`
+- **Positioning, sales pillars, audience, differentiators, pricing, market trends** → `marketing-knowledge/positioning.md`
+- **Voice, tone, copy rules, structural patterns for content** → `marketing-knowledge/writing-style.md`
+- **What lives where on buildio.au** (homepage sections, Notebook audit, Scrapbook structure) → `marketing-knowledge/bdoau-content.md`
+- **Current brand priorities, what's blocking growth** → `marketing-knowledge/priorities.md`
+- **Active channels, campaigns, what's working** → `marketing-knowledge/campaigns.md`
+- **Article-opening hook formulas, worked examples of which hook landed** → `marketing-knowledge/article-hook-patterns.md`
 - **A rule about how Claude and the team collaborate** (scope, commits, modes, documentation protocol)? → `CLAUDE.md`
 - **Something we're actively building?** → `projects/{initiative-name}.md`
 - **Something that happened this session?** → `session-state-rohan.md`
-- **A new term or vocabulary collision?** → `domain-knowledge/domain-knowledge.md` (vocabulary section)
 
 If you can't pick one branch in 5 seconds, the tree needs a new rule. Propose one.
 
