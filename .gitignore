@@ -7,3 +7,5 @@ public_html/wp-content/uploads
 *.log
 /public_html/wp-content/themes/buildio/dist/*.bundle.*
 public_html/wp-content/plugins/unipixel/*
+.claude/settings.local.json
+.claude/worktrees/
