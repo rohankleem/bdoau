@@ -184,6 +184,54 @@ height:14rem;
 
 
 
+/* Home hero slider — full bleed, equal heights, proper mobile padding */
+
+.hero-bg-slider {
+  /* Edge-to-edge on all viewports. Inner container handles content padding. */
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.js-swiper-home-hero {
+  /* Hide any overflow during slide transitions */
+  overflow: hidden;
+  width: 100%;
+}
+
+.js-swiper-home-hero .swiper-slide {
+  /* Slides size to their own content; JS will then set min-height to the
+     tallest slide so all slides occupy the same vertical space. */
+  height: auto;
+}
+
+.js-swiper-home-hero .swiper-slide > .hero-bg {
+  /* The slide's coloured background fills the slide's full height. */
+  min-height: 100%;
+  width: 100%;
+}
+
+.js-swiper-home-hero .home-hero-pagination {
+  /* Sit pagination dots inside the bottom of the slider, with a little
+     breathing room. Default Swiper styles handle the rest. */
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 5;
+}
+
+/* Mobile: comfortable inner padding so headlines and buttons never butt
+   up against the screen edges in narrow viewports. */
+@media (max-width: 575.98px) {
+  .js-swiper-home-hero .swiper-slide .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+
+
 .stats-marquee{
   width: 100%;
   overflow: hidden;

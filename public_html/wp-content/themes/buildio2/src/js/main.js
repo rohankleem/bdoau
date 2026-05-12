@@ -62,6 +62,22 @@ import Swiper from 'swiper/bundle';
 
 
   // Home page hero slider
+  // Equal-height behaviour: after init and on resize, measure each slide's
+  // natural content height and set every slide's min-height to the tallest
+  // so the slider doesn't jump between slides.
+  function homeHeroEqualHeights(swiper) {
+    if (!swiper || !swiper.slides) return;
+    // Reset previous overrides so we measure natural content height.
+    swiper.slides.forEach(function (s) { s.style.minHeight = ''; });
+    var maxH = 0;
+    swiper.slides.forEach(function (s) {
+      var h = s.offsetHeight;
+      if (h > maxH) maxH = h;
+    });
+    swiper.slides.forEach(function (s) { s.style.minHeight = maxH + 'px'; });
+    if (typeof swiper.update === 'function') swiper.update();
+  }
+
   var swiperHomeHero = new Swiper('.js-swiper-home-hero', {
     slidesPerView: 1,
     loop: true,
@@ -74,6 +90,11 @@ import Swiper from 'swiper/bundle';
     pagination: {
       el: '.home-hero-pagination',
       clickable: true,
+    },
+    on: {
+      init: function () { homeHeroEqualHeights(this); },
+      resize: function () { homeHeroEqualHeights(this); },
+      imagesReady: function () { homeHeroEqualHeights(this); },
     },
   });
 

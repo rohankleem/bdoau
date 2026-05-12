@@ -2,7 +2,7 @@
 
 <?php $imgpath = get_stylesheet_directory_uri() . "/dist/assets"; ?>
 
-<div class="position-relative mb-5 mb-md-7 hero-bg-slider px-3 px-md-0">
+<div class="position-relative mb-5 mb-md-7 hero-bg-slider">
 
 	<div class="swiper js-swiper-home-hero">
 		<div class="swiper-wrapper">
