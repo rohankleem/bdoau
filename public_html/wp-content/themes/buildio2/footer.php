@@ -9,7 +9,7 @@
       <div class="col-12 col-lg-4 text-white">
         <a class="d-inline-flex align-items-center text-decoration-none mb-3" href="/" aria-label="Buildio home">
           <img
-            src="https://buildio.local.site/wp-content/themes/buildio2/img/buildio-hori-clean-d.svg"
+            src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/buildio-hori-clean-d.svg"
             alt="Buildio"
             style="height: 32px; width: auto;"
           />
